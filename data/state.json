@@ -1,12 +1,12 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-09-30T22:13:00.000Z",
+  "updated_at": "2026-09-30T23:13:00.000Z",
   "quotes": {
-    "BTCUSDT": 83697.38,
-    "ETHUSDT": 2681.08,
-    "BNBUSDT": 766.18,
-    "APTUSDT": 0.7627,
+    "BTCUSDT": 83664.0,
+    "ETHUSDT": 2687.62,
+    "BNBUSDT": 770.17,
+    "APTUSDT": 0.7719,
     "SPY": 762.63,
     "QQQ": 739.77,
     "AAPL": 333.02,
