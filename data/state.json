@@ -1,12 +1,12 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-01T00:14:56.000Z",
+  "updated_at": "2026-10-01T01:13:00.000Z",
   "quotes": {
-    "BTCUSDT": 83524.0,
-    "ETHUSDT": 2682.78,
-    "BNBUSDT": 768.58,
-    "APTUSDT": 0.7732,
+    "BTCUSDT": 83600.4,
+    "ETHUSDT": 2687.99,
+    "BNBUSDT": 770.39,
+    "APTUSDT": 0.7866,
     "SPY": 762.63,
     "QQQ": 739.77,
     "AAPL": 333.02,
@@ -28,7 +28,11 @@
     "binance": {
       "cash": 2238.24,
       "start": 4000,
-      "alt_used": 560,
+      "alt_used": 565.47,
+      "unrealized": 6.71,
+      "realized": 0,
+      "equity": 4004.95,
+      "open_count": 4,
       "positions": [
         {
           "id": "b-btc",
@@ -165,6 +169,10 @@
     "us": {
       "cash": 1958.4,
       "start": 4000,
+      "unrealized": -13.73,
+      "realized": 0,
+      "equity": 3984.61,
+      "open_count": 5,
       "positions": [
         {
           "id": "u-spy",
@@ -333,6 +341,10 @@
     "bist": {
       "cash": 2719.48,
       "start": 4000,
+      "unrealized": -0.09,
+      "realized": 0,
+      "equity": 3999.39,
+      "open_count": 4,
       "positions": [
         {
           "id": "t-thyao",
