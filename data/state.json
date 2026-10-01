@@ -1,17 +1,17 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-01T16:53:00.000Z",
+  "updated_at": "2026-10-01T17:17:00.000Z",
   "quotes": {
-    "BTCUSDT": 84206.0,
-    "ETHUSDT": 2680.99,
-    "BNBUSDT": 767.3,
-    "APTUSDT": 0.7633,
-    "SPY": 761.1,
-    "QQQ": 737.89,
-    "AAPL": 328.12,
-    "MSFT": 513.03,
-    "NVDA": 230.37,
+    "BTCUSDT": 84669.5,
+    "ETHUSDT": 2695.57,
+    "BNBUSDT": 770.65,
+    "APTUSDT": 0.7738,
+    "SPY": 762.19,
+    "QQQ": 739.98,
+    "AAPL": 328.24,
+    "MSFT": 513.97,
+    "NVDA": 230.48,
     "THYAO.IS": 286.5,
     "GARAN.IS": 126.2,
     "BIMAS.IS": 408.0,
@@ -28,10 +28,10 @@
     "binance": {
       "cash": 2238.24,
       "start": 4000,
-      "alt_used": 555.93,
-      "unrealized": 0.92,
+      "alt_used": 560.94,
+      "unrealized": 12.53,
       "realized": 0,
-      "equity": 3999.16,
+      "equity": 4010.77,
       "open_count": 4,
       "positions": [
         {
@@ -169,9 +169,9 @@
     "us": {
       "cash": 1958.4,
       "start": 4000,
-      "unrealized": -18.0,
+      "unrealized": -14.86,
       "realized": 0,
-      "equity": 3980.34,
+      "equity": 3983.48,
       "open_count": 5,
       "positions": [
         {
