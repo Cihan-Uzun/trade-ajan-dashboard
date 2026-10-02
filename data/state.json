@@ -1,26 +1,26 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-02T19:13:00.000Z",
+  "updated_at": "2026-10-02T20:14:00.000Z",
   "quotes": {
-    "BTCUSDT": 84129.76,
-    "ETHUSDT": 2664.52,
-    "BNBUSDT": 764.13,
-    "APTUSDT": 0.779,
-    "USDTTRY": 49.16,
-    "SPY": 769.13,
-    "QQQ": 748.9,
-    "AAPL": 333.25,
-    "MSFT": 514.91,
-    "NVDA": 234.445,
+    "BTCUSDT": 84377.8,
+    "ETHUSDT": 2667.52,
+    "BNBUSDT": 766.2,
+    "APTUSDT": 0.7822,
+    "USDTTRY": 49.1198,
+    "SPY": 769.64,
+    "QQQ": 749.58,
+    "AAPL": 333.69,
+    "MSFT": 517.53,
+    "NVDA": 233.95,
     "THYAO.IS": 292.0,
     "GARAN.IS": 125.9,
     "BIMAS.IS": 414.0,
     "TUPRS.IS": 377.0
   },
   "decisions": {
-    "binance": "SAT ETH stop. ETH 2664.52 stop BE 2675.03 altinda, kalan 0.112148 SAT, net -1.63, fee 0.45. BTC 84129.76 runner stop 83742 ustu, TP2 dolu. BNB 764.13 TP1 782.86 alti, stop 749.92 ustu. APT 0.779 TP2 0.8711 alti, stop 0.7755 ustu. 4s EMA21 84524.46 RSI 47.83, fiyat EMA alti, yeni alt yok.",
-    "us": "WAIT",
+    "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. BTC 84377.8 runner stop BE 83742 ustu, TP2 dolu. BNB 766.2 TP1 782.86 alti, stop 749.92 ustu. APT 0.7822 TP2 0.8711 alti, stop 0.7755 ustu. 4s EMA21 84519.11 RSI 49.09, fiyat EMA alti, yeni alt yok.",
+    "us": "WAIT_SESSION",
     "bist": "WAIT_SESSION"
   },
   "config": {
@@ -139,10 +139,10 @@
     "binance": {
       "cash": 3436.56,
       "start": 4000,
-      "alt_used": 447.93,
-      "unrealized": 0.58,
+      "alt_used": 449.38,
+      "unrealized": 2.44,
       "realized": 26.25,
-      "equity": 4025.07,
+      "equity": 4026.94,
       "open_count": 3,
       "positions": [
         {
@@ -326,11 +326,11 @@
     "us": {
       "cash": 1958.4,
       "start": 4000,
-      "unrealized": 6.98,
+      "unrealized": 9.09,
       "realized": 0.0,
-      "equity": 4005.32,
+      "equity": 4007.42,
       "open_count": 5,
-      "decision": "WAIT",
+      "decision": "WAIT_SESSION",
       "positions": [
         {
           "id": "u-spy",
@@ -499,12 +499,12 @@
     "bist": {
       "cash": 2719.48,
       "start": 4000,
-      "unrealized": 14.84,
+      "unrealized": 14.86,
       "realized": 0.0,
-      "equity": 4010.07,
+      "equity": 4011.12,
       "open_count": 4,
       "decision": "WAIT_SESSION",
-      "fx": 49.16,
+      "fx": 49.1198,
       "positions": [
         {
           "id": "t-thyao",
@@ -644,7 +644,7 @@
     }
   },
   "filters": {
-    "updated_at": "2026-10-02T19:13:00.000Z",
+    "updated_at": "2026-10-02T20:14:00.000Z",
     "stance": "notr",
     "equity": {
       "label": "Bilanço ve haber eleği açık",
@@ -652,7 +652,7 @@
     },
     "crypto": {
       "label": "BTC EMA alti, yeni alt yok",
-      "reason": "BTC 84129.76, 4s EMA21 84524.46 altinda, RSI 47.83. Fiyat EMA ustu degil, yeni alt yok. ETH stop kapanisi ayri. Alt used 447.93/1400.",
+      "reason": "BTC 84377.8, 4s EMA21 84519.11 altinda, RSI 49.09. RSI esigi gecti ama fiyat EMA ustu degil, yeni alt yok. Alt used 449.38/1400.",
       "next": [
         "14 Eki CPI 15:30 TSI",
         "15 Eki PPI 15:30 TSI",
@@ -684,6 +684,27 @@
     }
   ],
   "journal": [
+    {
+      "time": "2026-10-02T20:14:00+00:00",
+      "market": "binance",
+      "action": "WAIT",
+      "symbol": "-",
+      "reason": "Secilen yok. BTC 84377.8 EMA21 84519.11 alti (RSI 49.09>=45 ama EMA filtresi eler). BNB 766.2 TP1 782.86 alti, APT 0.7822 stop 0.7755 ustu. Yeni alt yok, kaldirac yok."
+    },
+    {
+      "time": "2026-10-02T20:14:00+00:00",
+      "market": "us",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "ABD seansi kapali (16:14 NY, 16:00 sonrasi). AL/SAT yok. Son fiyat SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop tetigi seans disi islenmez."
+    },
+    {
+      "time": "2026-10-02T20:14:00+00:00",
+      "market": "bist",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "BIST seansi kapali (23:14 TSI, 18:00 sonrasi). AL/SAT yok. Son seans THYAO 292.0 GARAN 125.9 BIMAS 414.0 TUPRS 377.0. USDTTRY 49.1198."
+    },
     {
       "time": "2026-10-02T19:13:00+00:00",
       "market": "binance",
