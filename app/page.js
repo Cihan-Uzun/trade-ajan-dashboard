@@ -62,6 +62,68 @@ function marketName(k) {
   return k;
 }
 
+const BIST_CLOSED = new Set(["2026-01-01", "2026-03-20", "2026-03-21", "2026-03-22", "2026-04-23", "2026-05-01", "2026-05-19", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-07-15", "2026-10-29"]);
+const BIST_HALF = new Set(["2026-03-19", "2026-05-26", "2026-10-28"]);
+const US_CLOSED = new Set(["2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03", "2026-05-25", "2026-06-19", "2026-07-03", "2026-09-07", "2026-11-26", "2026-12-25"]);
+const US_EARLY = new Set(["2026-11-27", "2026-12-24"]);
+
+function zoned(date, timeZone) {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+    weekday: "short",
+  }).formatToParts(date);
+  const get = (t) => parts.find((p) => p.type === t)?.value;
+  const weekday = { Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6, Sun: 0 }[get("weekday")] ?? 0;
+  return {
+    ymd: `${get("year")}-${get("month")}-${get("day")}`,
+    minutes: Number(get("hour")) * 60 + Number(get("minute")),
+    weekday,
+    clock: `${get("hour")}:${get("minute")}`,
+  };
+}
+
+function sessionOf(market, now = new Date()) {
+  if (market === "binance") return { open: true, label: "Binance 7/24 açık" };
+  if (market === "bist") {
+    const z = zoned(now, "Europe/Istanbul");
+    if (z.weekday === 0 || z.weekday === 6) return { open: false, label: "BIST kapalı · hafta sonu" };
+    if (BIST_CLOSED.has(z.ymd)) return { open: false, label: "BIST kapalı · resmi tatil" };
+    const end = BIST_HALF.has(z.ymd) ? 13 * 60 : 18 * 60;
+    const open = z.minutes >= 10 * 60 && z.minutes < end;
+    return { open, label: open ? `BIST açık · ${z.clock} TSİ` : `BIST kapalı · seans 10:00–${BIST_HALF.has(z.ymd) ? "13:00" : "18:00"}` };
+  }
+  const z = zoned(now, "America/New_York");
+  if (z.weekday === 0 || z.weekday === 6) return { open: false, label: "ABD kapalı · hafta sonu" };
+  if (US_CLOSED.has(z.ymd)) return { open: false, label: "ABD kapalı · tatil" };
+  const end = US_EARLY.has(z.ymd) ? 13 * 60 : 16 * 60;
+  const open = z.minutes >= 9 * 60 + 30 && z.minutes < end;
+  return { open, label: open ? `ABD açık · ${z.clock} ET` : "ABD kapalı · seans 09:30–16:00 ET" };
+}
+
+function Bars({ rows }) {
+  if (!rows.length) return <p className="muted">Bu dönemde çizilecek kapanış yok.</p>;
+  const max = Math.max(...rows.map((r) => Math.abs(r.value)), 0.01);
+  return (
+    <div className="chart">
+      {rows.map((r) => (
+        <div key={r.label} className="bar-row">
+          <span className="bl">{r.label}</span>
+          <div className="track">
+            <i className={r.value >= 0 ? "bar upb" : "bar dnb"} style={{ width: `${Math.max(6, (Math.abs(r.value) / max) * 100)}%` }} />
+          </div>
+          <span className={pnlClass(r.value)}>{money(r.value)}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function Page() {
   const [tab, setTab] = useState("all");
   const [period, setPeriod] = useState("day");
@@ -155,7 +217,24 @@ export default function Page() {
     return { trades, positions, closes, realized, fees, unreal, wins: closes.filter((t) => (t.pnl || 0) > 0).length };
   }, [view, symbol, quotes]);
 
-  const totals = payload?.totals;
+  const dayBars = useMemo(() => {
+    if (!report) return [];
+    const map = {};
+    for (const t of report.closes) {
+      const day = istYmd(new Date(t.time));
+      map[day] = (map[day] || 0) + (Number(t.pnl) || 0);
+    }
+    return Object.entries(map).sort((a, b) => a[0] < b[0] ? -1 : 1).map(([label, value]) => ({ label: label.slice(5), value }));
+  }, [report]);
+  const symBars = useMemo(() => {
+    if (!report) return [];
+    return report.ranked.filter((r) => r.closes > 0).map((r) => ({ label: r.symbol.replace(".IS", ""), value: r.realized }));
+  }, [report]);
+  const sessions = useMemo(() => ({
+    binance: sessionOf("binance"),
+    us: sessionOf("us"),
+    bist: sessionOf("bist"),
+  }), [payload]);
 
   return (
     <div className="wrap">
@@ -178,6 +257,14 @@ export default function Page() {
           </button>
         ))}
       </nav>
+
+      <div className="sessions">
+        {MARKETS.map((k) => (
+          <span key={k} className={sessions[k].open ? "sess on" : "sess"}>
+            {sessions[k].label}
+          </span>
+        ))}
+      </div>
 
       {loading && <p className="muted">Yükleniyor…</p>}
       {err && <p className="err">Veri hatası: {err}</p>}
@@ -230,6 +317,36 @@ export default function Page() {
           {report.closes.length === 0 && (
             <p className="note">Bu dönemde kapanış yok. Açık pozisyonların K/Z’si henüz gerçekleşmedi; aşağıda hisse seçince açık K/Z de görünür.</p>
           )}
+          <div className="charts">
+            <div>
+              <h3>Günlük kapanan K/Z</h3>
+              <Bars rows={dayBars} />
+            </div>
+            <div>
+              <h3>Hisse kapanan K/Z</h3>
+              <Bars rows={symBars} />
+            </div>
+          </div>
+          <h3>Kapanan işlemler</h3>
+          <div className="log">
+            {report.closes.length ? report.closes.map((t, i) => (
+              <article key={t.id || i}>
+                <div className="logh">
+                  <b className="dn">{t.action}</b>
+                  <strong>{t.symbol}</strong>
+                  <span>{marketName(t.market)} · {t.horizon}</span>
+                  <em>{t.time ? new Date(t.time).toLocaleString("tr-TR", { timeZone: "Europe/Istanbul" }) : ""}</em>
+                </div>
+                <p>{t.reason}</p>
+                <div className="logf">
+                  <span>Adet {Number(t.qty).toFixed(4)}</span>
+                  <span>Fiyat {money(t.price, 4)}</span>
+                  <span>Komisyon {money(t.fee, 4)}</span>
+                  <span className={pnlClass(t.pnl || 0)}>K/Z {money(t.pnl || 0)}</span>
+                </div>
+              </article>
+            )) : <p className="muted">Bu dönemde kapanan işlem yok.</p>}
+          </div>
           <div className="table">
             <div className="row rank head">
               <span>Hisse</span><span>Piyasa</span><span>Alış</span><span>Kapanış</span><span>Komisyon</span><span>Kapanan K/Z</span>
@@ -375,6 +492,17 @@ select{min-width:220px}
 .logf{display:flex;gap:12px;flex-wrap:wrap;color:var(--mut);font-size:12px}
 .up{color:var(--up)!important} .dn{color:var(--dn)!important} .flat{color:var(--tx)}
 .muted{color:var(--mut)} .err{color:var(--dn)}
+.sessions{display:flex;gap:8px;flex-wrap:wrap;margin:-6px 0 12px}
+.sess{font-size:12px;color:var(--mut);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+.sess.on{color:var(--up);border-color:#14532d}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.charts h3,h3{margin:14px 0 8px;font-size:14px}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px}
+.bar-row{display:grid;grid-template-columns:72px 1fr 72px;gap:8px;align-items:center;margin:6px 0;font-size:12px}
+.bl{color:var(--mut);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.track{height:8px;background:#0e1728;border-radius:99px;overflow:hidden}
+.bar{display:block;height:8px;border-radius:99px}
+.upb{background:var(--up)} .dnb{background:var(--dn)}
 footer{margin-top:28px;color:var(--mut);font-size:12px;line-height:1.5}
 @media(max-width:700px){
   .row,.row.head{grid-template-columns:1.2fr .8fr .8fr}
@@ -382,6 +510,7 @@ footer{margin-top:28px;color:var(--mut);font-size:12px;line-height:1.5}
   .row.rank,.row.rank.head{grid-template-columns:1.2fr .7fr .9fr}
   .row.rank span:nth-child(2),.row.rank span:nth-child(3),.row.rank span:nth-child(4),
   .row.rank.head span:nth-child(2),.row.rank.head span:nth-child(3),.row.rank.head span:nth-child(4){display:none}
-  .split{grid-template-columns:1fr}
+  .split,.charts{grid-template-columns:1fr}
+  .bar-row{grid-template-columns:58px 1fr 64px}
 }
 `;
