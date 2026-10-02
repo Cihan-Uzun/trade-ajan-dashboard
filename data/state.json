@@ -22,7 +22,13 @@
     "binance_alt_target": 1200,
     "binance_alt_cap": 1400,
     "leverage_sleeve": 280,
-    "risk_pct": 0.01
+    "risk_pct": 0.01,
+    "session_lock": {
+      "binance": "24/7",
+      "bist": "Europe/Istanbul weekdays 10:00-18:00; half-days close 13:00; no weekend/holiday",
+      "us": "America/New_York weekdays 09:30-16:00; no extended hours; early close 13:00 ET",
+      "rule": "BIST ve ABD seans disinda AL ve SAT yasak. Sadece fiyat guncelle, karar WAIT_SESSION."
+    }
   },
   "books": {
     "binance": {
