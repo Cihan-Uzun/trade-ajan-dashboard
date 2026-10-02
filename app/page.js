@@ -13,7 +13,11 @@ const PERIODS = [
   { id: "month", label: "Aylık" },
   { id: "all", label: "Tümü" },
 ];
-const MARKETS = ["binance", "us", "bist"];
+const DEFAULT_FILTERS = {
+  stance: "risk-off",
+  equity: { reason: "ABD ve BIST çekirdekte yeni alım, bilanço günü ve önceki işlem günü yok. Rehberlik kesintisi, soruşturma, işlem yasağı veya KAP'ta sıkıntılı sermaye artırımı varsa o gün AL yok. Açık pozisyon haberle kapatılmaz." },
+  crypto: { label: "Yeni alt yok", reason: "ABD istihdam, CPI, PPI ve FOMC kararında açıklama + 1 saat dolmadan yeni altcoin yok. Alt giriş ayrıca BTC 4s EMA21 üstü ve RSI 45+ ister. BTC/ETH çekirdek tutulur.", next: ["14 Eki CPI 15:30 TSİ", "15 Eki PPI 15:30 TSİ", "28 Eki FOMC 21:00 TSİ"] },
+};
 
 function money(n, d = 2) {
   if (n == null || Number.isNaN(n)) return "—";
@@ -267,25 +271,28 @@ export default function Page() {
         ))}
       </div>
 
-      {state?.filters && (
+      {(() => {
+        const filters = state?.filters || DEFAULT_FILTERS;
+        return (
         <section className="report">
           <div className="sec-h">
             <h2>Haber ve makro elek</h2>
-            <span className={state.filters.stance === "risk-off" ? "sess" : "sess on"}>{state.filters.stance}</span>
+            <span className={filters.stance === "risk-off" ? "sess" : "sess on"}>{filters.stance}</span>
           </div>
           <div className="charts">
             <article className="note">
               <b>ABD / BIST çekirdek</b>
-              <p>{state.filters.equity?.reason}</p>
+              <p>{filters.equity?.reason}</p>
             </article>
             <article className="note">
-              <b>Kripto · {state.filters.crypto?.label}</b>
-              <p>{state.filters.crypto?.reason}</p>
-              <p className="muted">{(state.filters.crypto?.next || []).join(" · ")}</p>
+              <b>Kripto · {filters.crypto?.label}</b>
+              <p>{filters.crypto?.reason}</p>
+              <p className="muted">{(filters.crypto?.next || []).join(" · ")}</p>
             </article>
           </div>
         </section>
-      )}
+        );
+      })()}
 
       {loading && <p className="muted">Yükleniyor…</p>}
       {err && <p className="err">Veri hatası: {err}</p>}
