@@ -85,11 +85,6 @@ const THEMES = {
   BTCUSDT: "BTC beta", ETHUSDT: "BTC beta", BNBUSDT: "altcoin", APTUSDT: "altcoin",
 };
 const PAPER_START = "2026-09-30";
-  if (k === "us") return "ABD";
-  if (k === "bist") return "BIST";
-  if (k === "binance") return "Binance";
-  return k;
-}
 
 const BIST_CLOSED = new Set(["2026-01-01", "2026-03-20", "2026-03-21", "2026-03-22", "2026-04-23", "2026-05-01", "2026-05-19", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-30", "2026-07-15", "2026-10-29"]);
 const BIST_HALF = new Set(["2026-03-19", "2026-05-26", "2026-10-28"]);
@@ -413,6 +408,8 @@ export default function Page() {
           </div>
         </section>
       )}
+
+      {report && (
         <section className="report">
           <div className="sec-h">
             <h2>Kapanış raporu</h2>
