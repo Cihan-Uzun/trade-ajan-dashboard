@@ -1,12 +1,12 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-02T04:14:00.000Z",
+  "updated_at": "2026-10-02T05:15:00.000Z",
   "quotes": {
-    "BTCUSDT": 85463.94,
-    "ETHUSDT": 2714.51,
-    "BNBUSDT": 774.75,
-    "APTUSDT": 0.795,
+    "BTCUSDT": 86582.01,
+    "ETHUSDT": 2735.09,
+    "BNBUSDT": 780.0,
+    "APTUSDT": 0.8343,
     "SPY": 763.99,
     "QQQ": 742.03,
     "AAPL": 330.32,
@@ -26,12 +26,12 @@
   },
   "books": {
     "binance": {
-      "cash": 2523.74,
+      "cash": 2644.11,
       "start": 4000,
-      "alt_used": 570.09,
-      "unrealized": 26.11,
-      "realized": 5.47,
-      "equity": 4029.82,
+      "alt_used": 465.71,
+      "unrealized": 43.18,
+      "realized": 13.84,
+      "equity": 4055.16,
       "open_count": 4,
       "positions": [
         {
@@ -96,19 +96,19 @@
           "symbol": "APTUSDT",
           "side": "LONG",
           "qty": 361.057,
-          "qty_left": 361.057,
+          "qty_left": 216.634,
           "entry": 0.7755,
           "entry_time": "2026-09-30T19:19:47.200Z",
-          "stop": 0.7224,
+          "stop": 0.7755,
           "tp1": 0.8286,
           "tp2": 0.8711,
-          "tp1_done": false,
+          "tp1_done": true,
           "tp2_done": false,
           "horizon": "swing",
           "bucket": "altcoin",
           "reason": "Altcoin tarama APT. RSI 37.0.",
           "fee_open": 0.28,
-          "realized": 0
+          "realized": 8.37
         }
       ],
       "trades": [
@@ -176,6 +176,19 @@
           "reason": "TP1 85347.49 asildi (85463.94). Kademeli cikis %40, stop BE 83742.",
           "horizon": "long",
           "bucket": "core"
+        },
+        {
+          "time": "2026-10-02T05:15:00.000Z",
+          "market": "binance",
+          "symbol": "APTUSDT",
+          "action": "SAT",
+          "qty": 144.423,
+          "price": 0.8343,
+          "fee": 0.12,
+          "pnl": 8.37,
+          "reason": "TP1 0.8286 asildi (0.8343). Kademeli cikis %40, stop BE 0.7755.",
+          "horizon": "swing",
+          "bucket": "altcoin"
         }
       ]
     },
