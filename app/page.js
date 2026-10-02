@@ -60,6 +60,12 @@ function inPeriod(iso, bounds) {
   const y = istYmd(new Date(iso));
   return y >= bounds.start && y <= bounds.end;
 }
+function marketName(k) {
+  if (k === "us") return "ABD";
+  if (k === "bist") return "BIST";
+  if (k === "binance") return "Binance";
+  return k;
+}
 function fxOf(state) {
   return state?.fx?.USDTTRY || state?.quotes?.USDTTRY || 49;
 }
