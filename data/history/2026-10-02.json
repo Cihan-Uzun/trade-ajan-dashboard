@@ -1,47 +1,47 @@
 {
   "date": "2026-10-02",
-  "as_of": "2026-10-02T14:19:00.000Z",
-  "kind": "seed",
-  "note": "Ilk arsiv. Resmi gun kapanisi her gece 00:00 TSİ yazilir.",
+  "as_of": "2026-10-02T20:14:00.000Z",
+  "kind": "close",
+  "note": "Resmi gun kapanisi 00:00 TS\u0130. Kaynak son panel tick 23:14 TS\u0130. Canli emir yok.",
   "totals": {
     "start": 12000,
-    "equity": 12097.08,
-    "cash": 7816.07,
-    "unrealized": 73.22,
-    "realized": 27.88,
-    "pnl": 97.08
+    "equity": 12045.48,
+    "cash": 8114.44,
+    "unrealized": 26.39,
+    "realized": 26.25,
+    "pnl": 45.48
   },
   "books": {
     "binance": {
-      "equity": 4057.51,
-      "cash": 3138.19,
-      "unrealized": 31.38,
-      "realized": 27.88,
-      "open": 4,
+      "equity": 4026.94,
+      "cash": 3436.56,
+      "unrealized": 2.44,
+      "realized": 26.25,
+      "open": 3,
       "start": 4000
     },
     "us": {
-      "equity": 4017.28,
+      "equity": 4007.42,
       "cash": 1958.4,
-      "unrealized": 18.95,
-      "realized": 0,
+      "unrealized": 9.09,
+      "realized": 0.0,
       "open": 5,
       "start": 4000
     },
     "bist": {
-      "equity": 4022.29,
+      "equity": 4011.12,
       "cash": 2719.48,
-      "unrealized": 22.89,
-      "realized": 0,
+      "unrealized": 14.86,
+      "realized": 0.0,
       "open": 4,
       "start": 4000
     }
   },
   "day": {
-    "realized": 27.88,
-    "fees": 1.05,
+    "realized": 26.25,
+    "fees": 1.5,
     "wins": 4,
-    "losses": 0,
+    "losses": 1,
     "opens": 0,
     "closes": [
       {
@@ -87,6 +87,17 @@
         "fee": 0.43,
         "pnl": 9.24,
         "reason": "TP2 86631.88 asildi (86635). Kademeli cikis %40, stop BE 83742, runner kaldi."
+      },
+      {
+        "market": "binance",
+        "symbol": "ETHUSDT",
+        "action": "SAT",
+        "time": "2026-10-02T19:13:00.000Z",
+        "price": 2664.52,
+        "qty": 0.112148,
+        "fee": 0.45,
+        "pnl": -1.63,
+        "reason": "Stop BE 2675.03 kirildi (2664.52). Kalan cikis, fee taker 10bp + kayma 5bp."
       }
     ]
   },
