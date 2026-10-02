@@ -155,6 +155,8 @@ export default function Page() {
   const [payload, setPayload] = useState(null);
   const [err, setErr] = useState("");
   const [loading, setLoading] = useState(true);
+  const [archiveDate, setArchiveDate] = useState("");
+  const [archive, setArchive] = useState(null);
 
   async function load() {
     try {
@@ -173,6 +175,12 @@ export default function Page() {
   useEffect(() => {
     load();
     const t = setInterval(load, 30000);
+    fetch("/api/history").then((r) => r.json()).then((j) => {
+      if (!j.ok) return;
+      const date = (j.dates || [])[0] || "";
+      setArchiveDate(date);
+      if (date) fetch("/api/history?date=" + date).then((r) => r.json()).then((x) => setArchive(x.snap || null));
+    }).catch(() => {});
     return () => clearInterval(t);
   }, []);
 
@@ -548,6 +556,28 @@ export default function Page() {
             </article>
           )) : <p className="muted">Henüz işlem yok.</p>}
       </div>
+
+      {archive && (
+        <section className="report">
+          <div className="sec-h">
+            <h2>Gün sonu arşivi</h2>
+            <span className="muted">{archive.date} · {archive.kind === "seed" ? "ilk kayıt" : "00:00 kapanış"}</span>
+          </div>
+          <section className="cards">
+            <Card label="Özsermaye" value={money(archive.totals?.equity)} sub={`nakit ${money(archive.totals?.cash)}`} />
+            <Card label="Gün kapanan K/Z" value={money(archive.day?.realized)} tone={pnlClass(archive.day?.realized)} sub={`${archive.day?.wins || 0} / ${archive.day?.losses || 0}`} />
+            <Card label="Komisyon" value={money(archive.day?.fees)} />
+            <Card label="Açık K/Z" value={money(archive.totals?.unrealized)} tone={pnlClass(archive.totals?.unrealized)} />
+          </section>
+          <div className="log">
+            {Object.entries(archive.books || {}).map(([k, b]) => (
+              <article key={k}>
+                <div className="logh"><strong>{marketName(k)}</strong><span>{money(b.equity)}</span><em>kapanan {money(b.realized)} · açık {money(b.unrealized)}</em></div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       <footer>
         Yatırım tavsiyesi değildir. Sanal 4.000 USD × 3 piyasa. Günlük / haftalık / aylık rapor İstanbul saatine göre kapanan işlemlerin gerçekleşen K/Z’sidir; açık pozisyon ayrıca gösterilir.
