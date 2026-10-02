@@ -267,6 +267,26 @@ export default function Page() {
         ))}
       </div>
 
+      {state?.filters && (
+        <section className="report">
+          <div className="sec-h">
+            <h2>Haber ve makro elek</h2>
+            <span className={state.filters.stance === "risk-off" ? "sess" : "sess on"}>{state.filters.stance}</span>
+          </div>
+          <div className="charts">
+            <article className="note">
+              <b>ABD / BIST çekirdek</b>
+              <p>{state.filters.equity?.reason}</p>
+            </article>
+            <article className="note">
+              <b>Kripto · {state.filters.crypto?.label}</b>
+              <p>{state.filters.crypto?.reason}</p>
+              <p className="muted">{(state.filters.crypto?.next || []).join(" · ")}</p>
+            </article>
+          </div>
+        </section>
+      )}
+
       {loading && <p className="muted">Yükleniyor…</p>}
       {err && <p className="err">Veri hatası: {err}</p>}
 

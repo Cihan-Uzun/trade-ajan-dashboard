@@ -530,5 +530,23 @@
         }
       ]
     }
+  },
+  "filters": {
+    "updated_at": "2026-10-02T08:18:00+00:00",
+    "stance": "risk-off",
+    "equity": {
+      "label": "Bilanço ve haber eleği açık",
+      "reason": "ABD ve BIST çekirdekte yeni alım, bilanço günü ve önceki işlem günü yapılmaz. Rehberlik kesintisi, soruşturma, işlem yasağı veya KAP'ta sıkıntılı sermaye artırımı varsa o gün AL yok. Açık pozisyon haberle kapatılmaz; çıkış stop ve kademeli TP ile kalır."
+    },
+    "crypto": {
+      "label": "Yeni alt yok",
+      "reason": "Bugün ABD istihdam verisi 15:30 TSİ. Açıklama + 1 saat dolmadan yeni altcoin yok. BTC/ETH çekirdek tutulur. Alt giriş ayrıca BTC 4s EMA21 üstü ve RSI 45+ ister.",
+      "next": [
+        "14 Eki CPI 15:30 TSİ",
+        "15 Eki PPI 15:30 TSİ",
+        "28 Eki FOMC karar 21:00 TSİ",
+        "8-9 Ara FOMC"
+      ]
+    }
   }
 }
