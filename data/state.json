@@ -1,12 +1,12 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-02T03:13:00.000Z",
+  "updated_at": "2026-10-02T04:14:00.000Z",
   "quotes": {
-    "BTCUSDT": 85340.81,
-    "ETHUSDT": 2720.33,
-    "BNBUSDT": 775.19,
-    "APTUSDT": 0.8025,
+    "BTCUSDT": 85463.94,
+    "ETHUSDT": 2714.51,
+    "BNBUSDT": 774.75,
+    "APTUSDT": 0.795,
     "SPY": 763.99,
     "QQQ": 742.03,
     "AAPL": 330.32,
@@ -26,12 +26,12 @@
   },
   "books": {
     "binance": {
-      "cash": 2238.24,
+      "cash": 2523.74,
       "start": 4000,
-      "alt_used": 572.96,
-      "unrealized": 34.8,
-      "realized": 0,
-      "equity": 4033.03,
+      "alt_used": 570.09,
+      "unrealized": 26.11,
+      "realized": 5.47,
+      "equity": 4029.82,
       "open_count": 4,
       "positions": [
         {
@@ -39,19 +39,19 @@
           "symbol": "BTCUSDT",
           "side": "LONG",
           "qty": 0.008359,
-          "qty_left": 0.008359,
+          "qty_left": 0.005015,
           "entry": 83742,
           "entry_time": "2026-09-30T19:19:47.200Z",
-          "stop": 82136.51,
+          "stop": 83742,
           "tp1": 85347.49,
           "tp2": 86631.88,
-          "tp1_done": false,
+          "tp1_done": true,
           "tp2_done": false,
           "horizon": "long",
           "bucket": "core",
           "reason": "Uzun vade cekirdek BTC. 4s EMA21=83756, EMA55=83418, RSI=55.9.",
           "fee_open": 0.7,
-          "realized": 0
+          "realized": 5.47
         },
         {
           "id": "b-eth",
@@ -163,6 +163,19 @@
           "reason": "Altcoin tarama APT, RSI 37.",
           "horizon": "swing",
           "bucket": "altcoin"
+        },
+        {
+          "time": "2026-10-02T04:14:00.000Z",
+          "market": "binance",
+          "symbol": "BTCUSDT",
+          "action": "SAT",
+          "qty": 0.003344,
+          "price": 85463.94,
+          "fee": 0.29,
+          "pnl": 5.47,
+          "reason": "TP1 85347.49 asildi (85463.94). Kademeli cikis %40, stop BE 83742.",
+          "horizon": "long",
+          "bucket": "core"
         }
       ]
     },
