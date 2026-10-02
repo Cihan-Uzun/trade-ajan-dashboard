@@ -50,7 +50,35 @@
       "profit_factor": 1.25,
       "weekly_dd": -0.05,
       "start": "2026-09-30"
-    }
+    },
+    "alt_universe": [
+      "BTCUSDT",
+      "ETHUSDT",
+      "BNBUSDT",
+      "SOLUSDT",
+      "XRPUSDT",
+      "ADAUSDT",
+      "AVAXUSDT",
+      "DOTUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "UNIUSDT",
+      "ATOMUSDT",
+      "NEARUSDT",
+      "APTUSDT",
+      "SUIUSDT",
+      "TONUSDT",
+      "DOGEUSDT",
+      "TRXUSDT",
+      "AAVEUSDT",
+      "INJUSDT",
+      "FILUSDT",
+      "OPUSDT",
+      "ARBUSDT",
+      "POLUSDT",
+      "BCHUSDT"
+    ],
+    "alt_universe_rule": "25 isim tarama. Yeni alt ancak BTC 4s EMA21 ustu, RSI>=45, makro kapisi acik, alt used 1400 altinda ve ayni temada %40 asilmiyorsa. Liste genisledi diye islem acilmaz."
   },
   "books": {
     "binance": {
