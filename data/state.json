@@ -1,21 +1,26 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-02T07:19:00.000Z",
+  "updated_at": "2026-10-02T08:15:00.000Z",
   "quotes": {
-    "BTCUSDT": 85961.19,
-    "ETHUSDT": 2728.79,
-    "BNBUSDT": 776.7,
-    "APTUSDT": 0.8224,
+    "BTCUSDT": 86316.01,
+    "ETHUSDT": 2741.98,
+    "BNBUSDT": 776.95,
+    "APTUSDT": 0.8278,
     "SPY": 763.99,
     "QQQ": 742.03,
     "AAPL": 330.32,
     "MSFT": 512.8,
     "NVDA": 230.86,
     "THYAO.IS": 286.75,
-    "GARAN.IS": 125.8,
-    "BIMAS.IS": 406.0,
-    "TUPRS.IS": 385.5
+    "GARAN.IS": 126.0,
+    "BIMAS.IS": 407.25,
+    "TUPRS.IS": 383.25
+  },
+  "decisions": {
+    "binance": "ETH TP1 2740.7 asildi (2741.98). %40 SAT, stop BE. BTC TP2 altinda, BNB/APT TP/stop yok. Yeni giris yok.",
+    "us": "WAIT_SESSION",
+    "bist": "WAIT"
   },
   "config": {
     "starting": 4000,
@@ -32,12 +37,12 @@
   },
   "books": {
     "binance": {
-      "cash": 2644.11,
+      "cash": 2848.91,
       "start": 4000,
-      "alt_used": 461.93,
-      "unrealized": 35.1,
-      "realized": 13.84,
-      "equity": 4047.17,
+      "alt_used": 463.19,
+      "unrealized": 35.61,
+      "realized": 18.64,
+      "equity": 4052.48,
       "open_count": 4,
       "positions": [
         {
@@ -64,19 +69,19 @@
           "symbol": "ETHUSDT",
           "side": "LONG",
           "qty": 0.186914,
-          "qty_left": 0.186914,
+          "qty_left": 0.112148,
           "entry": 2675.03,
           "entry_time": "2026-09-30T19:19:47.200Z",
-          "stop": 2609.36,
+          "stop": 2675.03,
           "tp1": 2740.7,
           "tp2": 2793.23,
-          "tp1_done": false,
+          "tp1_done": true,
           "tp2_done": false,
           "horizon": "long",
           "bucket": "core",
           "reason": "Uzun vade cekirdek ETH. RSI 51.2.",
           "fee_open": 0.5,
-          "realized": 0
+          "realized": 4.8
         },
         {
           "id": "b-bnb",
@@ -195,6 +200,19 @@
           "reason": "TP1 0.8286 asildi (0.8343). Kademeli cikis %40, stop BE 0.7755.",
           "horizon": "swing",
           "bucket": "altcoin"
+        },
+        {
+          "time": "2026-10-02T08:15:00.000Z",
+          "market": "binance",
+          "symbol": "ETHUSDT",
+          "action": "SAT",
+          "qty": 0.074766,
+          "price": 2741.98,
+          "fee": 0.21,
+          "pnl": 4.8,
+          "reason": "TP1 2740.7 asildi (2741.98). Kademeli cikis %40, stop BE 2675.03.",
+          "horizon": "long",
+          "bucket": "core"
         }
       ]
     },
@@ -205,6 +223,7 @@
       "realized": 0,
       "equity": 3988.07,
       "open_count": 5,
+      "decision": "WAIT_SESSION",
       "positions": [
         {
           "id": "u-spy",
@@ -373,10 +392,11 @@
     "bist": {
       "cash": 2719.48,
       "start": 4000,
-      "unrealized": 9.81,
+      "unrealized": 9.38,
       "realized": 0,
-      "equity": 4009.2,
+      "equity": 4008.77,
       "open_count": 4,
+      "decision": "WAIT",
       "positions": [
         {
           "id": "t-thyao",
