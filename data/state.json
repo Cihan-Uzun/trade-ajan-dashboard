@@ -1,24 +1,25 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-02T08:15:00.000Z",
+  "updated_at": "2026-10-02T09:15:00.000Z",
   "quotes": {
-    "BTCUSDT": 86316.01,
-    "ETHUSDT": 2741.98,
-    "BNBUSDT": 776.95,
-    "APTUSDT": 0.8278,
+    "BTCUSDT": 86204.01,
+    "ETHUSDT": 2752.08,
+    "BNBUSDT": 776.99,
+    "APTUSDT": 0.828,
+    "USDTTRY": 49.0,
     "SPY": 763.99,
     "QQQ": 742.03,
     "AAPL": 330.32,
     "MSFT": 512.8,
     "NVDA": 230.86,
-    "THYAO.IS": 286.75,
-    "GARAN.IS": 126.0,
-    "BIMAS.IS": 407.25,
-    "TUPRS.IS": 383.25
+    "THYAO.IS": 289.75,
+    "GARAN.IS": 126.4,
+    "BIMAS.IS": 411.5,
+    "TUPRS.IS": 386.25
   },
   "decisions": {
-    "binance": "ETH TP1 2740.7 asildi (2741.98). %40 SAT, stop BE. BTC TP2 altinda, BNB/APT TP/stop yok. Yeni giris yok.",
+    "binance": "TP/stop yok. BTC 86204.01 TP2 86631.88 altinda. ETH 2752.08 TP2 2793.23 altinda. BNB 776.99 TP1 782.86 altinda. APT 0.828 TP2 0.8711 altinda. Yeni alt yok.",
     "us": "WAIT_SESSION",
     "bist": "WAIT"
   },
@@ -55,10 +56,10 @@
     "binance": {
       "cash": 2848.91,
       "start": 4000,
-      "alt_used": 463.19,
-      "unrealized": 35.61,
+      "alt_used": 463.25,
+      "unrealized": 36.23,
       "realized": 18.64,
-      "equity": 4052.48,
+      "equity": 4053.11,
       "open_count": 4,
       "positions": [
         {
@@ -408,18 +409,20 @@
     "bist": {
       "cash": 2719.48,
       "start": 4000,
-      "unrealized": 9.38,
+      "unrealized": 19.61,
       "realized": 0,
-      "equity": 4008.77,
+      "equity": 4019.0,
       "open_count": 4,
       "decision": "WAIT",
+      "fx": 49.0,
       "positions": [
         {
           "id": "t-thyao",
           "symbol": "THYAO.IS",
           "side": "LONG",
-          "qty": 1.1295,
-          "qty_left": 1.1295,
+          "qty": 55.3455,
+          "qty_left": 55.3455,
+          "qty_is_shares": true,
           "entry": 283.25,
           "entry_time": "2026-09-30T19:19:47.200Z",
           "stop": 266.39,
@@ -429,7 +432,7 @@
           "tp2_done": false,
           "horizon": "long",
           "bucket": "core",
-          "reason": "BIST cekirdek THYAO. RSI 41.1, likit BIST30.",
+          "reason": "BIST cekirdek THYAO. RSI 41.1, likit BIST30. Adet eski qty*USDTTRY.",
           "fee_open": 0.13,
           "realized": 0
         },
@@ -437,8 +440,9 @@
           "id": "t-garan",
           "symbol": "GARAN.IS",
           "side": "LONG",
-          "qty": 2.6037,
-          "qty_left": 2.6037,
+          "qty": 127.5813,
+          "qty_left": 127.5813,
+          "qty_is_shares": true,
           "entry": 122.9,
           "entry_time": "2026-09-30T19:19:47.200Z",
           "stop": 114.87,
@@ -448,7 +452,7 @@
           "tp2_done": false,
           "horizon": "long",
           "bucket": "core",
-          "reason": "BIST cekirdek GARAN. RSI 38.1.",
+          "reason": "BIST cekirdek GARAN. RSI 38.1. Adet eski qty*USDTTRY.",
           "fee_open": 0.13,
           "realized": 0
         },
@@ -456,8 +460,9 @@
           "id": "t-bimas",
           "symbol": "BIMAS.IS",
           "side": "LONG",
-          "qty": 0.7646,
-          "qty_left": 0.7646,
+          "qty": 37.4654,
+          "qty_left": 37.4654,
+          "qty_is_shares": true,
           "entry": 418.5,
           "entry_time": "2026-09-30T19:19:47.200Z",
           "stop": 397.33,
@@ -467,7 +472,7 @@
           "tp2_done": false,
           "horizon": "long",
           "bucket": "core",
-          "reason": "BIST cekirdek BIMAS.",
+          "reason": "BIST cekirdek BIMAS. Adet eski qty*USDTTRY.",
           "fee_open": 0.13,
           "realized": 0
         },
@@ -475,8 +480,9 @@
           "id": "t-tuprs",
           "symbol": "TUPRS.IS",
           "side": "LONG",
-          "qty": 0.8505,
-          "qty_left": 0.8505,
+          "qty": 41.6745,
+          "qty_left": 41.6745,
+          "qty_is_shares": true,
           "entry": 376.25,
           "entry_time": "2026-09-30T19:19:47.200Z",
           "stop": 348.71,
@@ -486,7 +492,7 @@
           "tp2_done": false,
           "horizon": "long",
           "bucket": "core",
-          "reason": "BIST cekirdek TUPRS. RSI 30.5.",
+          "reason": "BIST cekirdek TUPRS. RSI 30.5. Adet eski qty*USDTTRY.",
           "fee_open": 0.13,
           "realized": 0
         }
@@ -548,7 +554,7 @@
     }
   },
   "filters": {
-    "updated_at": "2026-10-02T08:18:00+00:00",
+    "updated_at": "2026-10-02T09:15:00+00:00",
     "stance": "risk-off",
     "equity": {
       "label": "Bilanço ve haber eleği açık",
@@ -556,7 +562,7 @@
     },
     "crypto": {
       "label": "Yeni alt yok",
-      "reason": "Bugün ABD istihdam verisi 15:30 TSİ. Açıklama + 1 saat dolmadan yeni altcoin yok. BTC/ETH çekirdek tutulur. Alt giriş ayrıca BTC 4s EMA21 üstü ve RSI 45+ ister.",
+      "reason": "Bugün ABD istihdam verisi 15:30 TSİ. Açıklama + 1 saat dolmadan yeni altcoin yok. BTC 4s EMA21 84452.65, RSI 68.86; makro penceresi kapalı olmasa alt filtresi açık olurdu. BTC/ETH çekirdek tutulur.",
       "next": [
         "14 Eki CPI 15:30 TSİ",
         "15 Eki PPI 15:30 TSİ",
@@ -588,6 +594,27 @@
     }
   ],
   "journal": [
+    {
+      "time": "2026-10-02T09:15:00+00:00",
+      "market": "binance",
+      "action": "WAIT_MACRO",
+      "symbol": "alt",
+      "reason": "ABD istihdam 15:30 TSİ, açıklama+1s dolmadı. Yeni alt yok. BTC 86204.01 TP2 altı, ETH 2752.08 TP2 altı, BNB 776.99 TP1 altı, APT 0.828 TP2 altı. Stop yok. 4s EMA21 84452.65 RSI 68.86. Alt used 463.25/1400."
+    },
+    {
+      "time": "2026-10-02T09:15:00+00:00",
+      "market": "us",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "ABD seansı kapalı (09:30 NY öncesi). AL/SAT yok. Son kapanış SPY 763.99 QQQ 742.03 AAPL 330.32 MSFT 512.8 NVDA 230.86."
+    },
+    {
+      "time": "2026-10-02T09:15:00+00:00",
+      "market": "bist",
+      "action": "WAIT",
+      "symbol": "-",
+      "reason": "Seans açık. TP/stop yok. KAP tarihi yok, yeni çekirdek AL yok. Eski adet gerçek hisseye çevrildi (qty*49). THYAO 289.75 GARAN 126.4 BIMAS 411.5 TUPRS 386.25."
+    },
     {
       "time": "2026-10-02T08:28:00+00:00",
       "market": "us",
