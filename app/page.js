@@ -235,6 +235,7 @@ export default function Page() {
     us: sessionOf("us"),
     bist: sessionOf("bist"),
   }), [payload]);
+  const totals = payload?.totals;
 
   return (
     <div className="wrap">
