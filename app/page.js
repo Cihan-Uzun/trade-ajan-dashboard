@@ -13,6 +13,7 @@ const PERIODS = [
   { id: "month", label: "Aylık" },
   { id: "all", label: "Tümü" },
 ];
+const MARKETS = ["binance", "us", "bist"];
 const DEFAULT_FILTERS = {
   stance: "risk-off",
   equity: { reason: "ABD ve BIST çekirdekte yeni alım, bilanço günü ve önceki işlem günü yok. Rehberlik kesintisi, soruşturma, işlem yasağı veya KAP'ta sıkıntılı sermaye artırımı varsa o gün AL yok. Açık pozisyon haberle kapatılmaz." },
