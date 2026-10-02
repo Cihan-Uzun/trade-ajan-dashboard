@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-02",
+  "as_of": "2026-10-02T14:19:00.000Z",
+  "kind": "seed",
+  "note": "Ilk arsiv. Resmi gun kapanisi her gece 00:00 TSİ yazilir.",
+  "totals": {
+    "start": 12000,
+    "equity": 12097.08,
+    "cash": 7816.07,
+    "unrealized": 73.22,
+    "realized": 27.88,
+    "pnl": 97.08
+  },
+  "books": {
+    "binance": {
+      "equity": 4057.51,
+      "cash": 3138.19,
+      "unrealized": 31.38,
+      "realized": 27.88,
+      "open": 4,
+      "start": 4000
+    },
+    "us": {
+      "equity": 4017.28,
+      "cash": 1958.4,
+      "unrealized": 18.95,
+      "realized": 0,
+      "open": 5,
+      "start": 4000
+    },
+    "bist": {
+      "equity": 4022.29,
+      "cash": 2719.48,
+      "unrealized": 22.89,
+      "realized": 0,
+      "open": 4,
+      "start": 4000
+    }
+  },
+  "day": {
+    "realized": 27.88,
+    "fees": 1.05,
+    "wins": 4,
+    "losses": 0,
+    "opens": 0,
+    "closes": [
+      {
+        "market": "binance",
+        "symbol": "BTCUSDT",
+        "action": "SAT",
+        "time": "2026-10-02T04:14:00.000Z",
+        "price": 85463.94,
+        "qty": 0.003344,
+        "fee": 0.29,
+        "pnl": 5.47,
+        "reason": "TP1 85347.49 asildi (85463.94). Kademeli cikis %40, stop BE 83742."
+      },
+      {
+        "market": "binance",
+        "symbol": "APTUSDT",
+        "action": "SAT",
+        "time": "2026-10-02T05:15:00.000Z",
+        "price": 0.8343,
+        "qty": 144.423,
+        "fee": 0.12,
+        "pnl": 8.37,
+        "reason": "TP1 0.8286 asildi (0.8343). Kademeli cikis %40, stop BE 0.7755."
+      },
+      {
+        "market": "binance",
+        "symbol": "ETHUSDT",
+        "action": "SAT",
+        "time": "2026-10-02T08:15:00.000Z",
+        "price": 2741.98,
+        "qty": 0.074766,
+        "fee": 0.21,
+        "pnl": 4.8,
+        "reason": "TP1 2740.7 asildi (2741.98). Kademeli cikis %40, stop BE 2675.03."
+      },
+      {
+        "market": "binance",
+        "symbol": "BTCUSDT",
+        "action": "SAT",
+        "time": "2026-10-02T12:24:00.000Z",
+        "price": 86635.0,
+        "qty": 0.003344,
+        "fee": 0.43,
+        "pnl": 9.24,
+        "reason": "TP2 86631.88 asildi (86635). Kademeli cikis %40, stop BE 83742, runner kaldi."
+      }
+    ]
+  },
+  "week": {
+    "label": "2026-09-28 / 2026-10-04"
+  },
+  "month": {
+    "label": "2026-10"
+  }
+}
