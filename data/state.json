@@ -33,6 +33,22 @@
       "bist": "Europe/Istanbul weekdays 10:00-18:00; half-days close 13:00; no weekend/holiday",
       "us": "America/New_York weekdays 09:30-16:00; no extended hours; early close 13:00 ET",
       "rule": "BIST ve ABD seans disinda AL ve SAT yasak. Sadece fiyat guncelle, karar WAIT_SESSION."
+    },
+    "costs": {
+      "binance_taker_bps": 10,
+      "binance_slip_bps": 5,
+      "us_slip_bps": 3,
+      "bist_commission_bps": 15,
+      "bist_slip_bps": 10,
+      "note": "Yeni islemde gidis-donus masraf dusulur. BIST binde 1.5 komisyon + 10 bp kayma."
+    },
+    "theme_cap": 0.4,
+    "paper_gate": {
+      "weeks": 12,
+      "closes": 100,
+      "profit_factor": 1.25,
+      "weekly_dd": -0.05,
+      "start": "2026-09-30"
     }
   },
   "books": {
@@ -548,5 +564,50 @@
         "8-9 Ara FOMC"
       ]
     }
-  }
+  },
+  "calendar": [
+    {
+      "symbol": "MSFT",
+      "date": "2026-10-27",
+      "note": "Bilanço tahmini, kara liste 26-27 Eki"
+    },
+    {
+      "symbol": "AAPL",
+      "date": "2026-10-28",
+      "note": "Bilanço kümesi, kara liste 27-28 Eki"
+    },
+    {
+      "symbol": "NVDA",
+      "date": "2026-11-17",
+      "note": "Bilanço tahmini, kara liste 16-17 Kas"
+    },
+    {
+      "symbol": "BIST",
+      "date": "KAP",
+      "note": "Tick KAP tarihini kontrol etmeden yeni çekirdek AL yok"
+    }
+  ],
+  "journal": [
+    {
+      "time": "2026-10-02T08:28:00+00:00",
+      "market": "us",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "ABD seansı kapalı. 16:30 TSİ öncesi AL/SAT yok."
+    },
+    {
+      "time": "2026-10-02T08:28:00+00:00",
+      "market": "bist",
+      "action": "WAIT",
+      "symbol": "-",
+      "reason": "Seans açık, yeni sinyal yok. Mevcut çekirdek stop/TP ile izlenir."
+    },
+    {
+      "time": "2026-10-02T08:28:00+00:00",
+      "market": "binance",
+      "action": "WAIT_MACRO",
+      "symbol": "alt",
+      "reason": "ABD istihdam 15:30 TSİ. Açıklama + 1 saat dolmadan yeni alt yok."
+    }
+  ]
 }

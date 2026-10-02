@@ -60,7 +60,25 @@ function inPeriod(iso, bounds) {
   const y = istYmd(new Date(iso));
   return y >= bounds.start && y <= bounds.end;
 }
-function marketName(k) {
+function fxOf(state) {
+  return state?.fx?.USDTTRY || state?.quotes?.USDTTRY || 49;
+}
+function sharesOf(p, fx) {
+  if (!String(p.symbol || "").endsWith(".IS")) return Number(p.qty_left) || 0;
+  if (p.qty_is_shares) return Number(p.qty_left) || 0;
+  return (Number(p.qty_left) || 0) * fx;
+}
+function usdPx(symbol, px, fx) {
+  if (String(symbol || "").endsWith(".IS")) return (Number(px) || 0) / fx;
+  return Number(px) || 0;
+}
+const THEMES = {
+  AAPL: "ABD teknoloji", MSFT: "ABD teknoloji", NVDA: "ABD teknoloji", QQQ: "ABD teknoloji",
+  SPY: "ABD endeks", "GARAN.IS": "BIST banka", "THYAO.IS": "BIST ulaştırma",
+  "BIMAS.IS": "BIST perakende", "TUPRS.IS": "BIST enerji",
+  BTCUSDT: "BTC beta", ETHUSDT: "BTC beta", BNBUSDT: "altcoin", APTUSDT: "altcoin",
+};
+const PAPER_START = "2026-09-30";
   if (k === "us") return "ABD";
   if (k === "bist") return "BIST";
   if (k === "binance") return "Binance";
@@ -216,8 +234,9 @@ export default function Page() {
     const realized = closes.reduce((s, t) => s + (Number(t.pnl) || 0), 0) + positions.reduce((s, p) => s + (Number(p.realized) || 0), 0);
     const fees = trades.reduce((s, t) => s + (Number(t.fee) || 0), 0) + positions.reduce((s, p) => s + (Number(p.fee_open) || 0), 0);
     const unreal = positions.reduce((s, p) => {
-      const px = quotes[p.symbol] ?? p.entry;
-      return s + p.qty_left * (px - p.entry);
+      const px = usdPx(p.symbol, quotes[p.symbol] ?? p.entry, fxOf(state));
+      const entry = usdPx(p.symbol, p.entry, p.fx_entry || fxOf(state));
+      return s + sharesOf(p, fxOf(state)) * (px - entry);
     }, 0);
     return { trades, positions, closes, realized, fees, unreal, wins: closes.filter((t) => (t.pnl || 0) > 0).length };
   }, [view, symbol, quotes]);
@@ -240,7 +259,31 @@ export default function Page() {
     us: sessionOf("us"),
     bist: sessionOf("bist"),
   }), [payload]);
+  const fx = fxOf(state);
   const totals = payload?.totals;
+  const themes = useMemo(() => {
+    if (!view) return [];
+    const buckets = {};
+    for (const p of view.positions) {
+      const theme = THEMES[p.symbol] || "diğer";
+      const px = usdPx(p.symbol, quotes[p.symbol] ?? p.entry, fx);
+      const val = sharesOf(p, fx) * px;
+      buckets[theme] = (buckets[theme] || 0) + val;
+    }
+    const base = tab === "all" ? (totals?.equity || 12000) : (view.book?.equity || 4000);
+    return Object.entries(buckets).map(([theme, usd]) => ({ theme, usd, pct: base ? usd / base : 0 })).sort((a, b) => b.pct - a.pct);
+  }, [view, quotes, fx, tab, totals]);
+  const gate = useMemo(() => {
+    if (!view) return null;
+    const closes = view.trades.filter(isClose);
+    const wins = closes.filter((t) => (t.pnl || 0) > 0).reduce((s, t) => s + t.pnl, 0);
+    const losses = Math.abs(closes.filter((t) => (t.pnl || 0) < 0).reduce((s, t) => s + t.pnl, 0));
+    const pf = losses > 0 ? wins / losses : null;
+    const days = Math.max(0, (Date.now() - new Date(PAPER_START + "T00:00:00+03:00").getTime()) / 86400000);
+    const weeks = days / 7;
+    const ready = (weeks >= 12 || closes.length >= 100) && pf != null && pf >= 1.25;
+    return { closes: closes.length, wins, losses, pf, weeks, ready };
+  }, [view]);
 
   return (
     <div className="wrap">
@@ -326,7 +369,44 @@ export default function Page() {
         </section>
       )}
 
-      {report && (
+      {gate && (
+        <section className="report">
+          <div className="sec-h"><h2>Kağıt bitiş çizgisi</h2><span className={gate.ready ? "sess on" : "sess"}>{gate.ready ? "eşik doldu" : "canlıya kapalı"}</span></div>
+          <section className="cards">
+            <Card label="Hafta" value={gate.weeks.toFixed(1)} sub="eşik 12 hafta veya 100 kapanış" />
+            <Card label="Kapanış" value={String(gate.closes)} sub="eşik 100" />
+            <Card label="Kâr faktörü" value={gate.pf == null ? "zarar yok" : gate.pf.toFixed(2)} sub="eşik 1,25 · masraf sonrası" />
+            <Card label="USDTTRY" value={fx.toFixed(2)} sub="BIST değeri buna bölünür" />
+          </section>
+          <p className="note">Canlı API için üç şart: 12 hafta veya 100 kapanış, masraf sonrası kâr faktörü en az 1,25, haftalık −%5 durdurma aşılmamış. Haftalık düşüş, karar günlüğü biriktikçe ölçülür.</p>
+          <h3>Tema tavanı %40</h3>
+          <div className="log">
+            {themes.map((t) => (
+              <article key={t.theme}>
+                <div className="logh"><strong>{t.theme}</strong><span className={t.pct > 0.4 ? "dn" : ""}>%{(t.pct * 100).toFixed(1)}</span><em>{money(t.usd)}</em></div>
+              </article>
+            ))}
+          </div>
+          {themes.filter((t) => t.pct > 0.4).length > 0 && <p className="note">Bir tema sermayenin %40'ını aşıyor. Yeni alım bu temada yok.</p>}
+          <h3>Bilanço kara listesi</h3>
+          <div className="log">
+            {(state?.calendar || []).map((e) => (
+              <article key={e.symbol}>
+                <div className="logh"><strong>{e.symbol}</strong><span>{e.date}</span><em>{e.note}</em></div>
+              </article>
+            ))}
+          </div>
+          <h3>Karar günlüğü</h3>
+          <div className="log">
+            {(state?.journal || []).slice(0, 8).map((d, i) => (
+              <article key={i}>
+                <div className="logh"><b>{d.action}</b><strong>{d.symbol || d.market}</strong><em>{d.time ? new Date(d.time).toLocaleString("tr-TR", { timeZone: "Europe/Istanbul" }) : ""}</em></div>
+                <p>{d.reason}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
         <section className="report">
           <div className="sec-h">
             <h2>Kapanış raporu</h2>
@@ -423,8 +503,11 @@ export default function Page() {
         </div>
         {(symbol ? view?.positions?.filter((p) => p.symbol === symbol) : view?.positions)?.length
           ? (symbol ? view.positions.filter((p) => p.symbol === symbol) : view.positions).map((p) => {
-            const px = quotes[p.symbol] ?? p.entry;
-            const u = p.qty_left * (px - p.entry);
+            const pxNative = quotes[p.symbol] ?? p.entry;
+            const px = usdPx(p.symbol, pxNative, fx);
+            const entry = usdPx(p.symbol, p.entry, p.fx_entry || fx);
+            const shares = sharesOf(p, fx);
+            const u = shares * (px - entry);
             return (
               <button key={p.id} className="row link" onClick={() => setSymbol(p.symbol)}>
                 <span>
@@ -432,9 +515,9 @@ export default function Page() {
                   <small>{marketName(p.market)} • {p.bucket}</small>
                 </span>
                 <span>{p.horizon}</span>
-                <span>{Number(p.qty_left).toFixed(4)}</span>
-                <span>{money(p.entry, 4)}</span>
-                <span>{money(px, 4)}</span>
+                <span>{shares.toFixed(2)}{String(p.symbol).endsWith(".IS") ? " adet" : ""}</span>
+                <span>{String(p.symbol).endsWith(".IS") ? money(pxNative, 2) + " TL" : money(p.entry, 4)}</span>
+                <span>{money(px, 2)}</span>
                 <span className={pnlClass(u)}>{money(u)}</span>
               </button>
             );
