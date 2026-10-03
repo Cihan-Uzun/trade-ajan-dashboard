@@ -1,17 +1,17 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-03T20:13:00.000Z",
+  "updated_at": "2026-10-03T21:14:00.000Z",
   "quotes": {
-    "BTCUSDT": 84887.68,
-    "ETHUSDT": 2687.74,
-    "BNBUSDT": 790.31,
-    "APTUSDT": 0.8038,
-    "SOLUSDT": 119.96,
-    "AVAXUSDT": 11.13,
-    "FILUSDT": 1.06,
-    "OPUSDT": 0.1352,
-    "USDTTRY": 49.13,
+    "BTCUSDT": 84685.05,
+    "ETHUSDT": 2687.09,
+    "BNBUSDT": 786.02,
+    "APTUSDT": 0.803,
+    "SOLUSDT": 119.71,
+    "AVAXUSDT": 11.093,
+    "FILUSDT": 1.0629,
+    "OPUSDT": 0.1361,
+    "USDTTRY": 49.107,
     "SPY": 769.64,
     "QQQ": 749.58,
     "AAPL": 333.69,
@@ -23,9 +23,9 @@
     "TUPRS.IS": 377.0
   },
   "decisions": {
-    "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1400.22/1400, oda -0.22. OP 24s +7.82 lider elendi. BTC 84887.68 4s EMA21 84630.20 ustu RSI 54.22. BNB 790.31 TP2 796.03 alti, SOL 119.96 TP1 121.74 alti, AVAX 11.13 TP1 11.7051 alti, APT 0.8038 stop BE 0.7755 ustu.",
-    "us": "WAIT_SESSION. Cumartesi, ABD seansi kapali. AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop seans disi tetiklenmez.",
-    "bist": "WAIT_SESSION. Cumartesi, BIST kapali. AL/SAT yok. Son seans THYAO 292 GARAN 125.9 BIMAS 414 TUPRS 377. USDTTRY 49.13. TP/stop seans disi yok."
+    "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1396.78/1400, oda 3.22 yetersiz. OP 24s +8.79 lider elendi. BTC 84685.05 4s EMA21 84611.78 ustu RSI 51.99. BNB 786.02 TP2 796.03 alti, SOL 119.71 TP1 121.74 alti, AVAX 11.093 TP1 11.7051 alti, APT 0.803 stop BE 0.7755 ustu.",
+    "us": "WAIT_SESSION. Pazar, ABD seansi kapali. AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop seans disi tetiklenmez.",
+    "bist": "WAIT_SESSION. Pazar, BIST kapali. AL/SAT yok. Son seans THYAO 292 GARAN 125.9 BIMAS 414 TUPRS 377. USDTTRY 49.107. TP/stop seans disi yok."
   },
   "config": {
     "starting": 4000,
@@ -143,10 +143,10 @@
     "binance": {
       "cash": 2503.18,
       "start": 4000,
-      "alt_used": 1400.22,
-      "unrealized": 18.6,
+      "alt_used": 1396.78,
+      "unrealized": 14.83,
       "realized": 29.45,
-      "equity": 4045.25,
+      "equity": 4041.47,
       "open_count": 5,
       "decision": "WAIT",
       "positions": [
@@ -581,12 +581,12 @@
     "bist": {
       "cash": 2719.48,
       "start": 4000,
-      "unrealized": 14.85,
+      "unrealized": 14.86,
       "realized": 0.0,
-      "equity": 4010.86,
+      "equity": 4011.46,
       "open_count": 4,
       "decision": "WAIT_SESSION",
-      "fx": 49.14,
+      "fx": 49.107,
       "positions": [
         {
           "id": "t-thyao",
@@ -726,15 +726,15 @@
     }
   },
   "filters": {
-    "updated_at": "2026-10-03T20:13:00.000Z",
+    "updated_at": "2026-10-03T21:14:00.000Z",
     "stance": "notr",
     "equity": {
       "label": "Seans kapali",
-      "reason": "Cumartesi. ABD ve BIST AL/SAT yok. Acik pozisyon haberle kapatilmaz. Son kapanis sabit."
+      "reason": "Pazar. ABD ve BIST AL/SAT yok. Acik pozisyon haberle kapatilmaz. Son kapanis sabit."
     },
     "crypto": {
-      "label": "Oda yok, islem yok",
-      "reason": "BTC 84887.68, 4s EMA21 84630.20 ustu, RSI 54.22. OP 24s +7.82 lider elendi. TP/stop yok. Alt used 1400.22/1400, oda -0.22.",
+      "label": "Oda yetersiz, islem yok",
+      "reason": "BTC 84685.05, 4s EMA21 84611.78 ustu, RSI 51.99. OP 24s +8.79 lider elendi. TP/stop yok. Alt used 1396.78/1400, oda 3.22.",
       "next": [
         "14 Eki CPI 15:30 TSI",
         "15 Eki PPI 15:30 TSI",
@@ -767,25 +767,25 @@
   ],
   "journal": [
     {
-      "time": "2026-10-03T20:13:00+00:00",
+      "time": "2026-10-03T21:14:00+00:00",
       "market": "binance",
       "action": "WAIT",
       "symbol": "-",
-      "reason": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1400.22/1400, oda -0.22. OP 24s +7.82 lider elendi. BTC 84887.68 4s EMA21 84630.20 ustu RSI 54.22. BNB 790.31 TP2 796.03 alti, SOL 119.96 TP1 121.74 alti, AVAX 11.13 TP1 11.7051 alti, APT 0.8038 stop BE ustu."
+      "reason": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1396.78/1400, oda 3.22 yetersiz. OP 24s +8.79 lider elendi. BTC 84685.05 4s EMA21 84611.78 ustu RSI 51.99. BNB 786.02 TP2 796.03 alti, SOL 119.71 TP1 121.74 alti, AVAX 11.093 TP1 11.7051 alti, APT 0.803 stop BE 0.7755 ustu."
     },
     {
-      "time": "2026-10-03T20:13:00+00:00",
+      "time": "2026-10-03T21:14:00+00:00",
       "market": "us",
       "action": "WAIT_SESSION",
       "symbol": "-",
-      "reason": "WAIT_SESSION. Cumartesi, ABD seansi kapali. AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop seans disi yok."
+      "reason": "WAIT_SESSION. Pazar, ABD seansi kapali. AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop seans disi tetiklenmez."
     },
     {
-      "time": "2026-10-03T20:13:00+00:00",
+      "time": "2026-10-03T21:14:00+00:00",
       "market": "bist",
       "action": "WAIT_SESSION",
       "symbol": "-",
-      "reason": "WAIT_SESSION. Cumartesi, BIST kapali. AL/SAT yok. Son seans THYAO 292 GARAN 125.9 BIMAS 414 TUPRS 377. USDTTRY 49.13. TP/stop seans disi yok."
+      "reason": "WAIT_SESSION. Pazar, BIST kapali. AL/SAT yok. Son seans THYAO 292 GARAN 125.9 BIMAS 414 TUPRS 377. USDTTRY 49.107. TP/stop seans disi yok."
     }
   ]
 }
