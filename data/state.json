@@ -1,14 +1,14 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-03T11:18:00.000Z",
+  "updated_at": "2026-10-03T12:23:00.000Z",
   "quotes": {
-    "BTCUSDT": 84645.01,
-    "ETHUSDT": 2683.3,
-    "BNBUSDT": 769.56,
-    "APTUSDT": 0.8032,
-    "SOLUSDT": 119.38,
-    "USDTTRY": 49.12,
+    "BTCUSDT": 84882.41,
+    "ETHUSDT": 2687.05,
+    "BNBUSDT": 771.73,
+    "APTUSDT": 0.8,
+    "SOLUSDT": 119.71,
+    "USDTTRY": 49.13,
     "SPY": 769.64,
     "QQQ": 749.58,
     "AAPL": 333.69,
@@ -20,7 +20,7 @@
     "TUPRS.IS": 377.0
   },
   "decisions": {
-    "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. BTC 84645.01 4s EMA21 84567.78 ustu, RSI 51.06, makro acik (CPI 14 Eki). Alt used 1400.80/1400, oda -0.80, gidis-donus 1R yer. FIL 24s +2.82 lider elendi. SOL 119.38 TP1 121.74 alti stop 116.88 ustu, BNB 769.56 TP1 782.86 alti, APT 0.8032 TP2 0.8711 alti stop BE 0.7755 ustu.",
+    "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. BTC 84882.41 4s EMA21 84580.78 ustu, RSI 53.87, makro acik (CPI 14 Eki). Alt used 1403.52/1400, oda -3.52, gidis-donus 1R yer. FIL 24s +2.62 lider elendi. SOL 119.71 TP1 121.74 alti stop 116.88 ustu, BNB 771.73 TP1 782.86 alti, APT 0.8000 TP2 0.8711 alti stop BE 0.7755 ustu.",
     "us": "WAIT_SESSION",
     "bist": "WAIT_SESSION"
   },
@@ -140,10 +140,10 @@
     "binance": {
       "cash": 2490.52,
       "start": 4000,
-      "alt_used": 1400.8,
-      "unrealized": 9.42,
+      "alt_used": 1403.52,
+      "unrealized": 12.33,
       "realized": 26.25,
-      "equity": 4032.76,
+      "equity": 4035.88,
       "open_count": 4,
       "positions": [
         {
@@ -533,9 +533,9 @@
     "bist": {
       "cash": 2719.48,
       "start": 4000,
-      "unrealized": 14.86,
+      "unrealized": 14.6,
       "realized": 0.0,
-      "equity": 4011.14,
+      "equity": 4010.86,
       "open_count": 4,
       "decision": "WAIT_SESSION",
       "fx": 49.12,
@@ -678,7 +678,7 @@
     }
   },
   "filters": {
-    "updated_at": "2026-10-03T11:18:00.000Z",
+    "updated_at": "2026-10-03T12:23:00.000Z",
     "stance": "notr",
     "equity": {
       "label": "Bilanço ve haber eleği açık",
@@ -686,7 +686,7 @@
     },
     "crypto": {
       "label": "Alt oda yeni islem icin yok",
-      "reason": "BTC 84645.01, 4s EMA21 84567.78 ustu, RSI 51.06. FIL 24s +2.82 lider elendi. Alt used 1400.80/1400, oda -0.80. SOL/BNB/APT acik, TP/stop yok.",
+      "reason": "BTC 84882.41, 4s EMA21 84580.78 ustu, RSI 53.87. FIL 24s +2.62 lider elendi. Alt used 1403.52/1400, oda -3.52. SOL/BNB/APT acik, TP/stop yok.",
       "next": [
         "14 Eki CPI 15:30 TSI",
         "15 Eki PPI 15:30 TSI",
@@ -718,6 +718,27 @@
     }
   ],
   "journal": [
+    {
+      "time": "2026-10-03T12:23:00+00:00",
+      "market": "binance",
+      "action": "WAIT",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. BTC 84882.41 4s EMA21 84580.78 ustu RSI 53.87. SOL 119.71 TP1 121.74 alti stop 116.88 ustu. BNB 771.73 TP1 782.86 alti. APT 0.8000 TP2 0.8711 alti stop BE 0.7755 ustu. Alt used 1403.52/1400 oda yok. FIL 24s +2.62 lider elendi. Makro acik (CPI 14 Eki)."
+    },
+    {
+      "time": "2026-10-03T12:23:00+00:00",
+      "market": "us",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "ABD seansi kapali (Cumartesi, NY kapali). AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP1/stop yok."
+    },
+    {
+      "time": "2026-10-03T12:23:00+00:00",
+      "market": "bist",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "BIST seansi kapali (Cumartesi). AL/SAT yok. Son fiyat THYAO 292.0 GARAN 125.9 BIMAS 414.0 TUPRS 377.0. USDTTRY 49.13. TP1/stop yok."
+    },
     {
       "time": "2026-10-03T11:18:00+00:00",
       "market": "binance",
@@ -976,27 +997,6 @@
       "action": "WAIT",
       "symbol": "-",
       "reason": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. BTC 85531.20 TP2 runner stop BE 83742. ETH 2702.39 TP2 2793.23 alti. BNB 774.29 TP1 782.86 alti. APT 0.8258 TP2 0.8711 alti. 4s EMA21 84577.38 RSI 60.22, makro acik. Yeni alt yok: maliyet sonrasi temiz odul/risk yok. Alt used 461.78/1400."
-    },
-    {
-      "time": "2026-10-02T15:18:00+00:00",
-      "market": "us",
-      "action": "WAIT",
-      "symbol": "-",
-      "reason": "Seans acik (11:18 NY). TP/stop yok. Bilanco gunu degil (MSFT 27 Eki, AAPL 28 Eki, NVDA 17 Kas). Teknoloji tema tavan alti, yeni AL yok. SPY 768.23 QQQ 748.855 AAPL 331.39 MSFT 514.85 NVDA 234.78."
-    },
-    {
-      "time": "2026-10-02T15:18:00+00:00",
-      "market": "bist",
-      "action": "WAIT_SESSION",
-      "symbol": "-",
-      "reason": "BIST seansi kapali (18:18 TSI, 18:00 sonrasi). AL/SAT yok. Son fiyat THYAO 292.25 GARAN 125.8 BIMAS 413.25 TUPRS 376.75. USDTTRY 49.1412. TP1/stop yok."
-    },
-    {
-      "time": "2026-10-02T14:19:00+00:00",
-      "market": "binance",
-      "action": "WAIT",
-      "symbol": "alt",
-      "reason": "Istihdam +1s 16:30 TSI doldu, makro kapi acik. BTC 86579.99 EMA21 84661.46 ustu RSI 70.82. TP/stop yok. BTC TP2 yapildi runner stop BE 83742. ETH 2741.39 TP2 2793.23 alti. BNB 781.23 TP1 782.86 alti. APT 0.8391 TP2 0.8711 alti. Yeni alt yok. Alt used 467.2/1400. Kaldirac yok."
     }
   ]
 }
