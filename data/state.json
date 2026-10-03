@@ -1,13 +1,14 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-03T00:19:00.000Z",
+  "updated_at": "2026-10-03T01:16:00.000Z",
   "quotes": {
-    "BTCUSDT": 84545.99,
-    "ETHUSDT": 2669.81,
-    "BNBUSDT": 768.12,
-    "APTUSDT": 0.8021,
-    "USDTTRY": 49.107,
+    "BTCUSDT": 84635.01,
+    "ETHUSDT": 2679.0,
+    "BNBUSDT": 769.06,
+    "APTUSDT": 0.802,
+    "SOLUSDT": 119.31,
+    "USDTTRY": 49.14,
     "SPY": 769.64,
     "QQQ": 749.58,
     "AAPL": 333.69,
@@ -19,7 +20,7 @@
     "TUPRS.IS": 377.0
   },
   "decisions": {
-    "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. BTC 84545.99 4s EMA21 84523.91 ustu, RSI 51.19, makro acik. AAVE 24s +3.85 elendi. Diger aday EMA alti veya masraf sonrasi RR zayif. TON 4s mum kaynagi guncel degil, AL yok. BNB 768.12 TP1 782.86 alti, stop 749.92 ustu. APT 0.8021 TP2 0.8711 alti, stop BE 0.7755 ustu.",
+    "binance": "OPEN SOLUSDT. TP/stop yok, kapanis yok, kaldirac yok. BTC 84635.01 4s EMA21 84519.11 ustu, RSI 50.95, makro acik (sonraki CPI 14 Eki). AAVE 24s lider elendi. SOL secildi: 4s EMA21 119.23>EMA55, RSI 47.99, 24s +0.64 kovalama degil, stop 116.88 mesafe %2.04, gidis-donus 30bp 1R yemiyor. Adet tavanla sinirli 7.9213, fee 0.95. BNB 769.06 TP1 782.86 alti, APT 0.802 TP2 0.8711 alti stop BE 0.7755 ustu.",
     "us": "WAIT_SESSION",
     "bist": "WAIT_SESSION"
   },
@@ -137,13 +138,13 @@
   },
   "books": {
     "binance": {
-      "cash": 3436.56,
+      "cash": 2490.52,
       "start": 4000,
-      "alt_used": 454.39,
-      "unrealized": 7.74,
+      "alt_used": 1400.0,
+      "unrealized": 8.21,
       "realized": 26.25,
-      "equity": 4032.23,
-      "open_count": 3,
+      "equity": 4031.95,
+      "open_count": 4,
       "positions": [
         {
           "id": "b-btc",
@@ -201,6 +202,25 @@
           "reason": "Altcoin tarama APT. RSI 37.0.",
           "fee_open": 0.28,
           "realized": 8.37
+        },
+        {
+          "id": "b-sol",
+          "symbol": "SOLUSDT",
+          "side": "LONG",
+          "qty": 7.9213,
+          "qty_left": 7.9213,
+          "entry": 119.31,
+          "entry_time": "2026-10-03T01:16:00.000Z",
+          "stop": 116.88,
+          "tp1": 121.74,
+          "tp2": 124.17,
+          "tp1_done": false,
+          "tp2_done": false,
+          "horizon": "swing",
+          "bucket": "altcoin",
+          "reason": "Alt tarama SOL. 4s EMA21>EMA55, RSI 47.99, 24s lider degil. Stop 6 bar dip 117.11*0.998. Tavan kalan oda.",
+          "fee_open": 0.95,
+          "realized": 0
         }
       ],
       "trades": [
@@ -320,6 +340,19 @@
           "reason": "Stop BE 2675.03 kirildi (2664.52). Kalan cikis, fee taker 10bp + kayma 5bp.",
           "horizon": "long",
           "bucket": "core"
+        },
+        {
+          "time": "2026-10-03T01:16:00.000Z",
+          "market": "binance",
+          "symbol": "SOLUSDT",
+          "action": "AL",
+          "qty": 7.9213,
+          "price": 119.31,
+          "fee": 0.95,
+          "pnl": 0,
+          "reason": "Yeni alt. AAVE 24s lider elendi. SOL masraf sonrasi RR: stop 116.88, TP1 121.74, TP2 124.17. Fee taker 10bp. Alt used tavan 1400.",
+          "horizon": "swing",
+          "bucket": "altcoin"
         }
       ]
     },
@@ -499,12 +532,12 @@
     "bist": {
       "cash": 2719.48,
       "start": 4000,
-      "unrealized": 15.82,
+      "unrealized": 14.96,
       "realized": 0.0,
-      "equity": 4011.46,
+      "equity": 4010.6,
       "open_count": 4,
       "decision": "WAIT_SESSION",
-      "fx": 49.107,
+      "fx": 49.14,
       "positions": [
         {
           "id": "t-thyao",
@@ -644,15 +677,15 @@
     }
   },
   "filters": {
-    "updated_at": "2026-10-03T00:19:00.000Z",
+    "updated_at": "2026-10-03T01:16:00.000Z",
     "stance": "notr",
     "equity": {
       "label": "Bilanço ve haber eleği açık",
       "reason": "ABD ve BIST çekirdekte yeni alım, bilanço günü ve önceki işlem günü yapılmaz. Rehberlik kesintisi, soruşturma, işlem yasağı veya KAP'ta sıkıntılı sermaye artırımı varsa o gün AL yok. Açık pozisyon haberle kapatılmaz; çıkış stop ve kademeli TP ile kalır."
     },
     "crypto": {
-      "label": "BTC EMA ustu, yeni alt yok",
-      "reason": "BTC 84545.99, 4s EMA21 84523.91 ustu, RSI 51.19. Kapi acik. AAVE 24s lider elendi. Guncel 4s yapi ile masraf sonrasi RR secimi yok. BNB/APT acik. Alt used 454.39/1400.",
+      "label": "SOL acildi, alt tavan dolu",
+      "reason": "BTC 84635.01, 4s EMA21 84519.11 ustu, RSI 50.95. AAVE 24s lider elendi. SOL AL 7.9213 @ 119.31. Alt used 1400/1400. BNB/APT acik.",
       "next": [
         "14 Eki CPI 15:30 TSI",
         "15 Eki PPI 15:30 TSI",
@@ -684,27 +717,6 @@
     }
   ],
   "journal": [
-    {
-      "time": "2026-10-02T22:15:00+00:00",
-      "market": "binance",
-      "action": "WAIT",
-      "symbol": "-",
-      "reason": "Secilen yok. BTC 84543.01 EMA21 84528.02 ustu, RSI 48.53. AAVE elendi (RSI 69, 6 bar en cok yukselen). LTC/TON EMA21>EMA55 degil. BNB TP1 alti, APT stop esit kirilmadi. Yeni alt yok, kaldirac yok."
-    },
-    {
-      "time": "2026-10-02T22:15:00+00:00",
-      "market": "us",
-      "action": "WAIT_SESSION",
-      "symbol": "-",
-      "reason": "ABD seansi kapali (Cuma 18:15 NY, 16:00 sonrasi). AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop tetigi seans disi islenmez."
-    },
-    {
-      "time": "2026-10-02T22:15:00+00:00",
-      "market": "bist",
-      "action": "WAIT_SESSION",
-      "symbol": "-",
-      "reason": "BIST seansi kapali (Cumartesi 01:15 TSI). AL/SAT yok. Son seans THYAO 292.0 GARAN 125.9 BIMAS 414.0 TUPRS 377.0. USDTTRY 49.15."
-    },
     {
       "time": "2026-10-02T21:14:00+00:00",
       "market": "binance",
@@ -963,6 +975,27 @@
       "action": "WAIT_SESSION",
       "symbol": "-",
       "reason": "BIST kapali (Cmt 03:19 TSI). AL/SAT yok. Son kapanis THYAO 292 GARAN 125.9 BIMAS 414 TUPRS 377. USDTTRY 49.107."
+    },
+    {
+      "time": "2026-10-03T01:16:00+00:00",
+      "market": "binance",
+      "action": "OPEN",
+      "symbol": "SOLUSDT",
+      "reason": "Secilen SOL. BTC 84635.01 EMA21 84519.11 ustu, RSI 50.95, makro acik. AAVE 24s lider elendi. BCH/FIL/LTC/SUI kovalama. SOL EMA21>EMA55 RSI 47.99, stop 116.88, 30bp 1R yemiyor, adet tavan 7.9213 fee 0.95. BNB/APT TP yok."
+    },
+    {
+      "time": "2026-10-03T01:16:00+00:00",
+      "market": "us",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "ABD seansi kapali (Cuma 21:16 NY, hafta sonu). AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95."
+    },
+    {
+      "time": "2026-10-03T01:16:00+00:00",
+      "market": "bist",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "BIST kapali (Cmt 04:16 TSI). AL/SAT yok. Son kapanis THYAO 292 GARAN 125.9 BIMAS 414 TUPRS 377. USDTTRY 49.14."
     }
   ]
 }
