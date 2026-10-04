@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-04",
+  "as_of": "2026-10-04T20:13:00.000Z",
+  "kind": "close",
+  "note": "Resmi gun kapanisi 00:00 TS\u0130. Kaynak son panel tick 23:13 TS\u0130. Canli emir yok.",
+  "totals": {
+    "start": 12000,
+    "equity": 12074.4,
+    "cash": 7195.05,
+    "unrealized": 45.84,
+    "realized": 37.14,
+    "pnl": 74.4
+  },
+  "books": {
+    "binance": {
+      "equity": 4055.86,
+      "cash": 2517.17,
+      "unrealized": 21.89,
+      "realized": 37.14,
+      "open": 6,
+      "start": 4000
+    },
+    "us": {
+      "equity": 4007.42,
+      "cash": 1958.4,
+      "unrealized": 9.09,
+      "realized": 0.0,
+      "open": 5,
+      "start": 4000
+    },
+    "bist": {
+      "equity": 4011.12,
+      "cash": 2719.48,
+      "unrealized": 14.86,
+      "realized": 0.0,
+      "open": 4,
+      "start": 4000
+    }
+  },
+  "day": {
+    "realized": 7.69,
+    "fees": 0.95,
+    "wins": 1,
+    "losses": 0,
+    "opens": 1,
+    "closes": [
+      {
+        "market": "binance",
+        "symbol": "SOLUSDT",
+        "action": "SAT",
+        "time": "2026-10-04T15:16:00.000Z",
+        "price": 121.92,
+        "qty": 3.16852,
+        "fee": 0.58,
+        "pnl": 7.69,
+        "reason": "TP1 121.74 asildi (121.92). Kademeli cikis %40, stop BE 119.31. Fee taker 10bp + kayma 5bp."
+      }
+    ]
+  },
+  "week": {
+    "label": "2026-09-28 / 2026-10-04"
+  },
+  "month": {
+    "label": "2026-10"
+  }
+}
