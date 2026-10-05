@@ -14,7 +14,7 @@
     "ATOMUSDT": 1.825,
     "DOGEUSDT": 0.09487,
     "BCHUSDT": 314.9,
-    "USDTTRY": 49.1478,
+    "USDTTRY": 49.18,
     "SOLUSDT": 120.23,
     "DOTUSDT": 1.218,
     "UNIUSDT": 9.117,
@@ -29,31 +29,31 @@
     "SUIUSDT": 1.1907,
     "TONUSDT": 1.6,
     "POLUSDT": 0.10902,
-    "SPY": 776.25,
-    "QQQ": 756.68,
-    "AAPL": 333.89,
-    "MSFT": 528.31,
-    "NVDA": 239.76,
-    "AMZN": 253.67,
-    "GOOGL": 347.56,
-    "META": 742.959,
-    "AVGO": 363.58,
-    "TSLA": 381.21,
-    "JPM": 332.755,
-    "UNH": 376.76,
-    "XOM": 163.92,
-    "JNJ": 253.7,
-    "V": 369.745,
-    "MA": 565.43,
-    "LLY": 1149.995,
-    "COST": 920.265,
-    "HD": 281.89,
-    "BAC": 54.205,
-    "KO": 86.455,
-    "PEP": 125.45,
-    "NFLX": 67.325,
-    "AMD": 632.595,
-    "CRM": 229.815,
+    "SPY": 774.83,
+    "QQQ": 756.2,
+    "AAPL": 332.89,
+    "MSFT": 525.18,
+    "NVDA": 238.9,
+    "AMZN": 251.4,
+    "GOOGL": 346.47,
+    "META": 741.9,
+    "AVGO": 362.51,
+    "TSLA": 378.73,
+    "JPM": 332.38,
+    "UNH": 378.58,
+    "XOM": 164.0,
+    "JNJ": 252.93,
+    "V": 369.71,
+    "MA": 564.59,
+    "LLY": 1143.12,
+    "COST": 923.52,
+    "HD": 281.15,
+    "BAC": 54.0,
+    "KO": 86.51,
+    "PEP": 125.65,
+    "NFLX": 67.5,
+    "AMD": 631.75,
+    "CRM": 229.79,
     "THYAO.IS": 292.25,
     "GARAN.IS": 130.4,
     "AKBNK.IS": 68.95,
@@ -569,9 +569,9 @@
     "us": {
       "cash": 2074.69,
       "start": 4000,
-      "unrealized": 28.63,
+      "unrealized": 23.86,
       "realized": 4.29,
-      "equity": 4031.25,
+      "equity": 4026.48,
       "open_count": 5,
       "decision": "SAT",
       "positions": [
@@ -765,9 +765,9 @@
     "bist": {
       "cash": 2855.54,
       "start": 4000,
-      "unrealized": 30.72,
+      "unrealized": 30.7,
       "realized": 8.19,
-      "equity": 4034.71,
+      "equity": 4033.94,
       "open_count": 4,
       "decision": "WAIT_SESSION",
       "fx": 49.05,
@@ -1316,6 +1316,37 @@
     }
   ],
   "fx": {
-    "USDTTRY": 49.1478
+    "USDTTRY": 49.18
+  },
+  "mark": {
+    "at": "2026-10-05T20:38:01.400605+00:00",
+    "source": "github-action",
+    "near": [
+      {
+        "symbol": "BTCUSDT",
+        "level": "tp1",
+        "px": 85678.7
+      },
+      {
+        "symbol": "APTUSDT",
+        "level": "tp1",
+        "px": 0.8279
+      },
+      {
+        "symbol": "SPY",
+        "level": "tp1",
+        "px": 774.83
+      },
+      {
+        "symbol": "QQQ",
+        "level": "tp1",
+        "px": 756.2
+      },
+      {
+        "symbol": "NVDA",
+        "level": "tp1",
+        "px": 238.9
+      }
+    ]
   }
 }
