@@ -1,36 +1,39 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-05T09:13:00.000Z",
+  "updated_at": "2026-10-05T10:17:00.000Z",
   "quotes": {
-    "BTCUSDT": 85982.19,
-    "ETHUSDT": 2719.0,
-    "BNBUSDT": 788.68,
-    "APTUSDT": 0.8095,
-    "SOLUSDT": 120.84,
-    "AVAXUSDT": 10.979,
-    "LTCUSDT": 70.16,
-    "NEARUSDT": 5.027,
-    "ADAUSDT": 0.2709,
-    "SUIUSDT": 1.2255,
-    "DOGEUSDT": 0.09655,
-    "USDTTRY": 49.05,
+    "BTCUSDT": 86078.3,
+    "ETHUSDT": 2718.65,
+    "BNBUSDT": 788.3,
+    "APTUSDT": 0.8174,
+    "SOLUSDT": 120.8,
+    "AVAXUSDT": 11.03,
+    "LTCUSDT": 70.67,
+    "NEARUSDT": 5.038,
+    "ADAUSDT": 0.27444,
+    "SUIUSDT": 1.2464,
+    "DOGEUSDT": 0.09634,
+    "USDTTRY": 49.1615,
     "SPY": 769.64,
     "QQQ": 749.58,
     "AAPL": 333.69,
     "MSFT": 517.53,
     "NVDA": 233.95,
-    "THYAO.IS": 294.0,
-    "GARAN.IS": 131.1,
-    "BIMAS.IS": 416.0,
-    "TUPRS.IS": 385.75,
-    "YKBNK.IS": 36.46,
-    "ASELS.IS": 375.75
+    "THYAO.IS": 293.25,
+    "GARAN.IS": 130.9,
+    "BIMAS.IS": 414.5,
+    "TUPRS.IS": 384.5,
+    "YKBNK.IS": 36.24,
+    "ASELS.IS": 371.75,
+    "AKBNK.IS": 69.15,
+    "ISCTR.IS": 12.86,
+    "KCHOL.IS": 213.0
   },
   "decisions": {
-    "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1391.65/1400, oda 8.35 yetersiz. ADA 24s +10.75 lider elendi. BTC 85982.19 4s EMA21 85271.86 ustu RSI 59.88.",
-    "us": "WAIT_SESSION. Pazartesi 12:13 TSİ, New York 05:13, ABD seansi kapali (09:30). AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop seans disi tetiklenmez.",
-    "bist": "WAIT. GARAN TP1 130.93 asildi 131.1, %40 SAT 51.03252, net +8.19, fee 0.34, stop BE 122.9, qty_left 76.54878. Yeni giris yok. Seans acik 12:13 TSİ. YKBNK +4.35 seans lideri elendi. ASELS fiyat EMA21 ustu ama EMA21 371.02 EMA55 375.42 alti. KCHOL EMA21>EMA55, fiyat 213.3 EMA21 214.51 alti. AEFES temettu odeme 05.10, AL yok. KAP'ta bugun evren icin bedelli/birlesme/islem yasagi tarihi yok. THYAO KAP son 23 Eyl, bugun is birligi haberi kapatma degil. KOZAL.IS Yahoo 404. USDTTRY 49.05."
+    "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1396.53/1400, oda 3.47 yetersiz. ADA 24s +11.82 lider elendi. BTC 86078.3 4s EMA21 85278.66 ustu RSI 61.06.",
+    "us": "WAIT_SESSION. Pazartesi 13:17 TSİ, New York 06:17, ABD seansi kapali (09:30). AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop seans disi tetiklenmez.",
+    "bist": "WAIT. TP/stop yok, kapanis yok, yeni giris yok. Seans acik 13:17 TSİ. GARAN +3.97 seans lideri elendi, TP2 137.36 alti (130.90). YKBNK +3.72 ikinci, banka temasi lideri degil alim. ASELS 371.75 onceki EMA55 375.42 alti. KCHOL 213.00 onceki EMA21 214.51 alti. AEFES temettu odeme 05.10, AL yok. ASTOR -8.86 elendi. KAP bugun evren icin bedelli/birlesme/islem yasagi tarihi yok. KOZAL Bigpara ilk sayfada yok. USDTTRY 49.1615."
   },
   "config": {
     "starting": 4000,
@@ -148,10 +151,10 @@
     "binance": {
       "cash": 2517.64,
       "start": 4000,
-      "alt_used": 1391.65,
-      "unrealized": 14.7,
+      "alt_used": 1396.53,
+      "unrealized": 19.74,
       "realized": 41.56,
-      "equity": 4052.97,
+      "equity": 4058.01,
       "open_count": 7,
       "decision": "WAIT",
       "positions": [
@@ -676,9 +679,9 @@
     "bist": {
       "cash": 2855.54,
       "start": 4000,
-      "unrealized": 31.09,
+      "unrealized": 27.66,
       "realized": 8.19,
-      "equity": 4037.37,
+      "equity": 4031.33,
       "open_count": 4,
       "decision": "WAIT",
       "fx": 49.05,
@@ -834,15 +837,15 @@
     }
   },
   "filters": {
-    "updated_at": "2026-10-05T09:13:00.000Z",
+    "updated_at": "2026-10-05T10:17:00.000Z",
     "stance": "notr",
     "equity": {
-      "label": "BIST GARAN TP1, yeni AL yok",
-      "reason": "Pazartesi 12:13 TSİ. BIST seansi acik, ABD kapali. GARAN TP1 kademeli %40. YKBNK lider elendi. ASELS EMA55 alti. KCHOL fiyat EMA21 alti. AEFES temettu odeme gunu. Acik pozisyon haberle kapatilmaz."
+      "label": "BIST yeni AL yok",
+      "reason": "Pazartesi 13:17 TSİ. BIST seansi acik, ABD kapali. TP/stop yok. GARAN lider elendi. ASELS EMA55 alti. KCHOL fiyat EMA21 alti. AEFES temettu odeme gunu. Acik pozisyon haberle kapatilmaz."
     },
     "crypto": {
       "label": "WAIT, oda yetersiz",
-      "reason": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1391.65/1400, oda 8.35 yetersiz. ADA 24s +10.75 lider elendi. BTC 85982.19 4s EMA21 85271.86 ustu RSI 59.88.",
+      "reason": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1396.53/1400, oda 3.47 yetersiz. ADA 24s +11.82 lider elendi. BTC 86078.3 4s EMA21 85278.66 ustu RSI 61.06.",
       "next": [
         "14 Eki CPI 15:30 TSI",
         "15 Eki PPI 15:30 TSI",
@@ -874,6 +877,27 @@
     }
   ],
   "journal": [
+    {
+      "time": "2026-10-05T10:17:00+00:00",
+      "market": "binance",
+      "action": "WAIT",
+      "symbol": "ADAUSDT",
+      "reason": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1396.53/1400, oda 3.47 yetersiz. ADA 24s +11.82 lider elendi. BTC 86078.3 4s EMA21 85278.66 ustu RSI 61.06."
+    },
+    {
+      "time": "2026-10-05T10:17:00+00:00",
+      "market": "us",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "WAIT_SESSION. Pazartesi 13:17 TSİ, New York 06:17, ABD seansi kapali (09:30). AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop seans disi tetiklenmez."
+    },
+    {
+      "time": "2026-10-05T10:17:00+00:00",
+      "market": "bist",
+      "action": "WAIT",
+      "symbol": "GARAN.IS",
+      "reason": "WAIT. TP/stop yok, kapanis yok, yeni giris yok. Seans acik 13:17 TSİ. GARAN +3.97 seans lideri elendi, TP2 137.36 alti (130.90). YKBNK +3.72 ikinci, banka temasi lideri degil alim. ASELS 371.75 onceki EMA55 375.42 alti. KCHOL 213.00 onceki EMA21 214.51 alti. AEFES temettu odeme 05.10, AL yok. ASTOR -8.86 elendi. KAP bugun evren icin bedelli/birlesme/islem yasagi tarihi yok. KOZAL Bigpara ilk sayfada yok. USDTTRY 49.1615."
+    },
     {
       "time": "2026-10-04T20:13:00+00:00",
       "market": "bist",
@@ -1132,30 +1156,9 @@
       "action": "WAIT",
       "symbol": "-",
       "reason": "WAIT. TP/stop yok, kapanis yok, yeni giris yok. Seans acik 11:16 TSİ. ASELS seans lideri elendi (378, prev 338.5). YKBNK EMA21 35.68 EMA55 35.72 ustu ama banka temasi GARAN acik. KCHOL EMA21>EMA55, fiyat 211.7 EMA21 214.37 alti. AEFES temettu odeme 05.10, AL yok. KAP'ta bugun evren icin bedelli/birlesme/islem yasagi tarihi yok. KOZAL.IS Yahoo 404. USDTTRY 49.10."
-    },
-    {
-      "time": "2026-10-05T09:13:00+00:00",
-      "market": "binance",
-      "action": "WAIT",
-      "symbol": "-",
-      "reason": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1391.65/1400, oda 8.35 yetersiz. ADA 24s +10.75 lider elendi. BTC 85982.19 4s EMA21 85271.86 ustu RSI 59.88."
-    },
-    {
-      "time": "2026-10-05T09:13:00+00:00",
-      "market": "us",
-      "action": "WAIT_SESSION",
-      "symbol": "-",
-      "reason": "WAIT_SESSION. Pazartesi 12:13 TSİ, New York 05:13, ABD seansi kapali (09:30). AL/SAT yok. Son kapanis SPY 769.64 QQQ 749.58 AAPL 333.69 MSFT 517.53 NVDA 233.95. TP/stop seans disi tetiklenmez."
-    },
-    {
-      "time": "2026-10-05T09:13:00+00:00",
-      "market": "bist",
-      "action": "WAIT",
-      "symbol": "GARAN.IS",
-      "reason": "WAIT. GARAN TP1 130.93 asildi 131.1, %40 SAT 51.03252, net +8.19, fee 0.34, stop BE 122.9, qty_left 76.54878. Yeni giris yok. Seans acik 12:13 TSİ. YKBNK +4.35 seans lideri elendi. ASELS fiyat EMA21 ustu ama EMA21 371.02 EMA55 375.42 alti. KCHOL EMA21>EMA55, fiyat 213.3 EMA21 214.51 alti. AEFES temettu odeme 05.10, AL yok. KAP'ta bugun evren icin bedelli/birlesme/islem yasagi tarihi yok. THYAO KAP son 23 Eyl, bugun is birligi haberi kapatma degil. KOZAL.IS Yahoo 404. USDTTRY 49.05."
     }
   ],
   "fx": {
-    "USDTTRY": 49.05
+    "USDTTRY": 49.1615
   }
 }
