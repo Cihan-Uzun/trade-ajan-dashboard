@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-05",
+  "as_of": "2026-10-05T19:11:00.000Z",
+  "kind": "close",
+  "note": "Resmi gun kapanisi 22:00 TSİ tick. Kaynak panel tick 22:11 TSİ. Canli emir yok.",
+  "totals": {
+    "start": 12000,
+    "equity": 12121.6,
+    "cash": 7447.87,
+    "unrealized": 76.72,
+    "realized": 54.04,
+    "pnl": 121.6
+  },
+  "books": {
+    "binance": {
+      "equity": 4055.64,
+      "cash": 2517.64,
+      "unrealized": 17.37,
+      "realized": 41.56,
+      "open": 7,
+      "start": 4000
+    },
+    "us": {
+      "equity": 4031.25,
+      "cash": 2074.69,
+      "unrealized": 28.63,
+      "realized": 4.29,
+      "open": 5,
+      "start": 4000
+    },
+    "bist": {
+      "equity": 4034.71,
+      "cash": 2855.54,
+      "unrealized": 30.72,
+      "realized": 8.19,
+      "open": 4,
+      "start": 4000
+    }
+  },
+  "day": {
+    "realized": 16.9,
+    "fees": 0.66,
+    "wins": 3,
+    "losses": 0,
+    "opens": 1,
+    "closes": [
+      {
+        "market": "binance",
+        "symbol": "BNBUSDT",
+        "action": "SAT",
+        "time": "2026-10-04T22:15:00.000Z",
+        "price": 797.81,
+        "qty": 0.14614,
+        "fee": 0.17,
+        "pnl": 4.42,
+        "reason": "TP2 796.03 asildi (797.81). Kademeli cikis %40, stop BE 766.39."
+      },
+      {
+        "market": "bist",
+        "symbol": "GARAN.IS",
+        "action": "SAT",
+        "time": "2026-10-05T09:13:00.000Z",
+        "price": 131.1,
+        "qty": 51.03252,
+        "fee": 0.34,
+        "pnl": 8.19,
+        "reason": "TP1 130.93 asildi (131.1). Kademeli cikis %40, stop BE 122.9. Komisyon 15bp + kayma 10bp."
+      },
+      {
+        "market": "us",
+        "symbol": "NVDA",
+        "action": "SAT",
+        "time": "2026-10-05T19:11:00.000Z",
+        "price": 239.76,
+        "qty": 0.48516,
+        "fee": 0.03,
+        "pnl": 4.29,
+        "reason": "TP1 239.34 asildi (239.76). Kademeli cikis %40, stop BE 230.86. Kayma 3bp."
+      }
+    ]
+  },
+  "week": {
+    "label": "2026-10-05 / 2026-10-11"
+  },
+  "month": {
+    "label": "2026-10"
+  }
+}
