@@ -14,7 +14,7 @@
     "ATOMUSDT": 1.789,
     "DOGEUSDT": 0.09387,
     "BCHUSDT": 314.9,
-    "USDTTRY": 49.14,
+    "USDTTRY": 49.16,
     "SOLUSDT": 120.59,
     "DOTUSDT": 1.216,
     "UNIUSDT": 8.627,
@@ -29,31 +29,31 @@
     "SUIUSDT": 1.1855,
     "TONUSDT": 1.6,
     "POLUSDT": 0.10716,
-    "SPY": 779.88,
-    "QQQ": 760.66,
-    "AAPL": 333.14,
-    "MSFT": 530.837,
-    "NVDA": 239.93,
-    "AMZN": 256.295,
-    "GOOGL": 347.888,
-    "META": 744.2,
-    "AVGO": 377.945,
-    "TSLA": 379.755,
-    "JPM": 331.55,
-    "UNH": 376.58,
-    "XOM": 165.12,
-    "JNJ": 255.365,
-    "V": 369.85,
-    "MA": 565.54,
-    "LLY": 1156.982,
-    "COST": 933.84,
-    "HD": 285.45,
-    "BAC": 54.05,
-    "KO": 86.755,
-    "PEP": 125.755,
-    "NFLX": 68.285,
-    "AMD": 655.35,
-    "CRM": 223.06,
+    "SPY": 779.09,
+    "QQQ": 759.66,
+    "AAPL": 333.63,
+    "MSFT": 529.3,
+    "NVDA": 239.24,
+    "AMZN": 256.29,
+    "GOOGL": 347.68,
+    "META": 738.88,
+    "AVGO": 375.81,
+    "TSLA": 380.68,
+    "JPM": 331.28,
+    "UNH": 376.32,
+    "XOM": 164.48,
+    "JNJ": 254.78,
+    "V": 370.64,
+    "MA": 566.58,
+    "LLY": 1157.49,
+    "COST": 935.68,
+    "HD": 286.69,
+    "BAC": 54.09,
+    "KO": 86.17,
+    "PEP": 125.71,
+    "NFLX": 68.69,
+    "AMD": 649.42,
+    "CRM": 224.99,
     "THYAO.IS": 290.5,
     "GARAN.IS": 131.2,
     "AKBNK.IS": 69.5,
@@ -582,9 +582,9 @@
     "us": {
       "cash": 2564.93,
       "start": 4000,
-      "unrealized": 26.05,
+      "unrealized": 24.29,
       "realized": 14.56,
-      "equity": 4038.95,
+      "equity": 4037.19,
       "open_count": 5,
       "decision": "WAIT",
       "positions": [
@@ -804,9 +804,9 @@
     "bist": {
       "cash": 2855.54,
       "start": 4000,
-      "unrealized": 16.59,
+      "unrealized": 16.58,
       "realized": 8.19,
-      "equity": 4020.76,
+      "equity": 4020.28,
       "open_count": 4,
       "decision": "WAIT_SESSION",
       "fx": 49.14,
@@ -1467,11 +1467,11 @@
     }
   ],
   "fx": {
-    "USDTTRY": 49.14
+    "USDTTRY": 49.16
   },
   "mark": {
-    "at": "2026-10-06T19:11:00+00:00",
-    "source": "paper-tick-22",
+    "at": "2026-10-06T20:52:37.502310+00:00",
+    "source": "github-action",
     "near": [
       {
         "symbol": "BTCUSDT",
@@ -1486,17 +1486,17 @@
       {
         "symbol": "SPY",
         "level": "tp1",
-        "px": 779.88
+        "px": 779.09
       },
       {
         "symbol": "QQQ",
         "level": "tp1",
-        "px": 760.66
+        "px": 759.66
       },
       {
         "symbol": "NVDA",
         "level": "tp1",
-        "px": 239.93
+        "px": 239.24
       },
       {
         "symbol": "GARAN.IS",
