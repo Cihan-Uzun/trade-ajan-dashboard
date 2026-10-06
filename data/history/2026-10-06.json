@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-06",
+  "as_of": "2026-10-06T19:11:00.000Z",
+  "kind": "close",
+  "note": "Resmi gun kapanisi 22:00 TSİ tick. Kaynak panel tick 22:11 TSİ. Canli emir yok.",
+  "totals": {
+    "start": 12000,
+    "equity": 12119.72,
+    "cash": 7987.39,
+    "unrealized": 61.44,
+    "realized": 67.25,
+    "pnl": 119.72
+  },
+  "books": {
+    "binance": {
+      "equity": 4060.01,
+      "cash": 2566.92,
+      "unrealized": 18.8,
+      "realized": 44.5,
+      "open": 7,
+      "start": 4000
+    },
+    "us": {
+      "equity": 4038.95,
+      "cash": 2564.93,
+      "unrealized": 26.05,
+      "realized": 14.56,
+      "open": 5,
+      "start": 4000
+    },
+    "bist": {
+      "equity": 4020.76,
+      "cash": 2855.54,
+      "unrealized": 16.59,
+      "realized": 8.19,
+      "open": 4,
+      "start": 4000
+    }
+  },
+  "day": {
+    "realized": 13.21,
+    "fees": 0.22,
+    "wins": 3,
+    "losses": 0,
+    "opens": 0,
+    "closes": [
+      {
+        "market": "binance",
+        "symbol": "NEARUSDT",
+        "action": "SAT",
+        "time": "2026-10-06T09:14:00.000Z",
+        "price": 5.272,
+        "qty": 9.36008,
+        "fee": 0.07,
+        "pnl": 2.94,
+        "reason": "TP1 5.1685 asildi (5.272). Kademeli cikis %40, stop BE 4.95."
+      },
+      {
+        "market": "us",
+        "symbol": "SPY",
+        "action": "SAT",
+        "time": "2026-10-06T15:15:00.000Z",
+        "price": 781.15,
+        "qty": 0.36516,
+        "fee": 0.09,
+        "pnl": 5.19,
+        "reason": "TP1 777.84 asildi (781.15). Kademeli cikis %40, stop BE 766.67. Kayma 3bp."
+      },
+      {
+        "market": "us",
+        "symbol": "QQQ",
+        "action": "SAT",
+        "time": "2026-10-06T15:15:00.000Z",
+        "price": 762.64,
+        "qty": 0.269,
+        "fee": 0.06,
+        "pnl": 5.08,
+        "reason": "TP1 759.17 asildi (762.64). Kademeli cikis %40, stop BE 743.53. Kayma 3bp."
+      }
+    ]
+  },
+  "week": {
+    "label": "2026-10-05 / 2026-10-11"
+  },
+  "month": {
+    "label": "2026-10"
+  }
+}
