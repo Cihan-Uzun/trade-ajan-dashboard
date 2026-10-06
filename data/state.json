@@ -14,7 +14,7 @@
     "ATOMUSDT": 1.802,
     "DOGEUSDT": 0.09441,
     "BCHUSDT": 315.3,
-    "USDTTRY": 49.16,
+    "USDTTRY": 49.15,
     "SOLUSDT": 119.81,
     "DOTUSDT": 1.22,
     "UNIUSDT": 8.827,
@@ -54,30 +54,30 @@
     "NFLX": 67.5,
     "AMD": 631.75,
     "CRM": 229.79,
-    "THYAO.IS": 293.5,
-    "GARAN.IS": 130.6,
-    "AKBNK.IS": 69.1,
-    "ISCTR.IS": 12.9,
-    "YKBNK.IS": 36.04,
-    "BIMAS.IS": 412.25,
-    "TUPRS.IS": 384.0,
-    "SISE.IS": 38.1,
-    "KCHOL.IS": 215.8,
-    "SAHOL.IS": 89.0,
-    "ASELS.IS": 374.5,
-    "EREGL.IS": 37.6,
-    "TCELL.IS": 101.2,
-    "PGSUS.IS": 142.4,
-    "TTKOM.IS": 53.65,
-    "FROTO.IS": 74.7,
-    "AEFES.IS": 18.43,
-    "TOASO.IS": 264.75,
-    "PETKM.IS": 20.06,
-    "HEKTS.IS": 2.16,
-    "ENKAI.IS": 84.85,
-    "MGROS.IS": 517.0,
-    "VESTL.IS": 17.31,
-    "ASTOR.IS": 186.5
+    "THYAO.IS": 291.5,
+    "GARAN.IS": 129.7,
+    "AKBNK.IS": 68.7,
+    "ISCTR.IS": 12.75,
+    "YKBNK.IS": 36.1,
+    "BIMAS.IS": 409.25,
+    "TUPRS.IS": 383.75,
+    "SISE.IS": 37.8,
+    "KCHOL.IS": 214.8,
+    "SAHOL.IS": 88.45,
+    "ASELS.IS": 365.5,
+    "EREGL.IS": 36.84,
+    "TCELL.IS": 101.0,
+    "PGSUS.IS": 140.8,
+    "TTKOM.IS": 53.25,
+    "FROTO.IS": 74.35,
+    "AEFES.IS": 18.52,
+    "TOASO.IS": 267.25,
+    "PETKM.IS": 20.2,
+    "HEKTS.IS": 2.15,
+    "ENKAI.IS": 83.25,
+    "MGROS.IS": 512.0,
+    "VESTL.IS": 17.12,
+    "ASTOR.IS": 191.2
   },
   "decisions": {
     "binance": "WAIT. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 1389.35/1400, oda 10.65 yetersiz. BTC 85377.53 4s EMA21 85384.09 alti, RSI 51.24, yeni alt yok. FIL 24s +12.02 lider elendi. NEAR TP1 5.1685 alti (5.157). SOL stop BE 119.31 ustu (119.81). APT TP2 0.8711 alti (0.8173). LTC stop 68.6824 ustu (69.44).",
@@ -765,9 +765,9 @@
     "bist": {
       "cash": 2855.54,
       "start": 4000,
-      "unrealized": 25.34,
+      "unrealized": 19.19,
       "realized": 8.19,
-      "equity": 4029.04,
+      "equity": 4023.13,
       "open_count": 4,
       "decision": "WAIT",
       "fx": 49.05,
@@ -1337,16 +1337,16 @@
     }
   ],
   "fx": {
-    "USDTTRY": 49.16
+    "USDTTRY": 49.15
   },
   "mark": {
-    "at": "2026-10-06T07:15:00+00:00",
-    "source": "paper-tick",
+    "at": "2026-10-06T08:49:02.630150+00:00",
+    "source": "github-action",
     "near": [
       {
-        "symbol": "SOLUSDT",
-        "level": "stop",
-        "px": 119.81
+        "symbol": "BTCUSDT",
+        "level": "tp1",
+        "px": 85377.53
       },
       {
         "symbol": "NEARUSDT",
@@ -1365,7 +1365,7 @@
       },
       {
         "symbol": "NVDA",
-        "level": "tp2",
+        "level": "tp1",
         "px": 238.9
       }
     ]
