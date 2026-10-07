@@ -204,6 +204,15 @@
       "day_halt": "Kitap gun icinde -%1 ise ertesi seansa kadar yeni islem yok.",
       "btc_main": "Ana trend gunluk EMA21. Altindaysa yeni alt yok. 4s EMA21 alti ise TP1 gelmemis altin yarisi kesilir.",
       "giveback": "TP1 veya +1R sonrasi tepe izlenir. Fiyat giris + (tepe-giris)*0.5 altina inerse kalan cikar. Once orijinal stop durur."
+    },
+    "tavan": {
+      "sleeve": 400,
+      "max_names_per_day": 1,
+      "stop_pct": 0.04,
+      "max_hold_days": 2,
+      "giveback": "giris+(tepe-giris)*0.5",
+      "halt": "3 kapanis ve kar faktoru 1 altinda kol kapanir",
+      "buy": "ertesi seans 10:05, acilis tavan altinda ve devretmiyorsa. Kilitli tavan kovalanmaz."
     }
   },
   "books": {
@@ -1341,5 +1350,19 @@
         "px": 237.345
       }
     ]
+  },
+  "tavan": {
+    "start": 400,
+    "cash": 400,
+    "equity": 400,
+    "realized": 0,
+    "unrealized": 0,
+    "positions": [],
+    "watch": [],
+    "closes": 0,
+    "wins": 0,
+    "losses": 0,
+    "halted": false,
+    "note": "Cekirdek kitaptan ayri. Ayni gun alis yok."
   }
 }

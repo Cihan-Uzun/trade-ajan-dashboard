@@ -579,6 +579,34 @@ export default function Page() {
         </section>
       )}
 
+      {state?.tavan && (
+        <section className="report">
+          <div className="sec-h">
+            <h2>Tavan kolu</h2>
+            <span className={state.tavan.halted ? "sess" : "sess on"}>{state.tavan.halted ? "kol kapalı" : "ayrı paper"}</span>
+          </div>
+          <section className="cards">
+            <Card label="Özsermaye" value={money(state.tavan.equity)} sub={`nakit ${money(state.tavan.cash)} · tavan 400`} />
+            <Card label="Kapanan" value={money(state.tavan.realized)} tone={pnlClass(state.tavan.realized)} sub={`${state.tavan.closes || 0} kapanış`} />
+            <Card label="İzlenen" value={String((state.tavan.watch || []).length)} sub="dün kilitli tavan" />
+            <Card label="Açık" value={String((state.tavan.positions || []).length)} sub="günde en fazla 1" />
+          </section>
+          <p className="note">Çekirdek kitaptan ayrı. Aynı gün alış yok. Ertesi sabah 10:05, açılış tavanın altındaysa. Kilitli tavan kovalanmaz. Stop %4. En fazla 2 gün.</p>
+          <div className="log">
+            {(state.tavan.watch || []).slice(0, 6).map((w, i) => (
+              <article key={i}>
+                <div className="logh"><strong>{w.symbol}</strong><span>{w.close || w.tavan}</span><em>{w.note || "izleme"}</em></div>
+              </article>
+            ))}
+            {(state.tavan.positions || []).map((p) => (
+              <article key={p.symbol}>
+                <div className="logh"><strong>{p.symbol}</strong><span>giriş {p.entry}</span><em>stop {p.stop}</em></div>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
       <footer>
         Yatırım tavsiyesi değildir. Sanal 4.000 USD × 3 piyasa. Günlük / haftalık / aylık rapor İstanbul saatine göre kapanan işlemlerin gerçekleşen K/Z’sidir; açık pozisyon ayrıca gösterilir.
         Fiyatlar Binance public API ve Yahoo Finance üzerinden çekilir. Altcoin hedef 1.200 USD, tavan 1.400 USD.
