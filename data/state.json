@@ -201,7 +201,9 @@
       "btc_regime": "BTC 4s EMA21 altinda yeni alt yok. TP1 gelmemis altin yarisi kesilir.",
       "be_stop": "TP1 sonrasi stop = giris + gidis-donus masraf. Binance 30 bp, ABD 6 bp, BIST 50 bp.",
       "stop_cooldown": "Kitapta o gun stop yemisse ayni piyasada yeni AL yok.",
-      "day_halt": "Kitap gun icinde -%1 ise ertesi seansa kadar yeni islem yok."
+      "day_halt": "Kitap gun icinde -%1 ise ertesi seansa kadar yeni islem yok.",
+      "btc_main": "Ana trend gunluk EMA21. Altindaysa yeni alt yok. 4s EMA21 alti ise TP1 gelmemis altin yarisi kesilir.",
+      "giveback": "TP1 veya +1R sonrasi tepe izlenir. Fiyat giris + (tepe-giris)*0.5 altina inerse kalan cikar. Once orijinal stop durur."
     }
   },
   "books": {
