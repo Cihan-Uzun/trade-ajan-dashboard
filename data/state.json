@@ -194,7 +194,15 @@
       "VESTL.IS",
       "ASTOR.IS"
     ],
-    "equity_scan_rule": "25 tarama, alim listesi degil. Ayni tick piyasada en fazla 1 yeni islem. KAP sermaye artirimi, temettu tarihi, bilanco ve olumsuz haber varsa AL yok."
+    "equity_scan_rule": "25 tarama, alim listesi degil. Ayni tick piyasada en fazla 1 yeni islem. KAP sermaye artirimi, temettu tarihi, bilanco ve olumsuz haber varsa AL yok.",
+    "risk_rules": {
+      "max_open_alts": 3,
+      "alt_cap": 1400,
+      "btc_regime": "BTC 4s EMA21 altinda yeni alt yok. TP1 gelmemis altin yarisi kesilir.",
+      "be_stop": "TP1 sonrasi stop = giris + gidis-donus masraf. Binance 30 bp, ABD 6 bp, BIST 50 bp.",
+      "stop_cooldown": "Kitapta o gun stop yemisse ayni piyasada yeni AL yok.",
+      "day_halt": "Kitap gun icinde -%1 ise ertesi seansa kadar yeni islem yok."
+    }
   },
   "books": {
     "binance": {
