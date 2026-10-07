@@ -1,34 +1,34 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-07T09:16:00.000Z",
+  "updated_at": "2026-10-07T13:25:00.000Z",
   "quotes": {
-    "BTCUSDT": 83824.36,
-    "ETHUSDT": 2607.0,
-    "BNBUSDT": 770.61,
-    "LTCUSDT": 67.43,
-    "ADAUSDT": 0.2549,
-    "XRPUSDT": 1.4575,
-    "TRXUSDT": 0.3329,
-    "LINKUSDT": 13.66,
-    "ATOMUSDT": 1.694,
-    "DOGEUSDT": 0.08995,
-    "BCHUSDT": 306.9,
-    "USDTTRY": 49.2,
-    "SOLUSDT": 118.09,
-    "DOTUSDT": 1.118,
-    "UNIUSDT": 8.08,
-    "AVAXUSDT": 11.14,
-    "AAVEUSDT": 174.82,
-    "NEARUSDT": 5.12,
-    "FILUSDT": 1.0942,
-    "INJUSDT": 7.43,
-    "OPUSDT": 0.1203,
-    "APTUSDT": 0.7677,
-    "ARBUSDT": 0.1865,
-    "SUIUSDT": 1.1282,
-    "TONUSDT": 1.6,
-    "POLUSDT": 0.10244,
+    "BTCUSDT": 83356.99,
+    "ETHUSDT": 2561.66,
+    "BNBUSDT": 766.54,
+    "LTCUSDT": 66.68,
+    "ADAUSDT": 0.2531,
+    "XRPUSDT": 1.4396,
+    "TRXUSDT": 0.3355,
+    "LINKUSDT": 13.363,
+    "ATOMUSDT": 1.685,
+    "DOGEUSDT": 0.08853,
+    "BCHUSDT": 302.2,
+    "USDTTRY": 49.19,
+    "SOLUSDT": 116.37,
+    "DOTUSDT": 1.104,
+    "UNIUSDT": 7.95,
+    "AVAXUSDT": 11.168,
+    "AAVEUSDT": 172.84,
+    "NEARUSDT": 5.035,
+    "FILUSDT": 1.0599,
+    "INJUSDT": 7.426,
+    "OPUSDT": 0.119,
+    "APTUSDT": 0.7783,
+    "ARBUSDT": 0.1864,
+    "SUIUSDT": 1.1198,
+    "TONUSDT": 1.4375,
+    "POLUSDT": 0.1015,
     "SPY": 779.09,
     "QQQ": 759.66,
     "AAPL": 333.63,
@@ -54,35 +54,35 @@
     "NFLX": 68.69,
     "AMD": 649.42,
     "CRM": 224.99,
-    "THYAO.IS": 287.75,
-    "GARAN.IS": 129.4,
-    "AKBNK.IS": 68.95,
-    "ISCTR.IS": 12.75,
-    "YKBNK.IS": 36.3,
-    "BIMAS.IS": 402.25,
-    "TUPRS.IS": 380.0,
-    "SISE.IS": 37.72,
-    "KCHOL.IS": 211.7,
-    "SAHOL.IS": 87.85,
-    "ASELS.IS": 358.5,
-    "EREGL.IS": 36.96,
-    "TCELL.IS": 99.6,
-    "PGSUS.IS": 138.3,
-    "TTKOM.IS": 52.4,
-    "FROTO.IS": 74.35,
-    "AEFES.IS": 18.27,
-    "TOASO.IS": 271.25,
-    "PETKM.IS": 20.2,
-    "HEKTS.IS": 2.16,
-    "ENKAI.IS": 81.45,
-    "MGROS.IS": 503.0,
-    "VESTL.IS": 17.48,
-    "ASTOR.IS": 179.7
+    "THYAO.IS": 285.5,
+    "GARAN.IS": 129.1,
+    "AKBNK.IS": 68.65,
+    "ISCTR.IS": 12.83,
+    "YKBNK.IS": 36.32,
+    "BIMAS.IS": 397.75,
+    "TUPRS.IS": 379.0,
+    "SISE.IS": 37.4,
+    "KCHOL.IS": 208.8,
+    "SAHOL.IS": 87.35,
+    "ASELS.IS": 353.5,
+    "EREGL.IS": 36.56,
+    "TCELL.IS": 98.8,
+    "PGSUS.IS": 136.9,
+    "TTKOM.IS": 51.9,
+    "FROTO.IS": 73.9,
+    "AEFES.IS": 18.01,
+    "TOASO.IS": 262.75,
+    "PETKM.IS": 19.98,
+    "HEKTS.IS": 2.13,
+    "ENKAI.IS": 80.35,
+    "MGROS.IS": 498.25,
+    "VESTL.IS": 17.38,
+    "ASTOR.IS": 183.8
   },
   "decisions": {
-    "binance": "WAIT. APT stop BE 0.7755 kirildi 0.7677, kalan 216.634 SAT, net -1.94, fee 0.25. Yeni giris yok, kaldirac yok. Alt used 230.89/1400, oda 1169.11. BTC 83824.36 4s EMA21 85149.82 alti, RSI 36.68, yeni alt yok. TON 24s +0.95 lider elendi. BNB stop BE 766.39 ustu (770.61). AVAX TP1 11.7051 alti (11.14). NEAR TP2 5.387 alti (5.12). BTC stop BE 83742 ustu (83824.36).",
-    "us": "WAIT_SESSION. Carsamba 12:16 TSİ, NY 05:16 seans kapali, AL/SAT yok. Kapanis SPY 779.09 TP2 786.78 alti, QQQ 759.66 TP2 771.68 alti, NVDA 239.24 TP2 246.12 alti stop BE 230.86 ustu, AAPL 333.63 stop 324.86 ustu, MSFT 529.3 TP1 536.34 alti. TSLA son kapanis lideri elendi.",
-    "bist": "WAIT. Seans acik. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. PETKM +2.12 seans lideri elendi, EMA21 20.66 EMA55 20.81 alti. YKBNK 36.30 EMA21 35.740 EMA55 35.742, EMA21 ustu degil, trend yok. Diger isimler fiyat EMA21 veya EMA55 alti. ASTOR temettu 15.10, AL yok. AEFES odeme 05.10 gecti. KAP: KPEKS/RGYAS temettu bugun evren disi. KOZAL Yahoo 404. USDTTRY 49.2. THYAO 287.75 stop 266.39 ustu. GARAN 129.4 TP2 137.36 alti stop BE 122.9 ustu. BIMAS 402.25 stop 397.33 ustu. TUPRS 380.0 stop 348.71 ustu."
+    "binance": "WAIT. BTC stop BE 83742 kirildi 83356.99, kalan 0.001671 SAT, net -0.85, fee 0.21. Yeni giris yok, kaldirac yok. Alt used 229.66/1400, oda 1170.34. BTC 83356.99 4s EMA21 84983.03 alti, RSI 32.70, yeni alt yok. TRX 24s -0.21 lider elendi. BNB stop BE 766.39 ustu (766.54). AVAX TP1 11.7051 alti (11.168). NEAR TP2 5.387 alti (5.035).",
+    "us": "WAIT_SESSION. Carsamba 16:25 TSİ, NY 09:25, acilis 16:30, bu tur AL/SAT yok. Son kapanis SPY 779.09 TP2 786.78 alti, QQQ 759.66 TP2 771.68 alti, NVDA 239.24 TP2 246.12 alti stop BE 230.86 ustu, AAPL 333.63 stop 324.86 ustu, MSFT 529.3 TP1 536.34 alti. TSLA son kapanis lideri elendi.",
+    "bist": "WAIT. Seans acik. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. YKBNK +4.3 seans lideri elendi, EMA21 35.746 EMA55 35.765 ustu tampon %1.61, lider oldugu icin AL yok. PETKM 19.98 EMA21 20.641 EMA55 20.769 alti. Diger isimler fiyat EMA21 alti. ASTOR temettu 15.10, AL yok. AEFES odeme 05.10 gecti. KAP: RGYAS temettu hak 7 Eki evren disi. KOZAL Yahoo 404. USDTTRY 49.19. THYAO 285.5 stop 266.39 ustu. GARAN 129.1 TP2 137.36 alti stop BE 122.9 ustu. BIMAS 397.75 stop 397.33 ustu. TUPRS 379.0 stop 348.71 ustu."
   },
   "config": {
     "starting": 4000,
@@ -198,36 +198,15 @@
   },
   "books": {
     "binance": {
-      "cash": 3649.19,
+      "cash": 3788.27,
       "start": 4000,
-      "alt_used": 230.89,
-      "unrealized": 3.09,
-      "realized": 20.35,
-      "equity": 4020.15,
-      "open_count": 4,
+      "alt_used": 229.66,
+      "unrealized": 1.72,
+      "realized": 19.5,
+      "equity": 4017.93,
+      "open_count": 3,
       "decision": "WAIT",
       "positions": [
-        {
-          "id": "b-btc",
-          "symbol": "BTCUSDT",
-          "side": "LONG",
-          "qty": 0.008359,
-          "qty_left": 0.001671,
-          "entry": 83742,
-          "entry_time": "2026-09-30T19:19:47.200Z",
-          "stop": 83742,
-          "tp1": 85347.49,
-          "tp2": 86631.88,
-          "tp1_done": true,
-          "tp2_done": true,
-          "horizon": "long",
-          "bucket": "core",
-          "reason": "Uzun vade cekirdek BTC. 4s EMA21=83756, EMA55=83418, RSI=55.9.",
-          "fee_open": 0.7,
-          "realized": 14.71,
-          "usd_px": 83824.36,
-          "shares_now": 0.001671
-        },
         {
           "id": "b-bnb",
           "symbol": "BNBUSDT",
@@ -246,7 +225,7 @@
           "reason": "Altcoin tarama BNB. RSI 52.5, uydu kova.",
           "fee_open": 0.28,
           "realized": 7.62,
-          "usd_px": 770.61,
+          "usd_px": 766.54,
           "shares_now": 0.073069
         },
         {
@@ -267,7 +246,7 @@
           "reason": "Alt tarama AVAX. 4s EMA21>EMA55, RSI 53.51, 24s lider degil. Stop 6 bar dip 10.54*0.998. Tavan kalan oda.",
           "fee_open": 0.1,
           "realized": 0,
-          "usd_px": 11.14,
+          "usd_px": 11.168,
           "shares_now": 9.2189
         },
         {
@@ -288,7 +267,7 @@
           "reason": "Alt tarama NEAR. 4s EMA21>EMA55, RSI 54.63, 24s lider degil. Stop 6 bar dip 4.741*0.998. Tavan kalan oda.",
           "fee_open": 0.12,
           "realized": 2.94,
-          "usd_px": 5.12,
+          "usd_px": 5.035,
           "shares_now": 14.04012
         }
       ],
@@ -552,6 +531,19 @@
           "reason": "Stop BE 0.7755 kirildi (0.7677). Kalan cikis, fee taker 10bp + kayma 5bp.",
           "horizon": "swing",
           "bucket": "altcoin"
+        },
+        {
+          "time": "2026-10-07T13:25:00.000Z",
+          "market": "binance",
+          "symbol": "BTCUSDT",
+          "action": "SAT",
+          "qty": 0.001671,
+          "price": 83356.99,
+          "fee": 0.21,
+          "pnl": -0.85,
+          "reason": "Stop BE 83742 kirildi (83356.99). Runner cikis, fee taker 10bp + kayma 5bp.",
+          "horizon": "long",
+          "bucket": "core"
         }
       ]
     },
@@ -780,9 +772,9 @@
     "bist": {
       "cash": 2855.54,
       "start": 4000,
-      "unrealized": 5.98,
+      "unrealized": -1.29,
       "realized": 8.19,
-      "equity": 4008.75,
+      "equity": 4001.71,
       "open_count": 4,
       "decision": "WAIT",
       "fx": 49.14,
@@ -806,7 +798,7 @@
           "reason": "BIST cekirdek THYAO. Adet eski qty*USDTTRY.",
           "fee_open": 0.13,
           "realized": 0,
-          "usd_px": 5.848577235772358,
+          "usd_px": 5.804025,
           "shares_now": 55.3455
         },
         {
@@ -828,7 +820,7 @@
           "reason": "TP1 130.93 asildi 131.1. Kademeli cikis %40, stop BE 122.9.",
           "fee_open": 0.13,
           "realized": 8.19,
-          "usd_px": 2.630081300813008,
+          "usd_px": 2.624517,
           "shares_now": 76.54878
         },
         {
@@ -850,7 +842,7 @@
           "reason": "BIST cekirdek BIMAS. Adet eski qty*USDTTRY.",
           "fee_open": 0.13,
           "realized": 0,
-          "usd_px": 8.175813008130081,
+          "usd_px": 8.085993,
           "shares_now": 37.4654
         },
         {
@@ -872,7 +864,7 @@
           "reason": "BIST cekirdek TUPRS. RSI 30.5. Adet eski qty*USDTTRY.",
           "fee_open": 0.13,
           "realized": 0,
-          "usd_px": 7.723577235772357,
+          "usd_px": 7.704818,
           "shares_now": 41.6745
         }
       ],
@@ -946,15 +938,15 @@
     }
   },
   "filters": {
-    "updated_at": "2026-10-07T09:16:00.000Z",
+    "updated_at": "2026-10-07T13:25:00.000Z",
     "stance": "notr",
     "equity": {
-      "label": "ABD kapali, BIST acik, yeni AL yok",
-      "reason": "WAIT_SESSION. Carsamba 12:16 TSİ, NY 05:16 seans kapali, AL/SAT yok. Kapanis SPY 779.09 TP2 786.78 alti, QQQ 759.66 TP2 771.68 alti, NVDA 239.24 TP2 246.12 alti stop BE 230.86 ustu, AAPL 333.63 stop 324.86 ustu, MSFT 529.3 TP1 536.34 alti. TSLA son kapanis lideri elendi. WAIT. Seans acik. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. PETKM +2.12 seans lideri elendi, EMA21 20.66 EMA55 20.81 alti. YKBNK 36.30 EMA21 35.740 EMA55 35.742, EMA21 ustu degil, trend yok. Diger isimler fiyat EMA21 veya EMA55 alti. ASTOR temettu 15.10, AL yok. AEFES odeme 05.10 gecti. KAP: KPEKS/RGYAS temettu bugun evren disi. KOZAL Yahoo 404. USDTTRY 49.2. THYAO 287.75 stop 266.39 ustu. GARAN 129.4 TP2 137.36 alti stop BE 122.9 ustu. BIMAS 402.25 stop 397.33 ustu. TUPRS 380.0 stop 348.71 ustu."
+      "label": "ABD acilis oncesi, BIST acik, yeni AL yok",
+      "reason": "WAIT_SESSION. Carsamba 16:25 TSİ, NY 09:25, acilis 16:30, bu tur AL/SAT yok. Son kapanis SPY 779.09 TP2 786.78 alti, QQQ 759.66 TP2 771.68 alti, NVDA 239.24 TP2 246.12 alti stop BE 230.86 ustu, AAPL 333.63 stop 324.86 ustu, MSFT 529.3 TP1 536.34 alti. TSLA son kapanis lideri elendi. WAIT. Seans acik. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. YKBNK +4.3 seans lideri elendi, EMA21 35.746 EMA55 35.765 ustu tampon %1.61, lider oldugu icin AL yok. PETKM 19.98 EMA21 20.641 EMA55 20.769 alti. Diger isimler fiyat EMA21 alti. ASTOR temettu 15.10, AL yok. AEFES odeme 05.10 gecti. KAP: RGYAS temettu hak 7 Eki evren disi. KOZAL Yahoo 404. USDTTRY 49.19. THYAO 285.5 stop 266.39 ustu. GARAN 129.1 TP2 137.36 alti stop BE 122.9 ustu. BIMAS 397.75 stop 397.33 ustu. TUPRS 379.0 stop 348.71 ustu."
     },
     "crypto": {
-      "label": "WAIT, BTC EMA21 alti RSI<45",
-      "reason": "WAIT. APT stop BE 0.7755 kirildi 0.7677, kalan 216.634 SAT, net -1.94, fee 0.25. Yeni giris yok, kaldirac yok. Alt used 230.89/1400, oda 1169.11. BTC 83824.36 4s EMA21 85149.82 alti, RSI 36.68, yeni alt yok. TON 24s +0.95 lider elendi. BNB stop BE 766.39 ustu (770.61). AVAX TP1 11.7051 alti (11.14). NEAR TP2 5.387 alti (5.12). BTC stop BE 83742 ustu (83824.36).",
+      "label": "WAIT, BTC stop ve EMA21 alti",
+      "reason": "WAIT. BTC stop BE 83742 kirildi 83356.99, kalan 0.001671 SAT, net -0.85, fee 0.21. Yeni giris yok, kaldirac yok. Alt used 229.66/1400, oda 1170.34. BTC 83356.99 4s EMA21 84983.03 alti, RSI 32.70, yeni alt yok. TRX 24s -0.21 lider elendi. BNB stop BE 766.39 ustu (766.54). AVAX TP1 11.7051 alti (11.168). NEAR TP2 5.387 alti (5.035).",
       "next": [
         "14 Eki CPI 15:30 TSI",
         "15 Eki PPI 15:30 TSI",
@@ -1286,39 +1278,60 @@
       "action": "WAIT",
       "symbol": "-",
       "reason": "WAIT. Seans acik. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. PETKM +2.12 seans lideri elendi, EMA21 20.66 EMA55 20.81 alti. YKBNK 36.30 EMA21 35.740 EMA55 35.742, EMA21 ustu degil, trend yok. Diger isimler fiyat EMA21 veya EMA55 alti. ASTOR temettu 15.10, AL yok. AEFES odeme 05.10 gecti. KAP: KPEKS/RGYAS temettu bugun evren disi. KOZAL Yahoo 404. USDTTRY 49.2. THYAO 287.75 stop 266.39 ustu. GARAN 129.4 TP2 137.36 alti stop BE 122.9 ustu. BIMAS 402.25 stop 397.33 ustu. TUPRS 380.0 stop 348.71 ustu."
+    },
+    {
+      "time": "2026-10-07T13:25:00+00:00",
+      "market": "binance",
+      "action": "SAT",
+      "symbol": "BTCUSDT",
+      "reason": "BTC stop BE 83742 kirildi 83356.99, kalan 0.001671 SAT, net -0.85, fee 0.21. Yeni alt yok: BTC 83356.99 4s EMA21 84983.03 alti, RSI 32.70."
+    },
+    {
+      "time": "2026-10-07T13:25:00+00:00",
+      "market": "us",
+      "action": "WAIT_SESSION",
+      "symbol": "-",
+      "reason": "WAIT_SESSION. Carsamba 16:25 TSİ, NY 09:25, acilis 16:30, bu tur AL/SAT yok. Son kapanis SPY 779.09 TP2 786.78 alti, QQQ 759.66 TP2 771.68 alti, NVDA 239.24 TP2 246.12 alti stop BE 230.86 ustu, AAPL 333.63 stop 324.86 ustu, MSFT 529.3 TP1 536.34 alti. TSLA son kapanis lideri elendi."
+    },
+    {
+      "time": "2026-10-07T13:25:00+00:00",
+      "market": "bist",
+      "action": "WAIT",
+      "symbol": "-",
+      "reason": "WAIT. Seans acik. TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. YKBNK +4.3 seans lideri elendi, EMA21 35.746 EMA55 35.765 ustu tampon %1.61, lider oldugu icin AL yok. PETKM 19.98 EMA21 20.641 EMA55 20.769 alti. Diger isimler fiyat EMA21 alti. ASTOR temettu 15.10, AL yok. AEFES odeme 05.10 gecti. KAP: RGYAS temettu hak 7 Eki evren disi. KOZAL Yahoo 404. USDTTRY 49.19. THYAO 285.5 stop 266.39 ustu. GARAN 129.1 TP2 137.36 alti stop BE 122.9 ustu. BIMAS 397.75 stop 397.33 ustu. TUPRS 379.0 stop 348.71 ustu."
     }
   ],
   "fx": {
-    "USDTTRY": 49.2
+    "USDTTRY": 49.19
   },
   "mark": {
-    "at": "2026-10-07T09:16:00.000Z",
+    "at": "2026-10-07T13:25:00.000Z",
     "source": "paper-tick",
     "near": [
       {
-        "symbol": "BTCUSDT",
-        "level": "stop",
-        "px": 83824.36
-      },
-      {
         "symbol": "BNBUSDT",
         "level": "stop",
-        "px": 770.61
+        "px": 766.54
       },
       {
         "symbol": "AVAXUSDT",
         "level": "stop",
-        "px": 11.14
+        "px": 11.168
       },
       {
         "symbol": "NEARUSDT",
         "level": "tp2",
-        "px": 5.12
+        "px": 5.035
+      },
+      {
+        "symbol": "BIMAS.IS",
+        "level": "stop",
+        "px": 397.75
       },
       {
         "symbol": "GARAN.IS",
         "level": "tp2",
-        "px": 129.4
+        "px": 129.1
       }
     ]
   }
