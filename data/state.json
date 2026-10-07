@@ -1330,6 +1330,13 @@
       "action": "SAT",
       "symbol": "BIMAS.IS",
       "reason": "BIMAS stop 397.33 kirildi 394.25, kalan 37.4654 SAT, net -19.22, fee 0.75. Yeni giris yok, kaldirac yok. Seans 18:00 kapandi, bu turdan sonra AL/SAT yok. PETKM +1.11 lider elendi, EMA21 20.643 EMA55 20.798 alti. YKBNK EMA21 35.769 EMA55 35.753 ustu tampon %2.27, lider degil, seans kapali AL yok. ASTOR temettu 15.10, AL yok. AEFES odeme 05.10 gecti. KOZAL Yahoo 404. USDTTRY 49.2. THYAO 286.5 stop 266.39 ustu. GARAN 129.8 TP2 137.36 alti stop BE 122.9 ustu. TUPRS 380.25 stop 348.71 ustu TP1 403.79 alti."
+    },
+    {
+      "time": "2026-10-07T19:11:00+00:00",
+      "market": "all",
+      "action": "ARCHIVE",
+      "symbol": "-",
+      "reason": "Gun sonu arsiv 2026-10-07. Kaynak state 2026-10-07T15:14:00Z (18:14 TSİ). 22:00 fiyat ticki yok, sayi uydurulmadi. equity 12050.63 cash 9508.21 uPnL 37.96 realized 23.03. Gun 5 kapanis (0 kazanc / 5 kayip), komisyon 2.59, yeni AL 0. Canli emir yok."
     }
   ],
   "fx": {

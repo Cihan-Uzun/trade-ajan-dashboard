@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-07",
+  "as_of": "2026-10-07T15:14:00.000Z",
+  "kind": "close",
+  "note": "Resmi gun kapanisi 22:00 TSİ. Kaynak panel tick 18:14 TSİ. 22:00 fiyat ticki yok, sayi uydurulmadi. Canli emir yok.",
+  "totals": {
+    "start": 12000,
+    "equity": 12050.63,
+    "cash": 9508.21,
+    "unrealized": 37.96,
+    "realized": 23.03,
+    "pnl": 50.63
+  },
+  "books": {
+    "binance": {
+      "equity": 4017.65,
+      "cash": 3788.27,
+      "unrealized": 1.44,
+      "realized": 19.5,
+      "open": 3,
+      "start": 4000
+    },
+    "us": {
+      "equity": 4031.64,
+      "cash": 2564.93,
+      "unrealized": 18.74,
+      "realized": 14.56,
+      "open": 5,
+      "start": 4000
+    },
+    "bist": {
+      "equity": 4001.34,
+      "cash": 3155.01,
+      "unrealized": 17.78,
+      "realized": -11.03,
+      "open": 3,
+      "start": 4000
+    }
+  },
+  "day": {
+    "realized": -44.22,
+    "fees": 2.59,
+    "wins": 0,
+    "losses": 5,
+    "opens": 0,
+    "closes": [
+      {
+        "market": "binance",
+        "symbol": "SOLUSDT",
+        "action": "SAT",
+        "time": "2026-10-07T07:17:00.000Z",
+        "price": 118.84,
+        "qty": 4.75278,
+        "fee": 0.85,
+        "pnl": -3.08,
+        "reason": "Stop BE 119.31 kirildi (118.84). Kalan cikis, fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "binance",
+        "symbol": "LTCUSDT",
+        "action": "SAT",
+        "time": "2026-10-07T07:17:00.000Z",
+        "price": 67.72,
+        "qty": 5.2093,
+        "fee": 0.53,
+        "pnl": -19.13,
+        "reason": "Stop 68.6824 kirildi (67.72). Kalan cikis, fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "binance",
+        "symbol": "APTUSDT",
+        "action": "SAT",
+        "time": "2026-10-07T09:16:00.000Z",
+        "price": 0.7677,
+        "qty": 216.634,
+        "fee": 0.25,
+        "pnl": -1.94,
+        "reason": "Stop BE 0.7755 kirildi (0.7677). Kalan cikis, fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "binance",
+        "symbol": "BTCUSDT",
+        "action": "SAT",
+        "time": "2026-10-07T13:25:00.000Z",
+        "price": 83356.99,
+        "qty": 0.001671,
+        "fee": 0.21,
+        "pnl": -0.85,
+        "reason": "Stop BE 83742 kirildi (83356.99). Runner cikis, fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "bist",
+        "symbol": "BIMAS.IS",
+        "action": "SAT",
+        "time": "2026-10-07T15:14:00.000Z",
+        "price": 394.25,
+        "qty": 37.4654,
+        "fee": 0.75,
+        "pnl": -19.22,
+        "reason": "Stop 397.33 kirildi (394.25). Kalan cikis, fee komisyon 15bp + kayma 10bp. USDTTRY 49.2."
+      }
+    ]
+  },
+  "week": {
+    "label": "2026-10-05 / 2026-10-11"
+  },
+  "month": {
+    "label": "2026-10"
+  }
+}
