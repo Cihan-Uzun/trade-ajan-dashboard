@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-08",
+  "as_of": "2026-10-08T19:11:00.000Z",
+  "kind": "close",
+  "note": "Resmi gun kapanisi 22:11 TSİ paper tick. Binance vision + Yahoo regular. BIST seans kapali, son kapanis. Canli emir yok.",
+  "totals": {
+    "start": 12000,
+    "equity": 12047.49,
+    "cash": 10629.29,
+    "unrealized": 30.16,
+    "realized": 28.21,
+    "pnl": 47.49
+  },
+  "books": {
+    "binance": {
+      "equity": 4017.86,
+      "cash": 4017.86,
+      "unrealized": 0,
+      "realized": 21.15,
+      "open": 0,
+      "start": 4000
+    },
+    "us": {
+      "equity": 4023.2,
+      "cash": 3456.42,
+      "unrealized": 6.78,
+      "realized": 18.09,
+      "open": 2,
+      "start": 4000
+    },
+    "bist": {
+      "equity": 4006.43,
+      "cash": 3155.01,
+      "unrealized": 23.38,
+      "realized": -11.03,
+      "open": 3,
+      "start": 4000
+    }
+  },
+  "day": {
+    "realized": 5.18,
+    "fees": 0.62,
+    "wins": 5,
+    "losses": 3,
+    "opens": 0,
+    "closes": [
+      {
+        "market": "binance",
+        "symbol": "AVAXUSDT",
+        "action": "SAT",
+        "time": "2026-10-08T07:15:00.000Z",
+        "price": 10.917,
+        "qty": 4.60945,
+        "fee": 0.08,
+        "pnl": -0.98,
+        "reason": "BTC 4s EMA21 84399.11 alti (83114.38). TP1 11.7051 gelmedi. Rejim kurali, yarisi SAT. Fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "binance",
+        "symbol": "NEARUSDT",
+        "action": "SAT",
+        "time": "2026-10-08T07:15:00.000Z",
+        "price": 5.527,
+        "qty": 9.36008,
+        "fee": 0.08,
+        "pnl": 5.32,
+        "reason": "TP2 5.387 asildi (5.527). Kademeli cikis %40, stop giris+masraf 4.9649, runner kaldi. Fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "binance",
+        "symbol": "BNBUSDT",
+        "action": "SAT",
+        "time": "2026-10-08T07:15:00.000Z",
+        "price": 770.77,
+        "qty": 0.073069,
+        "fee": 0.08,
+        "pnl": 0.24,
+        "reason": "TP2 sonrasi tepe 797.81. Geri verme giris+(tepe-giris)*0.5=782.1 alti (770.77). Kalan cikis. Fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "binance",
+        "symbol": "NEARUSDT",
+        "action": "SAT",
+        "time": "2026-10-08T09:15:00.000Z",
+        "price": 5.19,
+        "qty": 4.68004,
+        "fee": 0.04,
+        "pnl": 1.08,
+        "reason": "Geri verme 5.2385 kirildi (5.190). Tepe 5.527, giris+(tepe-giris)*0.5. Kalan cikis, fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "binance",
+        "symbol": "AVAXUSDT",
+        "action": "SAT",
+        "time": "2026-10-08T15:13:00.000Z",
+        "price": 10.258,
+        "qty": 4.60945,
+        "fee": 0.07,
+        "pnl": -4.01,
+        "reason": "Stop 10.5189 kirildi (10.258). Rejim yarisi sonrasi kalan cikis. Fee taker 10bp + kayma 5bp."
+      },
+      {
+        "market": "us",
+        "symbol": "SPY",
+        "action": "SAT",
+        "time": "2026-10-08T19:11:00.000Z",
+        "price": 772.86,
+        "qty": 0.54774,
+        "fee": 0.13,
+        "pnl": 3.26,
+        "reason": "TP1 sonrasi tepe 781.15. Geri verme giris+(tepe-giris)*0.5=773.91 alti (772.86). Kalan cikis. Fee kayma 3bp."
+      },
+      {
+        "market": "us",
+        "symbol": "QQQ",
+        "action": "SAT",
+        "time": "2026-10-08T19:11:00.000Z",
+        "price": 745.76,
+        "qty": 0.4035,
+        "fee": 0.09,
+        "pnl": 0.81,
+        "reason": "TP1 sonrasi tepe 762.64. Geri verme giris+(tepe-giris)*0.5=753.09 alti (745.76). Kalan cikis. Fee kayma 3bp."
+      },
+      {
+        "market": "us",
+        "symbol": "NVDA",
+        "action": "SAT",
+        "time": "2026-10-08T19:11:00.000Z",
+        "price": 230.19,
+        "qty": 0.72774,
+        "fee": 0.05,
+        "pnl": -0.54,
+        "reason": "Stop BE 230.86 kirildi (230.19). Kalan cikis, fee kayma 3bp."
+      }
+    ]
+  },
+  "week": {
+    "label": "2026-10-05 / 2026-10-11"
+  },
+  "month": {
+    "label": "2026-10"
+  }
+}
