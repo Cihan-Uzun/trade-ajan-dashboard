@@ -1337,6 +1337,13 @@
       "action": "ARCHIVE",
       "symbol": "-",
       "reason": "Gun sonu arsiv 2026-10-07. Kaynak state 2026-10-07T15:14:00Z (18:14 TSİ). 22:00 fiyat ticki yok, sayi uydurulmadi. equity 12050.63 cash 9508.21 uPnL 37.96 realized 23.03. Gun 5 kapanis (0 kazanc / 5 kayip), komisyon 2.59, yeni AL 0. Canli emir yok."
+    },
+    {
+      "time": "2026-10-08T07:05:00+00:00",
+      "market": "tavan",
+      "action": "NO_BUY",
+      "symbol": "-",
+      "reason": "10:05 TSI karar. Watch bos, dun 18:10 listesi yazilmamis, isim yok. Acik pozisyon yok. Yeni AL yok, kilitli tavan kovalanmadi. Kapanis 0, kar faktoru yok, halted false. Nakit 400, equity 400."
     }
   ],
   "fx": {
@@ -1375,6 +1382,9 @@
     "wins": 0,
     "losses": 0,
     "halted": false,
-    "note": "Cekirdek kitaptan ayri. Ayni gun alis yok."
+    "note": "Cekirdek kitaptan ayri. 2026-10-08 10:05 AL yok: watch bos.",
+    "as_of": "2026-10-08T07:05:00.000Z",
+    "decision": "NO_BUY",
+    "reason": "10:05 TSI karar. Watch bos, dun 18:10 listesi yazilmamis, isim yok. Acik pozisyon yok. Yeni AL yok, kilitli tavan kovalanmadi. Kapanis 0, kar faktoru yok, halted false. Nakit 400, equity 400."
   }
 }
