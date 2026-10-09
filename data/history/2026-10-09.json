@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-09",
+  "as_of": "2026-10-09T19:13:00.000Z",
+  "kind": "close",
+  "note": "Resmi gun kapanisi 22:13 TSİ paper tick. Binance vision + Yahoo regular. BIST seans kapali, son kapanis. Canli emir yok.",
+  "totals": {
+    "start": 12000,
+    "equity": 12052.5,
+    "cash": 10629.29,
+    "unrealized": 35.67,
+    "realized": 28.21,
+    "pnl": 52.5
+  },
+  "books": {
+    "binance": {
+      "equity": 4017.86,
+      "cash": 4017.86,
+      "unrealized": 0,
+      "realized": 21.15,
+      "open": 0,
+      "start": 4000
+    },
+    "us": {
+      "equity": 4028.91,
+      "cash": 3456.42,
+      "unrealized": 12.49,
+      "realized": 18.09,
+      "open": 2,
+      "start": 4000
+    },
+    "bist": {
+      "equity": 4005.73,
+      "cash": 3155.01,
+      "unrealized": 23.18,
+      "realized": -11.03,
+      "open": 3,
+      "start": 4000
+    }
+  },
+  "day": {
+    "realized": 0,
+    "fees": 0,
+    "wins": 0,
+    "losses": 0,
+    "opens": 0,
+    "closes": []
+  },
+  "week": {
+    "label": "2026-10-05 / 2026-10-11"
+  },
+  "month": {
+    "label": "2026-10"
+  }
+}
