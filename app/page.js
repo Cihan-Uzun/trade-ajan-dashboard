@@ -191,14 +191,14 @@ export default function Page() {
   const view = useMemo(() => {
     if (!state) return null;
     if (tab === "all") {
-      const trades = MARKETS.flatMap((k) => (books[k].trades || []).map((t) => ({ ...t, market: t.market || k })));
-      const positions = MARKETS.flatMap((k) => (books[k].positions || []).map((p) => ({ ...p, market: k })));
+      const trades = MARKETS.flatMap((k) => ((books[k] && books[k].trades) || []).map((t) => ({ ...t, market: t.market || k })));
+      const positions = MARKETS.flatMap((k) => ((books[k] && books[k].positions) || []).map((p) => ({ ...p, market: k })));
       trades.sort((a, b) => (a.time < b.time ? 1 : -1));
       return { positions, trades, book: null };
     }
     return {
-      positions: (books[tab].positions || []).map((p) => ({ ...p, market: tab })),
-      trades: [...(books[tab].trades || [])].map((t) => ({ ...t, market: t.market || tab })).reverse(),
+      positions: ((books[tab] && books[tab].positions) || []).map((p) => ({ ...p, market: tab })),
+      trades: [...((books[tab] && books[tab].trades) || [])].map((t) => ({ ...t, market: t.market || tab })).reverse(),
       book: books[tab],
     };
   }, [state, tab, books]);
