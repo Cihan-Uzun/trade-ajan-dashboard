@@ -14,7 +14,7 @@
     "ATOMUSDT": 2.08,
     "DOGEUSDT": 0.0847,
     "BCHUSDT": 274.3,
-    "USDTTRY": 49.21,
+    "USDTTRY": 49.23,
     "SOLUSDT": 110.1,
     "DOTUSDT": 1.204,
     "UNIUSDT": 7.303,
@@ -107,5 +107,13 @@
       "symbol": "-",
       "reason": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Binance acik pozisyon yok, alt used 0/1400. BTC 82722.95 gunluk EMA21 83169.25 alti, 4s EMA21 83249.67 alti, yeni alt yok. ABD WAIT_SESSION. BIST WAIT_SESSION. Hafta sonu."
     }
-  ]
+  ],
+  "fx": {
+    "USDTTRY": 49.23
+  },
+  "mark": {
+    "at": "2026-10-10T06:53:09.723490+00:00",
+    "source": "github-action",
+    "near": []
+  }
 }
