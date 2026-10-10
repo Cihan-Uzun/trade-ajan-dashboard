@@ -1,10 +1,10 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-10T09:13:00.000Z",
+  "updated_at": "2026-10-10T13:13:00.000Z",
   "quotes": {
-    "BTCUSDT": 82828.4,
-    "ETHUSDT": 2494.43,
+    "BTCUSDT": 82821.78,
+    "ETHUSDT": 2496.85,
     "BNBUSDT": 740.79,
     "LTCUSDT": 63.85,
     "ADAUSDT": 0.2514,
@@ -15,18 +15,18 @@
     "DOGEUSDT": 0.0847,
     "BCHUSDT": 274.3,
     "USDTTRY": 49.23,
-    "SOLUSDT": 109.96,
+    "SOLUSDT": 109.66,
     "DOTUSDT": 1.209,
     "UNIUSDT": 7.303,
     "AVAXUSDT": 10.286,
     "AAVEUSDT": 167.92,
-    "NEARUSDT": 4.975,
+    "NEARUSDT": 5.225,
     "FILUSDT": 1.0761,
     "INJUSDT": 6.887,
     "OPUSDT": 0.1247,
     "APTUSDT": 0.8158,
     "ARBUSDT": 0.1789,
-    "SUIUSDT": 1.0634,
+    "SUIUSDT": 1.1193,
     "TONUSDT": 1.6,
     "POLUSDT": 0.09894,
     "SPY": 778.57,
@@ -80,7 +80,7 @@
     "ASTOR.IS": 204.4
   },
   "decisions": {
-    "binance": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 82828.40 gunluk EMA21 83242 alti, 4s EMA21 83093 alti, RSI 43.71, yeni alt yok. Acik alt yok. ATOM 24s +5.47 lider elendi.",
+    "binance": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 82821.78 gunluk EMA21 ~82888 alti, 4s EMA21 ~83406 alti, RSI ~43, yeni alt yok. Acik alt yok. NEAR 24s +9.88 lider elendi.",
     "us": "WAIT_SESSION. Hafta sonu, AL/SAT yok.",
     "bist": "WAIT_SESSION. Hafta sonu, AL/SAT yok."
   },
@@ -629,6 +629,13 @@
     }
   ],
   "journal": [
+    {
+      "time": "2026-10-10T13:13:00+00:00",
+      "market": "binance",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 82821.78 gunluk EMA21 ~82888 alti, 4s EMA21 ~83406 alti, RSI ~43, yeni alt yok. Acik alt yok. NEAR 24s +9.88 lider elendi."
+    },
     {
       "time": "2026-10-10T09:13:00+00:00",
       "market": "binance",
