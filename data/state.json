@@ -14,7 +14,7 @@
     "ATOMUSDT": 1.986,
     "DOGEUSDT": 0.0847,
     "BCHUSDT": 274.3,
-    "USDTTRY": 49.23,
+    "USDTTRY": 49.31,
     "SOLUSDT": 109.66,
     "DOTUSDT": 1.209,
     "UNIUSDT": 7.303,
@@ -232,9 +232,9 @@
     "us": {
       "cash": 3456.42,
       "start": 4000,
-      "unrealized": 12.49,
+      "unrealized": 10.52,
       "realized": 18.09,
-      "equity": 4028.91,
+      "equity": 4026.95,
       "open_count": 2,
       "decision": "WAIT",
       "positions": [
@@ -431,9 +431,9 @@
     "bist": {
       "cash": 3155.01,
       "start": 4000,
-      "unrealized": 23.18,
+      "unrealized": 23.16,
       "realized": -11.03,
-      "equity": 4005.73,
+      "equity": 4004.87,
       "open_count": 3,
       "decision": "WAIT_SESSION",
       "fx": 49.22,
@@ -1086,12 +1086,18 @@
     }
   ],
   "fx": {
-    "USDTTRY": 49.23
+    "USDTTRY": 49.31
   },
   "mark": {
-    "at": "2026-10-10T06:53:09.723490+00:00",
+    "at": "2026-10-10T13:29:27.395518+00:00",
     "source": "github-action",
-    "near": []
+    "near": [
+      {
+        "symbol": "MSFT",
+        "level": "tp1",
+        "px": 535.07
+      }
+    ]
   },
   "tavan": {
     "start": 400,
