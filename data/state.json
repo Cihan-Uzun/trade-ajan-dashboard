@@ -1,32 +1,32 @@
 {
   "version": "0.2",
   "mode": "PAPER",
-  "updated_at": "2026-10-11T05:15:00.000Z",
+  "updated_at": "2026-10-11T09:18:00.000Z",
   "quotes": {
-    "BTCUSDT": 82980.0,
-    "ETHUSDT": 2505.5,
-    "BNBUSDT": 750.1,
-    "LTCUSDT": 64.3,
-    "ADAUSDT": 0.256,
-    "XRPUSDT": 1.405,
-    "TRXUSDT": 0.332,
-    "LINKUSDT": 13.15,
-    "ATOMUSDT": 1.97,
-    "DOGEUSDT": 0.0865,
-    "BCHUSDT": 280.0,
+    "BTCUSDT": 83050.0,
+    "ETHUSDT": 2503.5,
+    "BNBUSDT": 747.6,
+    "LTCUSDT": 63.8,
+    "ADAUSDT": 0.248,
+    "XRPUSDT": 1.40,
+    "TRXUSDT": 0.330,
+    "LINKUSDT": 12.87,
+    "ATOMUSDT": 1.94,
+    "DOGEUSDT": 0.0853,
+    "BCHUSDT": 277.5,
     "USDTTRY": 49.18,
-    "SOLUSDT": 110.15,
-    "DOTUSDT": 1.265,
-    "UNIUSDT": 7.6,
-    "AVAXUSDT": 10.52,
-    "AAVEUSDT": 171.5,
-    "NEARUSDT": 5.45,
+    "SOLUSDT": 109.6,
+    "DOTUSDT": 1.24,
+    "UNIUSDT": 7.52,
+    "AVAXUSDT": 10.33,
+    "AAVEUSDT": 167.4,
+    "NEARUSDT": 5.26,
     "FILUSDT": 1.14,
-    "INJUSDT": 7.5,
-    "OPUSDT": 0.139,
-    "APTUSDT": 0.85,
-    "ARBUSDT": 0.187,
-    "SUIUSDT": 1.13,
+    "INJUSDT": 7.66,
+    "OPUSDT": 0.142,
+    "APTUSDT": 0.844,
+    "ARBUSDT": 0.20,
+    "SUIUSDT": 1.10,
     "TONUSDT": 1.47,
     "POLUSDT": 0.102,
     "SPY": 778.57,
@@ -80,7 +80,7 @@
     "ASTOR.IS": 204.4
   },
   "decisions": {
-    "binance": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 82980.00 gunluk EMA21 ~82893 ustu (ince), 4s EMA21 ~83380 alti, RSI ~46, yeni alt yok (4s alti). Acik alt yok. NEAR 24s lider elendi.",
+    "binance": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 83050.00 gunluk EMA21 ~82900 ustu (ince), 4s EMA21 ~83380 alti, RSI ~48, yeni alt yok (4s alti). Acik alt yok. NEAR 24s lider elendi.",
     "us": "WAIT_SESSION. Hafta sonu, AL/SAT yok.",
     "bist": "WAIT_SESSION. Hafta sonu, AL/SAT yok."
   },
@@ -611,6 +611,13 @@
   },
   "journal": [
     {
+      "time": "2026-10-11T09:18:00+00:00",
+      "market": "binance",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 83050.00 gunluk EMA21 ~82900 ustu (ince), 4s EMA21 ~83380 alti, RSI ~48, yeni alt yok (4s alti). Acik alt yok. NEAR 24s lider elendi."
+    },
+    {
       "time": "2026-10-11T05:15:00+00:00",
       "market": "binance",
       "action": "TICK",
@@ -629,14 +636,8 @@
     "USDTTRY": 49.18
   },
   "mark": {
-    "at": "2026-10-11T08:36:10.249189+00:00",
-    "source": "github-action",
-    "near": [
-      {
-        "symbol": "MSFT",
-        "level": "tp1",
-        "px": 535.07
-      }
-    ]
+    "at": "2026-10-11T09:18:00.000Z",
+    "source": "paper-tick",
+    "near": []
   }
 }
