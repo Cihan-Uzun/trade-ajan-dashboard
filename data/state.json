@@ -14,7 +14,7 @@
     "ATOMUSDT": 1.97,
     "DOGEUSDT": 0.0865,
     "BCHUSDT": 280.0,
-    "USDTTRY": 49.23,
+    "USDTTRY": 49.18,
     "SOLUSDT": 110.15,
     "DOTUSDT": 1.265,
     "UNIUSDT": 7.6,
@@ -431,9 +431,9 @@
     "bist": {
       "cash": 3155.01,
       "start": 4000,
-      "unrealized": 23.19,
+      "unrealized": 23.22,
       "realized": -11.03,
-      "equity": 4006.25,
+      "equity": 4007.11,
       "open_count": 3,
       "decision": "WAIT_SESSION",
       "fx": 49.22,
@@ -624,5 +624,19 @@
       "symbol": "-",
       "reason": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 82944.00 gunluk EMA21 ~82893 ustu (ince), 4s EMA21 ~83380 alti, RSI ~45, yeni alt yok (4s alti). Acik alt yok. NEAR 24s lider elendi."
     }
-  ]
+  ],
+  "fx": {
+    "USDTTRY": 49.18
+  },
+  "mark": {
+    "at": "2026-10-11T08:36:10.249189+00:00",
+    "source": "github-action",
+    "near": [
+      {
+        "symbol": "MSFT",
+        "level": "tp1",
+        "px": 535.07
+      }
+    ]
+  }
 }
