@@ -8,13 +8,13 @@
     "BNBUSDT": 747.6,
     "LTCUSDT": 63.8,
     "ADAUSDT": 0.248,
-    "XRPUSDT": 1.40,
-    "TRXUSDT": 0.330,
+    "XRPUSDT": 1.4,
+    "TRXUSDT": 0.33,
     "LINKUSDT": 12.87,
     "ATOMUSDT": 1.94,
     "DOGEUSDT": 0.0853,
     "BCHUSDT": 277.5,
-    "USDTTRY": 49.18,
+    "USDTTRY": 49.2,
     "SOLUSDT": 109.6,
     "DOTUSDT": 1.24,
     "UNIUSDT": 7.52,
@@ -25,8 +25,8 @@
     "INJUSDT": 7.66,
     "OPUSDT": 0.142,
     "APTUSDT": 0.844,
-    "ARBUSDT": 0.20,
-    "SUIUSDT": 1.10,
+    "ARBUSDT": 0.2,
+    "SUIUSDT": 1.1,
     "TONUSDT": 1.47,
     "POLUSDT": 0.102,
     "SPY": 778.57,
@@ -431,9 +431,9 @@
     "bist": {
       "cash": 3155.01,
       "start": 4000,
-      "unrealized": 23.22,
+      "unrealized": 23.21,
       "realized": -11.03,
-      "equity": 4007.11,
+      "equity": 4006.77,
       "open_count": 3,
       "decision": "WAIT_SESSION",
       "fx": 49.22,
@@ -633,11 +633,17 @@
     }
   ],
   "fx": {
-    "USDTTRY": 49.18
+    "USDTTRY": 49.2
   },
   "mark": {
-    "at": "2026-10-11T09:18:00.000Z",
-    "source": "paper-tick",
-    "near": []
+    "at": "2026-10-11T15:31:02.521382+00:00",
+    "source": "github-action",
+    "near": [
+      {
+        "symbol": "MSFT",
+        "level": "tp1",
+        "px": 535.07
+      }
+    ]
   }
 }
