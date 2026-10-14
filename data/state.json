@@ -54,30 +54,30 @@
     "NFLX": 70.46,
     "AMD": 605.53,
     "CRM": 238.01,
-    "THYAO.IS": 286.25,
-    "GARAN.IS": 131.3,
-    "AKBNK.IS": 68.75,
-    "ISCTR.IS": 13.05,
-    "YKBNK.IS": 36.42,
-    "BIMAS.IS": 411.25,
-    "TUPRS.IS": 385.75,
-    "SISE.IS": 37.88,
+    "THYAO.IS": 283.0,
+    "GARAN.IS": 130.9,
+    "AKBNK.IS": 67.95,
+    "ISCTR.IS": 13.12,
+    "YKBNK.IS": 36.2,
+    "BIMAS.IS": 409.75,
+    "TUPRS.IS": 394.5,
+    "SISE.IS": 37.94,
     "KCHOL.IS": 212.5,
-    "SAHOL.IS": 85.65,
-    "ASELS.IS": 350.75,
-    "EREGL.IS": 37.26,
-    "TCELL.IS": 99.45,
-    "PGSUS.IS": 132.6,
-    "TTKOM.IS": 52.25,
-    "FROTO.IS": 72.65,
-    "AEFES.IS": 18.5,
-    "TOASO.IS": 260.5,
-    "PETKM.IS": 20.88,
+    "SAHOL.IS": 85.9,
+    "ASELS.IS": 349.25,
+    "EREGL.IS": 37.58,
+    "TCELL.IS": 99.3,
+    "PGSUS.IS": 131.2,
+    "TTKOM.IS": 52.1,
+    "FROTO.IS": 72.4,
+    "AEFES.IS": 18.39,
+    "TOASO.IS": 255.0,
+    "PETKM.IS": 21.08,
     "HEKTS.IS": 2.14,
-    "ENKAI.IS": 80.65,
-    "MGROS.IS": 497.25,
-    "VESTL.IS": 17.48,
-    "ASTOR.IS": 196.0
+    "ENKAI.IS": 80.3,
+    "MGROS.IS": 489.5,
+    "VESTL.IS": 17.19,
+    "ASTOR.IS": 198.6
   },
   "decisions": {
     "binance": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 83050.00 gunluk EMA21 ~82900 ustu (ince), 4s EMA21 ~83380 alti, RSI ~48, yeni alt yok (4s alti). Acik alt yok. NEAR 24s lider elendi.",
@@ -431,9 +431,9 @@
     "bist": {
       "cash": 3155.01,
       "start": 4000,
-      "unrealized": 24.44,
+      "unrealized": 27.56,
       "realized": -11.03,
-      "equity": 4006.14,
+      "equity": 4009.27,
       "open_count": 3,
       "decision": "WAIT_SESSION",
       "fx": 49.22,
@@ -636,13 +636,13 @@
     "USDTTRY": 49.31
   },
   "mark": {
-    "at": "2026-10-14T06:01:34.058719+00:00",
+    "at": "2026-10-14T11:39:49.183517+00:00",
     "source": "github-action",
     "near": [
       {
         "symbol": "GARAN.IS",
         "level": "tp1",
-        "px": 131.3
+        "px": 130.9
       }
     ]
   }
