@@ -14,7 +14,7 @@
     "ATOMUSDT": 1.94,
     "DOGEUSDT": 0.0853,
     "BCHUSDT": 277.5,
-    "USDTTRY": 49.35,
+    "USDTTRY": 49.36,
     "SOLUSDT": 109.6,
     "DOTUSDT": 1.24,
     "UNIUSDT": 7.52,
@@ -54,30 +54,30 @@
     "NFLX": 70.57,
     "AMD": 570.82,
     "CRM": 235.95,
-    "THYAO.IS": 279.25,
-    "GARAN.IS": 130.5,
-    "AKBNK.IS": 67.1,
-    "ISCTR.IS": 13.01,
-    "YKBNK.IS": 35.94,
-    "BIMAS.IS": 408.0,
-    "TUPRS.IS": 391.0,
-    "SISE.IS": 37.42,
-    "KCHOL.IS": 211.2,
-    "SAHOL.IS": 84.75,
-    "ASELS.IS": 348.0,
-    "EREGL.IS": 37.1,
-    "TCELL.IS": 98.3,
-    "PGSUS.IS": 129.7,
-    "TTKOM.IS": 52.5,
-    "FROTO.IS": 71.85,
+    "THYAO.IS": 282.0,
+    "GARAN.IS": 133.1,
+    "AKBNK.IS": 67.85,
+    "ISCTR.IS": 13.23,
+    "YKBNK.IS": 36.42,
+    "BIMAS.IS": 402.5,
+    "TUPRS.IS": 382.75,
+    "SISE.IS": 37.56,
+    "KCHOL.IS": 212.2,
+    "SAHOL.IS": 85.2,
+    "ASELS.IS": 348.5,
+    "EREGL.IS": 37.14,
+    "TCELL.IS": 98.15,
+    "PGSUS.IS": 130.8,
+    "TTKOM.IS": 52.75,
+    "FROTO.IS": 71.65,
     "AEFES.IS": 18.24,
-    "TOASO.IS": 250.25,
-    "PETKM.IS": 20.78,
-    "HEKTS.IS": 2.11,
-    "ENKAI.IS": 79.75,
-    "MGROS.IS": 484.75,
-    "VESTL.IS": 16.78,
-    "ASTOR.IS": 193.0
+    "TOASO.IS": 249.6,
+    "PETKM.IS": 20.3,
+    "HEKTS.IS": 2.09,
+    "ENKAI.IS": 78.75,
+    "MGROS.IS": 477.0,
+    "VESTL.IS": 16.95,
+    "ASTOR.IS": 188.9
   },
   "decisions": {
     "binance": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 83050.00 gunluk EMA21 ~82900 ustu (ince), 4s EMA21 ~83380 alti, RSI ~48, yeni alt yok (4s alti). Acik alt yok. NEAR 24s lider elendi.",
@@ -431,9 +431,9 @@
     "bist": {
       "cash": 3155.01,
       "start": 4000,
-      "unrealized": 19.76,
+      "unrealized": 19.9,
       "realized": -11.03,
-      "equity": 4000.8,
+      "equity": 4000.78,
       "open_count": 3,
       "decision": "WAIT_SESSION",
       "fx": 49.22,
@@ -633,17 +633,11 @@
     }
   ],
   "fx": {
-    "USDTTRY": 49.35
+    "USDTTRY": 49.36
   },
   "mark": {
-    "at": "2026-10-15T04:09:21.298551+00:00",
+    "at": "2026-10-15T09:42:43.844639+00:00",
     "source": "github-action",
-    "near": [
-      {
-        "symbol": "GARAN.IS",
-        "level": "tp1",
-        "px": 130.5
-      }
-    ]
+    "near": []
   }
 }
