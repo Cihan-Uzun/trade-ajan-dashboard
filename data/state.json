@@ -14,7 +14,7 @@
     "ATOMUSDT": 1.94,
     "DOGEUSDT": 0.0853,
     "BCHUSDT": 277.5,
-    "USDTTRY": 49.45,
+    "USDTTRY": 49.46,
     "SOLUSDT": 109.6,
     "DOTUSDT": 1.24,
     "UNIUSDT": 7.52,
@@ -433,7 +433,7 @@
       "start": 4000,
       "unrealized": 1.77,
       "realized": -11.03,
-      "equity": 3981.14,
+      "equity": 3980.97,
       "open_count": 3,
       "decision": "WAIT_SESSION",
       "fx": 49.22,
@@ -633,10 +633,10 @@
     }
   ],
   "fx": {
-    "USDTTRY": 49.45
+    "USDTTRY": 49.46
   },
   "mark": {
-    "at": "2026-10-17T15:20:56.771091+00:00",
+    "at": "2026-10-17T18:19:43.754433+00:00",
     "source": "github-action",
     "near": []
   }
