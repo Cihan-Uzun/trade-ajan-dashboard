@@ -14,7 +14,7 @@
     "ATOMUSDT": 1.94,
     "DOGEUSDT": 0.0853,
     "BCHUSDT": 277.5,
-    "USDTTRY": 49.62,
+    "USDTTRY": 49.56,
     "SOLUSDT": 109.6,
     "DOTUSDT": 1.24,
     "UNIUSDT": 7.52,
@@ -54,30 +54,30 @@
     "NFLX": 67.05,
     "AMD": 507.93,
     "CRM": 250.29,
-    "THYAO.IS": 258.25,
-    "GARAN.IS": 128.5,
-    "AKBNK.IS": 64.5,
-    "ISCTR.IS": 12.41,
-    "YKBNK.IS": 35.46,
-    "BIMAS.IS": 372.0,
-    "TUPRS.IS": 354.0,
-    "SISE.IS": 33.94,
-    "KCHOL.IS": 196.1,
-    "SAHOL.IS": 87.25,
-    "ASELS.IS": 331.25,
-    "EREGL.IS": 33.88,
-    "TCELL.IS": 89.45,
-    "PGSUS.IS": 126.6,
-    "TTKOM.IS": 47.04,
-    "FROTO.IS": 66.2,
-    "AEFES.IS": 16.26,
-    "TOASO.IS": 222.2,
-    "PETKM.IS": 18.42,
-    "HEKTS.IS": 1.83,
-    "ENKAI.IS": 73.75,
-    "MGROS.IS": 440.0,
-    "VESTL.IS": 13.66,
-    "ASTOR.IS": 149.3
+    "THYAO.IS": 249.7,
+    "GARAN.IS": 122.6,
+    "AKBNK.IS": 61.35,
+    "ISCTR.IS": 11.81,
+    "YKBNK.IS": 33.84,
+    "BIMAS.IS": 368.25,
+    "TUPRS.IS": 352.0,
+    "SISE.IS": 32.66,
+    "KCHOL.IS": 190.4,
+    "SAHOL.IS": 83.65,
+    "ASELS.IS": 326.0,
+    "EREGL.IS": 31.6,
+    "TCELL.IS": 85.85,
+    "PGSUS.IS": 120.9,
+    "TTKOM.IS": 44.58,
+    "FROTO.IS": 63.05,
+    "AEFES.IS": 15.65,
+    "TOASO.IS": 214.9,
+    "PETKM.IS": 17.54,
+    "HEKTS.IS": 1.71,
+    "ENKAI.IS": 72.15,
+    "MGROS.IS": 423.25,
+    "VESTL.IS": 12.9,
+    "ASTOR.IS": 140.5
   },
   "decisions": {
     "binance": "TP/stop yok, kapanis yok, yeni giris yok, kaldirac yok. Alt used 0/1400. BTC 83050.00 gunluk EMA21 ~82900 ustu (ince), 4s EMA21 ~83380 alti, RSI ~48, yeni alt yok (4s alti). Acik alt yok. NEAR 24s lider elendi.",
@@ -431,9 +431,9 @@
     "bist": {
       "cash": 3155.01,
       "start": 4000,
-      "unrealized": -37.93,
+      "unrealized": -58.32,
       "realized": -11.03,
-      "equity": 3938.61,
+      "equity": 3919.22,
       "open_count": 3,
       "decision": "WAIT_SESSION",
       "fx": 49.22,
@@ -633,11 +633,17 @@
     }
   ],
   "fx": {
-    "USDTTRY": 49.62
+    "USDTTRY": 49.56
   },
   "mark": {
-    "at": "2026-10-23T07:17:02.583400+00:00",
+    "at": "2026-10-23T13:16:04.136315+00:00",
     "source": "github-action",
-    "near": []
+    "near": [
+      {
+        "symbol": "GARAN.IS",
+        "level": "stop",
+        "px": 122.6
+      }
+    ]
   }
 }
