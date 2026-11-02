@@ -24,8 +24,8 @@ export default function Page() {
     {id: 'bist', label: 'BIST'},
     {id: 'tavan', label: 'Tavan'},
     {id: 'approvals', label: 'Onaylar'},
-    {id: 'ledger', label: 'Ledger'},
-    {id: 'logs', label: 'Agent Logs'}
+    {id: 'ledger', label: 'Defter'},
+    {id: 'logs', label: 'Ajan Kayıtları'}
   ];
 
   const pnlColor = (n) => n > 0.005 ? '#34d399' : n < -0.005 ? '#fb7185' : '#e8eef8';
@@ -35,14 +35,14 @@ export default function Page() {
     return (
       <div className="panel">
         <h2>{key.toUpperCase()} Kitap</h2>
-        <p>Start: ${b.start || 0} | Equity: <span style={{color: pnlColor((b.equity||0)-(b.start||0))}}>${(b.equity||0).toFixed(2)}</span> | Cash: ${(b.cash||0).toFixed(2)}</p>
-        <p>uPnL: <span style={{color: pnlColor(b.unrealized||0)}}>${(b.unrealized||0).toFixed(2)}</span> | Realized: <span style={{color: pnlColor(b.realized||0)}}>${(b.realized||0).toFixed(2)}</span> | Open: {b.open_count || 0}</p>
-        {key === 'tavan' && b.watch && <p>Watch: {(b.watch || []).join(', ') || 'boş'}</p>}
+        <p>Başlangıç: ${b.start || 0} | Özsermaye: <span style={{color: pnlColor((b.equity||0)-(b.start||0))}}>${(b.equity||0).toFixed(2)}</span> | Nakit: ${(b.cash||0).toFixed(2)}</p>
+        <p>Açık K/Z: <span style={{color: pnlColor(b.unrealized||0)}}>${(b.unrealized||0).toFixed(2)}</span> | Gerçekleşen K/Z: <span style={{color: pnlColor(b.realized||0)}}>${(b.realized||0).toFixed(2)}</span> | Açık pozisyon: {b.open_count || 0}</p>
+        {key === 'tavan' && b.watch && <p>İzleme: {(b.watch || []).join(', ') || 'boş'}</p>}
         {key === 'tavan' && b.last_decision && <p>Son karar: {b.last_decision.action || '-'} ({b.last_decision.reason || ''})</p>}
         <h3>Pozisyonlar</h3>
-        <ul>{(b.positions || []).map((p,i) => <li key={i}>{p.symbol} qty:{p.qty_left} entry:{p.entry}</li>)}</ul>
+        <ul>{(b.positions || []).map((p,i) => <li key={i}>{p.symbol} adet:{p.qty_left} giriş:{p.entry}</li>)}</ul>
         <h3>Son işlemler</h3>
-        <ul>{(b.trades || []).slice(-5).map((t,i) => <li key={i}>{t.symbol} {t.side} pnl:<span style={{color: pnlColor(t.pnl||0)}}>${(t.pnl||0).toFixed(2)}</span></li>)}</ul>
+        <ul>{(b.trades || []).slice(-5).map((t,i) => <li key={i}>{t.symbol} {t.side} k/z:<span style={{color: pnlColor(t.pnl||0)}}>${(t.pnl||0).toFixed(2)}</span></li>)}</ul>
       </div>
     );
   };
@@ -75,7 +75,7 @@ export default function Page() {
       <div className="kicker">PAPER • GERÇEK VERİ • CANLI API YOK</div>
       <h1>Trade Ajanı</h1>
       <div className="meta">
-        Tenant: {state.tenant || 'default'} · Status: {state.status} · Integrity: {state.integrity?.ok ? 'OK' : 'FAIL'} · {state.updated_at}
+        Kiracı: {state.tenant || 'default'} · Durum: {state.status} · Bütünlük: {state.integrity?.ok ? 'TAMAM' : 'HATA'} · {state.updated_at}
       </div>
 
       <nav>
@@ -94,10 +94,10 @@ export default function Page() {
             return (
               <div key={k} className="card">
                 <h3>{k.toUpperCase()}</h3>
-                <p>Equity: <strong style={{color: pnlColor(pnl)}}>${(b.equity||0).toFixed(2)}</strong></p>
-                <p>uPnL: <span style={{color: pnlColor(b.unrealized||0)}}>${(b.unrealized||0).toFixed(2)}</span></p>
-                <p>Realized: <span style={{color: pnlColor(b.realized||0)}}>${(b.realized||0).toFixed(2)}</span></p>
-                <p>Open: {b.open_count || 0}</p>
+                <p>Özsermaye: <strong style={{color: pnlColor(pnl)}}>${(b.equity||0).toFixed(2)}</strong></p>
+                <p>Açık K/Z: <span style={{color: pnlColor(b.unrealized||0)}}>${(b.unrealized||0).toFixed(2)}</span></p>
+                <p>Gerçekleşen K/Z: <span style={{color: pnlColor(b.realized||0)}}>${(b.realized||0).toFixed(2)}</span></p>
+                <p>Açık pozisyon: {b.open_count || 0}</p>
               </div>
             );
           })}
@@ -117,8 +117,8 @@ export default function Page() {
 
       {tab === 'ledger' && (
         <div className="panel">
-          <h2>Compensation Ledger</h2>
-          {(state.ledger || []).length === 0 ? <p>Ledger boş.</p> : (
+          <h2>Tazminat Defteri</h2>
+          {(state.ledger || []).length === 0 ? <p>Defter boş.</p> : (
             <table style={{width:'100%', borderCollapse:'collapse'}}>
               <thead><tr><th>Tarih</th><th>Tip</th><th>Miktar</th><th>Açıklama</th></tr></thead>
               <tbody>{state.ledger.map((e,i) => <tr key={i}><td>{e.at}</td><td>{e.type}</td><td>{e.amount}</td><td>{e.note}</td></tr>)}</tbody>
@@ -129,8 +129,8 @@ export default function Page() {
 
       {tab === 'logs' && (
         <div className="panel">
-          <h2>Agent Runs</h2>
-          {(state.agent_runs || []).length === 0 ? <p>Log boş. Ajanlar çalıştıkça dolacak.</p> : (
+          <h2>Ajan Kayıtları</h2>
+          {(state.agent_runs || []).length === 0 ? <p>Kayıt boş. Ajanlar çalıştıkça dolacak.</p> : (
             <ul>{state.agent_runs.slice(-20).map((r,i) => (
               <li key={i}>{r.time || r.at || '-'} · {r.agent || r.market || '-'} · {r.action || r.decision || '-'} · {r.reason || ''}</li>
             ))}</ul>
@@ -140,7 +140,7 @@ export default function Page() {
 
       {state.policy_status && (
         <div className="policy">
-          <h3>Policy Durumu</h3>
+          <h3>Politika Durumu</h3>
           {Object.entries(state.policy_status).map(([k, v]) => (
             <p key={k}><strong>{k}:</strong> {v.allowed ? 'izinli' : 'yasak'} — {v.reason || ''}</p>
           ))}
