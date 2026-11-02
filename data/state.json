@@ -44,36 +44,53 @@
       "realized": 0,
       "positions": [],
       "trades": [],
-      "watch": ["HRKET", "HATSN", "IZFAS", "KARCL", "MCARD"],
+      "watch": [
+        "HRKET",
+        "HATSN",
+        "IZFAS",
+        "KARCL",
+        "MCARD"
+      ],
       "last_decision": null,
       "open_count": 0
     }
   },
   "config": {
-    "risk_rules": {"max_open_alts": 3, "day_halt_pct": -0.01},
+    "risk_rules": {
+      "max_open_alts": 3,
+      "day_halt_pct": -0.01
+    },
     "binance_alt_cap": 1400,
     "theme_cap": 0.4,
     "tavan_budget": 4000
   },
-  "policy": {"code_enforced": true},
+  "policy": {
+    "code_enforced": true
+  },
   "approvals": [],
   "agent_runs": [],
   "ledger": [],
-  "integrity": {"ok": true, "missing": []},
-  "quotes": {
-    "BTC": 77775,
-    "ETH": 2293,
-    "SPY": 760.29,
-    "QQQ": 696.22,
-    "AAPL": 340.37,
-    "MSFT": 525.30,
-    "NVDA": 208.47,
-    "THYAO": 255.75,
-    "GARAN": 127.90,
-    "BIMAS": 347.50,
-    "TUPRS": 336.75
+  "integrity": {
+    "ok": true,
+    "missing": []
   },
-  "fx": {"USDTTRY": 49.2},
+  "quotes": {
+    "BTC": 34.07,
+    "ETH": 21.565,
+    "SPY": 758.875,
+    "QQQ": 692.167,
+    "AAPL": 337.97,
+    "MSFT": 520.24,
+    "NVDA": 206.98,
+    "THYAO": 255.75,
+    "GARAN": 127.9,
+    "BIMAS": 347.5,
+    "TUPRS": 336.75,
+    "USDTTRY": 49.82
+  },
+  "fx": {
+    "USDTTRY": 49.82
+  },
   "journal": [
     {
       "time": "2026-11-02T14:30:00Z",
@@ -96,5 +113,10 @@
       "symbol": "-",
       "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80450), yeni alt yok. ABD WAIT (seans açık). BIST WAIT_SESSION (18:00 kapandı). Alt used 0/1400."
     }
-  ]
+  ],
+  "mark": {
+    "at": "2026-11-02T18:06:01.343001+00:00",
+    "source": "github-action",
+    "near": []
+  }
 }
