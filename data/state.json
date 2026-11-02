@@ -23,7 +23,22 @@
       "realized": 18.09,
       "positions": [],
       "trades": [],
-      "open_count": 0
+      "open_count": 0,
+      "last_mark": {
+        "at_et": "2026-11-02T09:24:00-05:00",
+        "session": "PRE_MARKET (closed)",
+        "source": "Yahoo Finance v8 chart regularMarketPrice (last close 2026-10-30 16:00 ET)",
+        "quotes": {
+          "SPY": 755.72,
+          "QQQ": 690.49,
+          "AAPL": 344.63,
+          "MSFT": 521.91,
+          "NVDA": 204.64
+        },
+        "positions_marked": 0,
+        "computed_equity_cash_plus_holdings": 3456.42,
+        "note": "No open positions; stored equity 4028.91 != cash 3456.42. equity/unrealized left unchanged pending review. No trades (outside session)."
+      }
     },
     "bist": {
       "start": 4000,
