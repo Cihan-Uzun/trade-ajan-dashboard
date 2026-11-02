@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-02T15:10:00Z",
+  "updated_at": "2026-11-02T15:17:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -60,7 +60,19 @@
   "agent_runs": [],
   "ledger": [],
   "integrity": {"ok": true, "missing": []},
-  "quotes": {},
+  "quotes": {
+    "BTC": 77775,
+    "ETH": 2293,
+    "SPY": 760.29,
+    "QQQ": 696.22,
+    "AAPL": 340.37,
+    "MSFT": 525.30,
+    "NVDA": 208.47,
+    "THYAO": 255.75,
+    "GARAN": 127.90,
+    "BIMAS": 347.50,
+    "TUPRS": 336.75
+  },
   "fx": {"USDTTRY": 49.2},
   "journal": [
     {
@@ -76,6 +88,13 @@
       "action": "WATCH",
       "symbol": "-",
       "reason": "Tavan liste 2026-11-02: HRKET HATSN IZFAS KARCL MCARD. Ana Pazar, +10% kilitli kapanış, hacim yeterli, KAP bedelli/soruşturma yok. Aynı gün AL yok."
+    },
+    {
+      "time": "2026-11-02T15:17:00Z",
+      "market": "system",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80450), yeni alt yok. ABD WAIT (seans açık). BIST WAIT_SESSION (18:00 kapandı). Alt used 0/1400."
     }
   ]
 }
