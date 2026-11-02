@@ -1,8 +1,9 @@
 {
-  "version": "0.3",
+  "version": "0.4",
   "status": "RUNNING",
+  "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:14:00Z",
-  "updated_at": "2026-11-02T14:14:00Z",
+  "updated_at": "2026-11-02T14:26:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -54,18 +55,25 @@
       "start": 400,
       "cash": 400,
       "equity": 400,
+      "unrealized": 0,
+      "realized": 0,
       "positions": [],
-      "trades": []
+      "trades": [],
+      "watch": [],
+      "last_decision": null,
+      "open_count": 0
     }
   },
   "config": {
     "risk_rules": {"max_open_alts": 3, "day_halt_pct": -0.01},
     "binance_alt_cap": 1400,
-    "theme_cap": 0.4
+    "theme_cap": 0.4,
+    "tavan_budget": 400
   },
   "policy": {"code_enforced": true},
   "approvals": [],
   "agent_runs": [],
+  "ledger": [],
   "integrity": {"ok": true, "missing": []},
   "quotes": {},
   "fx": {"USDTTRY": 49.2},
