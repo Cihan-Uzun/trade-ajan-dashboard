@@ -13,8 +13,8 @@ export default function Page() {
       .catch(e => setErr(e.message));
   }, []);
 
-  if (err) return <div style={{padding:20}}>Veri hatası: {err}</div>;
-  if (!state) return <div style={{padding:20}}>Yükleniyor...</div>;
+  if (err) return <div style={{padding:20, fontFamily:'system-ui'}}>Veri hatası: {err}</div>;
+  if (!state) return <div style={{padding:20, fontFamily:'system-ui'}}>Yükleniyor...</div>;
 
   const books = state.books || {};
   const tabs = [
@@ -35,8 +35,8 @@ export default function Page() {
         <h2>{key.toUpperCase()} Kitap</h2>
         <p>Start: {b.start} | Equity: {b.equity?.toFixed(2)} | Cash: {b.cash?.toFixed(2)}</p>
         <p>uPnL: {b.unrealized?.toFixed(2) || 0} | Realized: {b.realized?.toFixed(2) || 0} | Open: {b.open_count || 0}</p>
-        {key === 'tavan' && b.watch && <p>Watch: {b.watch.join(', ') || 'boş'}</p>}
-        {key === 'tavan' && b.last_decision && <p>Son karar: {JSON.stringify(b.last_decision)}</p>}
+        {key === 'tavan' && b.watch && <p>Watch: {(b.watch || []).join(', ') || 'boş'}</p>}
+        {key === 'tavan' && b.last_decision && <p>Son karar: {b.last_decision.action || '-'} ({b.last_decision.reason || ''})</p>}
         <h3>Pozisyonlar</h3>
         <ul>{(b.positions || []).map((p,i) => <li key={i}>{p.symbol} qty:{p.qty_left} entry:{p.entry}</li>)}</ul>
         <h3>Son işlemler</h3>
@@ -80,8 +80,7 @@ export default function Page() {
 
       {tab === 'approvals' && (
         <div>
-          <h2>Onay Akışı (Approval Workflow)</h2>
-          <p>Paper trade önerileri ve manuel onaylar. Tam workflow: propose → pending → approved/rejected → execute.</p>
+          <h2>Onay Akışı</h2>
           {(state.approvals || []).length === 0 ? <p>Bekleyen onay yok.</p> : (
             <ul>{state.approvals.map((a,i) => <li key={i}>{a.id}: {a.status} - {a.reason}</li>)}</ul>
           )}
@@ -91,7 +90,6 @@ export default function Page() {
       {tab === 'ledger' && (
         <div>
           <h2>Compensation Ledger</h2>
-          <p>Komisyon, slippage, adjustment, realized PnL double-entry tarzı kayıtlar. Tenant sınırlı.</p>
           {(state.ledger || []).length === 0 ? <p>Ledger boş.</p> : (
             <table style={{width:'100%', borderCollapse:'collapse'}}>
               <thead><tr><th>Tarih</th><th>Tip</th><th>Miktar</th><th>Açıklama</th></tr></thead>
@@ -103,18 +101,21 @@ export default function Page() {
 
       {tab === 'logs' && (
         <div>
-          <h2>Agent Runs Log (zengin)</h2>
-          <p>Her tick/karar: agent, market, action, confidence, policy checks, timestamp.</p>
+          <h2>Agent Runs</h2>
           {(state.agent_runs || []).length === 0 ? <p>Log boş. Ajanlar çalıştıkça dolacak.</p> : (
-            <ul>{state.agent_runs.slice(-20).map((r,i) => <li key={i}><pre>{JSON.stringify(r, null, 2)}</pre></li>)}</ul>
+            <ul>{state.agent_runs.slice(-20).map((r,i) => (
+              <li key={i}>{r.time || r.at || '-'} · {r.agent || r.market || '-'} · {r.action || r.decision || '-'} · {r.reason || ''}</li>
+            ))}</ul>
           )}
         </div>
       )}
 
       {state.policy_status && (
         <div style={{marginTop: 24, padding: 12, background: '#f5f5f5', borderRadius: 8}}>
-          <h3>Policy Status</h3>
-          <pre>{JSON.stringify(state.policy_status, null, 2)}</pre>
+          <h3>Policy Durumu</h3>
+          {Object.entries(state.policy_status).map(([k, v]) => (
+            <p key={k}><strong>{k}:</strong> {v.allowed ? 'izinli' : 'yasak'} — {v.reason || ''}</p>
+          ))}
         </div>
       )}
     </div>
