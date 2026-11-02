@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-02T14:30:00Z",
+  "updated_at": "2026-11-02T15:10:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -44,7 +44,7 @@
       "realized": 0,
       "positions": [],
       "trades": [],
-      "watch": [],
+      "watch": ["HRKET", "HATSN", "IZFAS", "KARCL", "MCARD"],
       "last_decision": null,
       "open_count": 0
     }
@@ -69,6 +69,13 @@
       "action": "RESET",
       "symbol": "-",
       "reason": "Cihan isteği: Binance/ABD/BIST 4000'er, tavan 4000. Toplam 16000. Önceki defter arşivlendi, açık pozisyon yoktu."
+    },
+    {
+      "time": "2026-11-02T15:10:00Z",
+      "market": "tavan",
+      "action": "WATCH",
+      "symbol": "-",
+      "reason": "Tavan liste 2026-11-02: HRKET HATSN IZFAS KARCL MCARD. Ana Pazar, +10% kilitli kapanış, hacim yeterli, KAP bedelli/soruşturma yok. Aynı gün AL yok."
     }
   ]
 }
