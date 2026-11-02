@@ -2,15 +2,15 @@
   "version": "0.4",
   "status": "RUNNING",
   "tenant": "cihan_uzun",
-  "restarted_at": "2026-11-02T14:14:00Z",
-  "updated_at": "2026-11-02T14:26:00Z",
+  "restarted_at": "2026-11-02T14:30:00Z",
+  "updated_at": "2026-11-02T14:30:00Z",
   "books": {
     "binance": {
       "start": 4000,
-      "cash": 4017.86,
-      "equity": 4017.86,
+      "cash": 4000,
+      "equity": 4000,
       "unrealized": 0,
-      "realized": 21.15,
+      "realized": 0,
       "positions": [],
       "trades": [],
       "alt_used": 0,
@@ -18,43 +18,28 @@
     },
     "us": {
       "start": 4000,
-      "cash": 3456.42,
-      "equity": 4028.91,
-      "unrealized": 12.49,
-      "realized": 18.09,
+      "cash": 4000,
+      "equity": 4000,
+      "unrealized": 0,
+      "realized": 0,
       "positions": [],
       "trades": [],
-      "open_count": 0,
-      "last_mark": {
-        "at_et": "2026-11-02T09:24:00-05:00",
-        "session": "PRE_MARKET (closed)",
-        "source": "Yahoo Finance v8 chart regularMarketPrice (last close 2026-10-30 16:00 ET)",
-        "quotes": {
-          "SPY": 755.72,
-          "QQQ": 690.49,
-          "AAPL": 344.63,
-          "MSFT": 521.91,
-          "NVDA": 204.64
-        },
-        "positions_marked": 0,
-        "computed_equity_cash_plus_holdings": 3456.42,
-        "note": "No open positions; stored equity 4028.91 != cash 3456.42. equity/unrealized left unchanged pending review. No trades (outside session)."
-      }
+      "open_count": 0
     },
     "bist": {
       "start": 4000,
-      "cash": 3155.01,
-      "equity": 4005.73,
-      "unrealized": 23.18,
-      "realized": -11.03,
+      "cash": 4000,
+      "equity": 4000,
+      "unrealized": 0,
+      "realized": 0,
       "positions": [],
       "trades": [],
       "open_count": 0
     },
     "tavan": {
-      "start": 400,
-      "cash": 400,
-      "equity": 400,
+      "start": 4000,
+      "cash": 4000,
+      "equity": 4000,
       "unrealized": 0,
       "realized": 0,
       "positions": [],
@@ -68,7 +53,7 @@
     "risk_rules": {"max_open_alts": 3, "day_halt_pct": -0.01},
     "binance_alt_cap": 1400,
     "theme_cap": 0.4,
-    "tavan_budget": 400
+    "tavan_budget": 4000
   },
   "policy": {"code_enforced": true},
   "approvals": [],
@@ -77,5 +62,13 @@
   "integrity": {"ok": true, "missing": []},
   "quotes": {},
   "fx": {"USDTTRY": 49.2},
-  "journal": []
+  "journal": [
+    {
+      "time": "2026-11-02T14:30:00Z",
+      "market": "system",
+      "action": "RESET",
+      "symbol": "-",
+      "reason": "Cihan isteği: Binance/ABD/BIST 4000'er, tavan 4000. Toplam 16000. Önceki defter arşivlendi, açık pozisyon yoktu."
+    }
+  ]
 }
