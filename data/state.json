@@ -1,1 +1,58 @@
-PLACEHOLDER
+{
+  "version": "0.3",
+  "status": "RUNNING",
+  "restarted_at": "2026-11-02T14:14:00Z",
+  "updated_at": "2026-11-02T14:14:00Z",
+  "books": {
+    "binance": {
+      "start": 4000,
+      "cash": 4017.86,
+      "equity": 4017.86,
+      "unrealized": 0,
+      "realized": 21.15,
+      "positions": [],
+      "trades": [],
+      "alt_used": 0,
+      "open_count": 0
+    },
+    "us": {
+      "start": 4000,
+      "cash": 3456.42,
+      "equity": 4028.91,
+      "unrealized": 12.49,
+      "realized": 18.09,
+      "positions": [],
+      "trades": [],
+      "open_count": 0
+    },
+    "bist": {
+      "start": 4000,
+      "cash": 3155.01,
+      "equity": 4005.73,
+      "unrealized": 23.18,
+      "realized": -11.03,
+      "positions": [],
+      "trades": [],
+      "open_count": 0
+    },
+    "tavan": {
+      "start": 400,
+      "cash": 400,
+      "equity": 400,
+      "positions": [],
+      "trades": []
+    }
+  },
+  "config": {
+    "risk_rules": {"max_open_alts": 3, "day_halt_pct": -0.01},
+    "binance_alt_cap": 1400,
+    "theme_cap": 0.4
+  },
+  "policy": {"code_enforced": true},
+  "approvals": [],
+  "agent_runs": [],
+  "integrity": {"ok": true, "missing": []},
+  "quotes": {},
+  "fx": {"USDTTRY": 49.2},
+  "journal": []
+}
