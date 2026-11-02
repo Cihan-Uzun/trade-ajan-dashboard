@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-02T15:17:00Z",
+  "updated_at": "2026-11-02T19:11:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -75,21 +75,21 @@
     "missing": []
   },
   "quotes": {
-    "BTC": 34.07,
-    "ETH": 21.565,
-    "SPY": 758.875,
-    "QQQ": 692.167,
-    "AAPL": 337.97,
-    "MSFT": 520.24,
-    "NVDA": 206.98,
+    "BTC": 76844.62,
+    "ETH": 2246.76,
+    "SPY": 756.38,
+    "QQQ": 687.95,
+    "AAPL": 337.05,
+    "MSFT": 517.20,
+    "NVDA": 205.12,
     "THYAO": 255.75,
     "GARAN": 127.9,
     "BIMAS": 347.5,
     "TUPRS": 336.75,
-    "USDTTRY": 49.82
+    "USDTTRY": 49.87
   },
   "fx": {
-    "USDTTRY": 49.82
+    "USDTTRY": 49.87
   },
   "journal": [
     {
@@ -112,11 +112,18 @@
       "action": "TICK",
       "symbol": "-",
       "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80450), yeni alt yok. ABD WAIT (seans açık). BIST WAIT_SESSION (18:00 kapandı). Alt used 0/1400."
+    },
+    {
+      "time": "2026-11-02T19:11:00Z",
+      "market": "system",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80450), 4s altı RSI ~39, yeni alt yok. ABD seans açık. BIST WAIT_SESSION. Alt used 0/1400. Quotes BTC 76844.62 ETH 2246.76 SPY 756.38 QQQ 687.95 AAPL 337.05 MSFT 517.20 NVDA 205.12 USDTTRY 49.87."
     }
   ],
   "mark": {
-    "at": "2026-11-02T18:06:01.343001+00:00",
-    "source": "github-action",
+    "at": "2026-11-02T19:11:00.000000+00:00",
+    "source": "paper-agent",
     "near": []
   }
 }
