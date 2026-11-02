@@ -13,8 +13,8 @@ export default function Page() {
       .catch(e => setErr(e.message));
   }, []);
 
-  if (err) return <div style={{padding:20, fontFamily:'system-ui'}}>Veri hatası: {err}</div>;
-  if (!state) return <div style={{padding:20, fontFamily:'system-ui'}}>Yükleniyor...</div>;
+  if (err) return <div style={{padding:20, fontFamily:'system-ui', background:'#0b1220', color:'#e8eef8', minHeight:'100vh'}}>Veri hatası: {err}</div>;
+  if (!state) return <div style={{padding:20, fontFamily:'system-ui', background:'#0b1220', color:'#e8eef8', minHeight:'100vh'}}>Yükleniyor...</div>;
 
   const books = state.books || {};
   const tabs = [
@@ -28,47 +28,75 @@ export default function Page() {
     {id: 'logs', label: 'Agent Logs'}
   ];
 
+  const pnlColor = (n) => n > 0.005 ? '#34d399' : n < -0.005 ? '#fb7185' : '#e8eef8';
+
   const renderBook = (key) => {
     const b = books[key] || {};
     return (
-      <div>
+      <div className="panel">
         <h2>{key.toUpperCase()} Kitap</h2>
-        <p>Start: {b.start} | Equity: {b.equity?.toFixed(2)} | Cash: {b.cash?.toFixed(2)}</p>
-        <p>uPnL: {b.unrealized?.toFixed(2) || 0} | Realized: {b.realized?.toFixed(2) || 0} | Open: {b.open_count || 0}</p>
+        <p>Start: ${b.start || 0} | Equity: <span style={{color: pnlColor((b.equity||0)-(b.start||0))}}>${(b.equity||0).toFixed(2)}</span> | Cash: ${(b.cash||0).toFixed(2)}</p>
+        <p>uPnL: <span style={{color: pnlColor(b.unrealized||0)}}>${(b.unrealized||0).toFixed(2)}</span> | Realized: <span style={{color: pnlColor(b.realized||0)}}>${(b.realized||0).toFixed(2)}</span> | Open: {b.open_count || 0}</p>
         {key === 'tavan' && b.watch && <p>Watch: {(b.watch || []).join(', ') || 'boş'}</p>}
         {key === 'tavan' && b.last_decision && <p>Son karar: {b.last_decision.action || '-'} ({b.last_decision.reason || ''})</p>}
         <h3>Pozisyonlar</h3>
         <ul>{(b.positions || []).map((p,i) => <li key={i}>{p.symbol} qty:{p.qty_left} entry:{p.entry}</li>)}</ul>
         <h3>Son işlemler</h3>
-        <ul>{(b.trades || []).slice(-5).map((t,i) => <li key={i}>{t.symbol} {t.side} pnl:{t.pnl}</li>)}</ul>
+        <ul>{(b.trades || []).slice(-5).map((t,i) => <li key={i}>{t.symbol} {t.side} pnl:<span style={{color: pnlColor(t.pnl||0)}}>${(t.pnl||0).toFixed(2)}</span></li>)}</ul>
       </div>
     );
   };
 
   return (
-    <div style={{fontFamily: 'system-ui', padding: 20, maxWidth: 1200, margin: '0 auto'}}>
-      <h1>Trade Ajan Paper Dashboard v0.4</h1>
-      <p>Tenant: {state.tenant || 'default'} | Status: {state.status} | Integrity: {state.integrity?.ok ? 'OK' : 'FAIL'} | Updated: {state.updated_at}</p>
-      <div style={{display: 'flex', gap: 8, margin: '16px 0', flexWrap: 'wrap'}}>
-        {tabs.map(t => (
-          <button key={t.id} onClick={() => setTab(t.id)} style={{
-            padding: '8px 16px', border: '1px solid #ccc', borderRadius: 6,
-            background: tab === t.id ? '#0070f3' : '#fff', color: tab === t.id ? '#fff' : '#000',
-            cursor: 'pointer'
-          }}>{t.label}</button>
-        ))}
+    <div className="wrap">
+      <style>{`
+        :root { --bg:#0b1220; --card:#121b2d; --line:#243044; --tx:#e8eef8; --mut:#8ea0b8; --up:#34d399; --dn:#fb7185; --acc:#2dd4bf; }
+        *{box-sizing:border-box}
+        body{margin:0;background:var(--bg);color:var(--tx);font-family:Inter,system-ui,Segoe UI,sans-serif}
+        .wrap{max-width:1100px;margin:0 auto;padding:18px 14px 48px}
+        h1{margin:4px 0 0;font-size:28px}
+        .kicker{color:var(--acc);font-size:11px;letter-spacing:.12em;font-weight:700}
+        .meta{color:var(--mut);font-size:13px;margin:8px 0 16px}
+        nav{display:flex;gap:8px;margin:16px 0;flex-wrap:wrap}
+        nav button{background:#1b2740;color:var(--tx);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer}
+        nav button.on{background:#134e4a;border-color:#2dd4bf}
+        .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+        .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+        .card h3{margin:0 0 8px;font-size:14px;color:var(--mut)}
+        .card p{margin:4px 0;font-size:14px}
+        .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:8px}
+        .panel h2,.panel h3{margin:12px 0 6px}
+        .policy{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:20px}
+        ul{padding-left:18px}
+        li{margin:4px 0}
+        .up{color:var(--up)} .dn{color:var(--dn)}
+      `}</style>
+
+      <div className="kicker">PAPER • GERÇEK VERİ • CANLI API YOK</div>
+      <h1>Trade Ajanı</h1>
+      <div className="meta">
+        Tenant: {state.tenant || 'default'} · Status: {state.status} · Integrity: {state.integrity?.ok ? 'OK' : 'FAIL'} · {state.updated_at}
       </div>
 
+      <nav>
+        {tabs.map(t => (
+          <button key={t.id} className={tab === t.id ? 'on' : ''} onClick={() => setTab(t.id)}>
+            {t.label}
+          </button>
+        ))}
+      </nav>
+
       {tab === 'genel' && (
-        <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 16}}>
+        <div className="cards">
           {['binance', 'us', 'bist', 'tavan'].map(k => {
             const b = books[k] || {};
+            const pnl = (b.equity || 0) - (b.start || 0);
             return (
-              <div key={k} style={{border: '1px solid #ddd', padding: 12, borderRadius: 8}}>
+              <div key={k} className="card">
                 <h3>{k.toUpperCase()}</h3>
-                <p>Equity: {b.equity?.toFixed(2) || 'N/A'}</p>
-                <p>uPnL: {b.unrealized?.toFixed(2) || 0}</p>
-                <p>Realized: {b.realized?.toFixed(2) || 0}</p>
+                <p>Equity: <strong style={{color: pnlColor(pnl)}}>${(b.equity||0).toFixed(2)}</strong></p>
+                <p>uPnL: <span style={{color: pnlColor(b.unrealized||0)}}>${(b.unrealized||0).toFixed(2)}</span></p>
+                <p>Realized: <span style={{color: pnlColor(b.realized||0)}}>${(b.realized||0).toFixed(2)}</span></p>
                 <p>Open: {b.open_count || 0}</p>
               </div>
             );
@@ -79,7 +107,7 @@ export default function Page() {
       {['binance', 'us', 'bist', 'tavan'].includes(tab) && renderBook(tab)}
 
       {tab === 'approvals' && (
-        <div>
+        <div className="panel">
           <h2>Onay Akışı</h2>
           {(state.approvals || []).length === 0 ? <p>Bekleyen onay yok.</p> : (
             <ul>{state.approvals.map((a,i) => <li key={i}>{a.id}: {a.status} - {a.reason}</li>)}</ul>
@@ -88,7 +116,7 @@ export default function Page() {
       )}
 
       {tab === 'ledger' && (
-        <div>
+        <div className="panel">
           <h2>Compensation Ledger</h2>
           {(state.ledger || []).length === 0 ? <p>Ledger boş.</p> : (
             <table style={{width:'100%', borderCollapse:'collapse'}}>
@@ -100,7 +128,7 @@ export default function Page() {
       )}
 
       {tab === 'logs' && (
-        <div>
+        <div className="panel">
           <h2>Agent Runs</h2>
           {(state.agent_runs || []).length === 0 ? <p>Log boş. Ajanlar çalıştıkça dolacak.</p> : (
             <ul>{state.agent_runs.slice(-20).map((r,i) => (
@@ -111,7 +139,7 @@ export default function Page() {
       )}
 
       {state.policy_status && (
-        <div style={{marginTop: 24, padding: 12, background: '#f5f5f5', borderRadius: 8}}>
+        <div className="policy">
           <h3>Policy Durumu</h3>
           {Object.entries(state.policy_status).map(([k, v]) => (
             <p key={k}><strong>{k}:</strong> {v.allowed ? 'izinli' : 'yasak'} — {v.reason || ''}</p>
