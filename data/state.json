@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-03T15:18:00Z",
+  "updated_at": "2026-11-03T15:10:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -45,11 +45,10 @@
       "positions": [],
       "trades": [],
       "watch": [
-        "HRKET",
-        "HATSN",
-        "IZFAS",
-        "KARCL",
-        "MCARD"
+        "BMSTL",
+        "OBASE",
+        "VESTL",
+        "VESBE"
       ],
       "last_decision": {
         "time": "2026-11-03T07:05:00Z",
@@ -165,6 +164,13 @@
       "action": "TICK",
       "symbol": "-",
       "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80450), 4s altı, yeni alt yok. ABD seans açık. BIST WAIT_SESSION (18:00 kapandı). Alt used 0/1400. Quotes BTC 77250 ETH 2283 BNB 697 SPY 752.1 QQQ 681.09 AAPL 338.32 MSFT 507.12 NVDA 202.06 THYAO 266 GARAN 128 BIMAS 359 TUPRS 342 USDTTRY 49.9."
+    },
+    {
+      "time": "2026-11-03T15:10:00Z",
+      "market": "tavan",
+      "action": "WATCH",
+      "symbol": "-",
+      "reason": "Tavan liste 2026-11-03: BMSTL OBASE VESTL VESBE. Ana/Yıldız Pazar, +10% kilitli kapanış (high=close), hacim yeterli (BMSTL ~99M, VESTL 19.5M, OBASE 5.5M, VESBE 3.7M TL). ENPRA PÖİP, BRKVY KAP soruşturma, PAMEL manipülasyon soruşturma elendi. Aynı gün AL yok. Halted false. Nakit/equity 4000."
     }
   ],
   "mark": {
