@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-03T09:19:00Z",
+  "updated_at": "2026-11-03T13:22:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -85,9 +85,9 @@
     "missing": []
   },
   "quotes": {
-    "BTC": 76650,
-    "ETH": 2250,
-    "BNB": 693,
+    "BTC": 77200,
+    "ETH": 2280,
+    "BNB": 700,
     "SPY": 752.1,
     "QQQ": 681.09,
     "AAPL": 338.32,
@@ -95,8 +95,8 @@
     "NVDA": 202.06,
     "THYAO": 262,
     "GARAN": 127,
-    "BIMAS": 356,
-    "TUPRS": 331,
+    "BIMAS": 359,
+    "TUPRS": 342,
     "USDTTRY": 49.9
   },
   "fx": {
@@ -151,10 +151,17 @@
       "action": "TICK",
       "symbol": "-",
       "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80450), yeni alt yok. ABD WAIT_SESSION (NY 04:19). BIST seans açık, yeni AL yok. Alt used 0/1400. Quotes BTC 76650 ETH 2250 BNB 693 SPY 752.1 QQQ 681.09 AAPL 338.32 MSFT 507.12 NVDA 202.06 THYAO 262 GARAN 127 BIMAS 356 TUPRS 331 USDTTRY 49.9."
+    },
+    {
+      "time": "2026-11-03T13:22:00Z",
+      "market": "system",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. 25 listesi tarandı (kripto top gainers HOT/STX, BIST ENPRA/BMSTL). BTC günlük EMA21 altı (~80450), 4s altı, yeni alt yok. ABD WAIT_SESSION (NY 09:22, açılış 09:30). BIST seans açık, yeni AL yok (setup yok). Alt used 0/1400. Quotes BTC 77200 ETH 2280 BNB 700 SPY 752.1 QQQ 681.09 AAPL 338.32 MSFT 507.12 NVDA 202.06 THYAO 262 GARAN 127 BIMAS 359 TUPRS 342 USDTTRY 49.9."
     }
   ],
   "mark": {
-    "at": "2026-11-03T09:19:00Z",
+    "at": "2026-11-03T13:22:00Z",
     "source": "paper-agent",
     "near": []
   }
