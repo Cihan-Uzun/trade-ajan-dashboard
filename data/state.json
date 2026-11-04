@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-04T09:18:00Z",
+  "updated_at": "2026-11-04T13:24:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -84,23 +84,23 @@
     "missing": []
   },
   "quotes": {
-    "BTC": 78400,
-    "ETH": 2305,
-    "BNB": 702,
-    "SOL": 93.5,
+    "BTC": 78350,
+    "ETH": 2315,
+    "BNB": 700,
+    "SOL": 93,
     "SPY": 754.35,
     "QQQ": 685.28,
     "AAPL": 331.9,
     "MSFT": 520.99,
     "NVDA": 206.69,
-    "THYAO": 275,
-    "GARAN": 134.5,
-    "BIMAS": 360,
-    "TUPRS": 341,
-    "USDTTRY": 49.96
+    "THYAO": 289.5,
+    "GARAN": 137,
+    "BIMAS": 371.75,
+    "TUPRS": 347.75,
+    "USDTTRY": 50.02
   },
   "fx": {
-    "USDTTRY": 49.96
+    "USDTTRY": 50.02
   },
   "journal": [
     {
@@ -200,10 +200,17 @@
       "action": "TICK",
       "symbol": "-",
       "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80000), 4s EMA21 üstü RSI ~53, yeni alt yok. ABD WAIT_SESSION (NY ~04:18). BIST seans açık, yeni AL yok. Alt used 0/1400. Quotes BTC 78400 ETH 2305 BNB 702 SOL 93.5 SPY 754.35 QQQ 685.28 AAPL 331.9 MSFT 520.99 NVDA 206.69 THYAO 275 GARAN 134.5 BIMAS 360 TUPRS 341 USDTTRY 49.96."
+    },
+    {
+      "time": "2026-11-04T13:24:00Z",
+      "market": "system",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. 25 listesi tarandı (kripto CAP/BEAM/RUNE, BIST THYAO/GARAN lider). BTC günlük EMA21 altı (~79885), 4s EMA21 üstü RSI ~54, yeni alt yok. ABD WAIT_SESSION (NY ~09:24, açılış 09:30). BIST seans açık, yeni AL yok (setup yok, KAP kontrol). Alt used 0/1400. Quotes BTC 78350 ETH 2315 BNB 700 SOL 93 SPY 754.35 QQQ 685.28 AAPL 331.9 MSFT 520.99 NVDA 206.69 THYAO 289.5 GARAN 137 BIMAS 371.75 TUPRS 347.75 USDTTRY 50.02."
     }
   ],
   "mark": {
-    "at": "2026-11-04T09:18:00Z",
+    "at": "2026-11-04T13:24:00Z",
     "source": "paper-ajan",
     "near": []
   }
