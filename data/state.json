@@ -85,23 +85,23 @@
     "missing": []
   },
   "quotes": {
-    "BTC": 78300,
-    "ETH": 2316,
+    "BTC": 35.385,
+    "ETH": 23.07,
     "BNB": 700,
     "SOL": 93,
-    "SPY": 754.35,
-    "QQQ": 685.28,
-    "AAPL": 331.9,
-    "MSFT": 520.99,
-    "NVDA": 206.69,
+    "SPY": 766.81,
+    "QQQ": 691.95,
+    "AAPL": 349.51,
+    "MSFT": 555.8,
+    "NVDA": 200.13,
     "THYAO": 290,
     "GARAN": 138.5,
     "BIMAS": 371.75,
     "TUPRS": 348,
-    "USDTTRY": 50.02
+    "USDTTRY": 49.92
   },
   "fx": {
-    "USDTTRY": 50.02
+    "USDTTRY": 49.92
   },
   "journal": [
     {
@@ -232,8 +232,8 @@
     }
   ],
   "mark": {
-    "at": "2026-11-04T19:12:00+00:00",
-    "source": "paper-agent",
+    "at": "2026-11-04T21:12:10.097511+00:00",
+    "source": "github-action",
     "near": []
   }
 }
