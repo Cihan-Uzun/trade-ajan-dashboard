@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-04T15:10:00Z",
+  "updated_at": "2026-11-04T19:12:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -222,10 +222,17 @@
       "action": "WATCH",
       "symbol": "-",
       "reason": "Tavan liste 2026-11-04: KGYO VESBE IHAAS BASGZ KARCL. Ana/Yıldız Pazar, +10% kilitli kapanış (high=close), hacim yeterli (KGYO 76M, VESBE 15.8M, IHAAS 13.1M, BASGZ 6.4M, KARCL yüksek). NETAS bedelli, CITAS yeni IPO, CASA yakın izleme, OTTO ince elendi. Aynı gün AL yok. Halted false. Nakit/equity 4000."
+    },
+    {
+      "time": "2026-11-04T19:12:00Z",
+      "market": "system",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80000), yeni alt yok. ABD seans açık. BIST WAIT_SESSION. Alt used 0/1400. Quotes BTC 78300 ETH 2316 BNB 700 SOL 93 SPY 754.35 QQQ 685.28 AAPL 331.9 MSFT 520.99 NVDA 206.69 THYAO 290 GARAN 138.5 BIMAS 371.75 TUPRS 348 USDTTRY 50.02."
     }
   ],
   "mark": {
-    "at": "2026-11-04T15:17:00+00:00",
+    "at": "2026-11-04T19:12:00+00:00",
     "source": "paper-agent",
     "near": []
   }

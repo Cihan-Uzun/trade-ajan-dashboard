@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-04",
+  "as_of": "2026-11-04T19:12:00.000Z",
+  "kind": "close",
+  "note": "Resmi gun kapanisi 22:00 TSİ tick. Kaynak state as_of 2026-11-04T15:17Z guncellendi. Canli emir yok.",
+  "totals": {
+    "start": 16000,
+    "equity": 16000,
+    "cash": 16000,
+    "unrealized": 0,
+    "realized": 0,
+    "pnl": 0
+  },
+  "books": {
+    "binance": {
+      "equity": 4000,
+      "cash": 4000,
+      "unrealized": 0,
+      "realized": 0,
+      "open": 0,
+      "start": 4000
+    },
+    "us": {
+      "equity": 4000,
+      "cash": 4000,
+      "unrealized": 0,
+      "realized": 0,
+      "open": 0,
+      "start": 4000
+    },
+    "bist": {
+      "equity": 4000,
+      "cash": 4000,
+      "unrealized": 0,
+      "realized": 0,
+      "open": 0,
+      "start": 4000
+    },
+    "tavan": {
+      "equity": 4000,
+      "cash": 4000,
+      "unrealized": 0,
+      "realized": 0,
+      "open": 0,
+      "start": 4000
+    }
+  },
+  "day": {
+    "realized": 0,
+    "fees": 0,
+    "wins": 0,
+    "losses": 0,
+    "opens": 0,
+    "closes": []
+  },
+  "week": {
+    "label": "2026-11-02 / 2026-11-08"
+  },
+  "month": {
+    "label": "2026-11"
+  }
+}
