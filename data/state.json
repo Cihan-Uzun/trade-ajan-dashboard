@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-03T19:11:00Z",
+  "updated_at": "2026-11-04T07:05:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -51,10 +51,10 @@
         "VESBE"
       ],
       "last_decision": {
-        "time": "2026-11-03T07:05:00Z",
+        "time": "2026-11-04T07:05:00Z",
         "decision": "NO_BUY",
-        "reason": "10:05 TSI. Dün watch HRKET HATSN IZFAS KARCL MCARD. Açılış printi yok veya son=önceki kapanış tavan (HRKET 6.93, HATSN 20.68, IZFAS 15.08, KARCL 26.88, MCARD 123.70). Tavan altı ve devretmiyor teyit yok, kilitli tavan kovalama yok. Açık pozisyon yok. Kapanış 0, kâr faktörü yok, halted false. Nakit/equity 4000.",
-        "as_of": "2026-11-03T07:05:00Z",
+        "reason": "10:05 TSI. Dün watch BMSTL OBASE VESTL VESBE. Açılış printi yok veya son=önceki kapanış tavan (BMSTL 31.46, OBASE 17.82, VESTL 12.27, VESBE 3.20). Tavan altı ve devretmiyor teyit yok, kilitli tavan kovalama yok. Açık pozisyon yok. Kapanış 0, kâr faktörü yok, halted false. Nakit/equity 4000.",
+        "as_of": "2026-11-04T07:05:00Z",
         "halted": false,
         "closes": 0,
         "wins": 0,
@@ -97,10 +97,10 @@
     "GARAN": 128,
     "BIMAS": 359,
     "TUPRS": 342,
-    "USDTTRY": 49.89
+    "USDTTRY": 50.00
   },
   "fx": {
-    "USDTTRY": 49.89
+    "USDTTRY": 50.00
   },
   "journal": [
     {
@@ -179,11 +179,18 @@
       "action": "TICK",
       "symbol": "-",
       "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80450), 4s RSI ~47 altı, yeni alt yok. ABD seans açık. BIST WAIT_SESSION. Alt used 0/1400. Quotes BTC 77650 ETH 2297 BNB 697 SOL 93.5 SPY 756.15 QQQ 687 AAPL 331.5 MSFT 518 NVDA 207.7 USDTTRY 49.9."
+    },
+    {
+      "time": "2026-11-04T07:05:00Z",
+      "market": "tavan",
+      "action": "DECISION",
+      "symbol": "-",
+      "reason": "Tavan karar 2026-11-04 10:05 TSİ: NO_BUY. Watch BMSTL OBASE VESTL VESBE açılış tavan kilitli (önceki kapanış seviyesi: BMSTL 31.46, OBASE 17.82, VESTL 12.27, VESBE 3.20), tavan altı/devretmiyor teyit yok, kovalama yok. Açık pozisyon yok. Kapanış 0, kâr faktörü yok, halted false. Nakit/equity 4000. Canlı emir yok. USDTTRY ~50.00."
     }
   ],
   "mark": {
-    "at": "2026-11-04T05:48:28.629404+00:00",
-    "source": "github-action",
+    "at": "2026-11-04T07:05:00Z",
+    "source": "tavan-ajan",
     "near": []
   }
 }
