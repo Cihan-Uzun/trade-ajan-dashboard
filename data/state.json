@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-04T07:20:00Z",
+  "updated_at": "2026-11-04T09:18:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -84,23 +84,23 @@
     "missing": []
   },
   "quotes": {
-    "BTC": 77950,
-    "ETH": 2296,
-    "BNB": 698,
-    "SOL": 93,
+    "BTC": 78400,
+    "ETH": 2305,
+    "BNB": 702,
+    "SOL": 93.5,
     "SPY": 754.35,
     "QQQ": 685.28,
     "AAPL": 331.9,
     "MSFT": 520.99,
     "NVDA": 206.69,
-    "THYAO": 265,
-    "GARAN": 128.8,
-    "BIMAS": 359.5,
-    "TUPRS": 338.25,
-    "USDTTRY": 49.95
+    "THYAO": 275,
+    "GARAN": 134.5,
+    "BIMAS": 360,
+    "TUPRS": 341,
+    "USDTTRY": 49.96
   },
   "fx": {
-    "USDTTRY": 49.95
+    "USDTTRY": 49.96
   },
   "journal": [
     {
@@ -193,10 +193,17 @@
       "action": "TICK",
       "symbol": "-",
       "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80450), yeni alt yok. ABD WAIT_SESSION (NY ~02:20). BIST seans açık, yeni AL yok. Alt used 0/1400. Quotes BTC 77950 ETH 2296 BNB 698 SOL 93 SPY 754.35 QQQ 685.28 AAPL 331.9 MSFT 520.99 NVDA 206.69 THYAO 265 GARAN 128.8 BIMAS 359.5 TUPRS 338.25 USDTTRY 49.95."
+    },
+    {
+      "time": "2026-11-04T09:18:00Z",
+      "market": "system",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 altı (~80000), 4s EMA21 üstü RSI ~53, yeni alt yok. ABD WAIT_SESSION (NY ~04:18). BIST seans açık, yeni AL yok. Alt used 0/1400. Quotes BTC 78400 ETH 2305 BNB 702 SOL 93.5 SPY 754.35 QQQ 685.28 AAPL 331.9 MSFT 520.99 NVDA 206.69 THYAO 275 GARAN 134.5 BIMAS 360 TUPRS 341 USDTTRY 49.96."
     }
   ],
   "mark": {
-    "at": "2026-11-04T07:20:00Z",
+    "at": "2026-11-04T09:18:00Z",
     "source": "paper-ajan",
     "near": []
   }
