@@ -1,1 +1,80 @@
-PLACEHOLDER
+{
+  "version": "0.4",
+  "status": "RUNNING",
+  "tenant": "cihan_uzun",
+  "restarted_at": "2026-11-02T14:30:00Z",
+  "updated_at": "2026-11-05T13:37:00Z",
+  "books": {
+    "binance": {
+      "start": 4000,
+      "cash": 4000,
+      "equity": 4000,
+      "unrealized": 0,
+      "realized": 0,
+      "positions": [],
+      "trades": [],
+      "alt_used": 0,
+      "open_count": 0
+    },
+    "us": {
+      "start": 4000,
+      "cash": 4000,
+      "equity": 4000,
+      "unrealized": 0,
+      "realized": 0,
+      "positions": [],
+      "trades": [],
+      "open_count": 0
+    },
+    "bist": {
+      "start": 4000,
+      "cash": 4000,
+      "equity": 4000,
+      "unrealized": 0,
+      "realized": 0,
+      "positions": [],
+      "trades": [],
+      "open_count": 0
+    },
+    "tavan": {
+      "start": 4000,
+      "cash": 4000,
+      "equity": 4000,
+      "unrealized": 0,
+      "realized": 0,
+      "positions": [],
+      "trades": [],
+      "watch": ["KGYO", "VESBE", "IHAAS", "BASGZ", "KARCL"],
+      "last_decision": {
+        "time": "2026-11-05T07:05:00Z",
+        "decision": "NO_BUY",
+        "reason": "10:05 TSI. Dün watch KGYO VESBE IHAAS BASGZ KARCL. Açılış printi yok veya son=önceki kapanış tavan (KGYO 7.81, VESBE 3.52, IHAAS 11.33, BASGZ 35.20, KARCL 28.60). Tavan altı ve devretmiyor teyit yok, kilitli tavan kovalama yok. Açık pozisyon yok. Kapanış 0, kâr faktörü yok, halted false. Nakit/equity 4000. USDTTRY ~50.05.",
+        "as_of": "2026-11-05T07:05:00Z",
+        "halted": false,
+        "closes": 0,
+        "wins": 0,
+        "losses": 0
+      },
+      "open_count": 0,
+      "halted": false
+    }
+  },
+  "config": {
+    "risk_rules": {"max_open_alts": 3, "day_halt_pct": -0.01},
+    "binance_alt_cap": 1400,
+    "theme_cap": 0.4,
+    "tavan_budget": 4000
+  },
+  "policy": {"code_enforced": true},
+  "approvals": [],
+  "agent_runs": [],
+  "ledger": [],
+  "integrity": {"ok": true, "missing": []},
+  "quotes": {"BTC": 80000, "ETH": 2390, "BNB": 711, "SOL": 95.5, "SPY": 766.81, "QQQ": 691.95, "AAPL": 349.51, "MSFT": 555.8, "NVDA": 200.13, "THYAO": 295, "GARAN": 140.1, "BIMAS": 372.25, "TUPRS": 332, "USDTTRY": 50.0},
+  "fx": {"USDTTRY": 50.0},
+  "journal": [
+    {"time": "2026-11-02T14:30:00Z", "market": "system", "action": "RESET", "symbol": "-", "reason": "Cihan isteği: Binance/ABD/BIST 4000'er, tavan 4000. Toplam 16000. Önceki defter arşivlendi, açık pozisyon yoktu."},
+    {"time": "2026-11-05T13:37:00Z", "market": "system", "action": "TICK", "symbol": "-", "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. 25 listesi tarandı (kripto PEARL/INJ/ALGO/ZEC, BIST +10% tavan KARCL/TMPOL/BMSTL). BTC günlük EMA21 ~80000 civarı (fiyat ~80000, üstü/sınırda), yeni alt yok (setup yok). ABD WAIT_SESSION (NY ~08:37, açılış 09:30). BIST seans açık, yeni AL yok. Alt used 0/1400. Quotes BTC 80000 ETH 2390 BNB 711 SOL 95.5 SPY 766.81 QQQ 691.95 AAPL 349.51 MSFT 555.8 NVDA 200.13 THYAO 295 GARAN 140.1 BIMAS 372.25 TUPRS 332 USDTTRY 50.0."}
+  ],
+  "mark": {"at": "2026-11-05T13:37:00Z", "source": "paper-agent", "near": []}
+}
