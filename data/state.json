@@ -3,7 +3,7 @@
   "status": "RUNNING",
   "tenant": "cihan_uzun",
   "restarted_at": "2026-11-02T14:30:00Z",
-  "updated_at": "2026-11-05T07:05:00Z",
+  "updated_at": "2026-11-05T07:21:00Z",
   "books": {
     "binance": {
       "start": 4000,
@@ -85,19 +85,19 @@
     "missing": []
   },
   "quotes": {
-    "BTC": 35.39,
-    "ETH": 23.08,
-    "BNB": 700,
-    "SOL": 93,
+    "BTC": 80640,
+    "ETH": 2428,
+    "BNB": 714,
+    "SOL": 96.2,
     "SPY": 766.81,
     "QQQ": 691.95,
     "AAPL": 349.51,
     "MSFT": 555.8,
     "NVDA": 200.13,
-    "THYAO": 290,
+    "THYAO": 299,
     "GARAN": 138.5,
-    "BIMAS": 371.75,
-    "TUPRS": 348,
+    "BIMAS": 372,
+    "TUPRS": 345,
     "USDTTRY": 50.05
   },
   "fx": {
@@ -236,11 +236,18 @@
       "action": "DECISION",
       "symbol": "-",
       "reason": "Tavan karar 2026-11-05 10:05 TSİ: NO_BUY. Watch KGYO VESBE IHAAS BASGZ KARCL açılış tavan kilitli (önceki kapanış seviyesi: KGYO 7.81, VESBE 3.52, IHAAS 11.33, BASGZ 35.20, KARCL 28.60), tavan altı/devretmiyor teyit yok, kovalama yok. Açık pozisyon yok. Kapanış 0, kâr faktörü yok, halted false. Nakit/equity 4000. Canlı emir yok. USDTTRY ~50.05."
+    },
+    {
+      "time": "2026-11-05T07:21:00Z",
+      "market": "system",
+      "action": "TICK",
+      "symbol": "-",
+      "reason": "TP/stop yok, kapanış yok, yeni giriş yok, kaldıraç yok. BTC günlük EMA21 üstü (~80000), 4s kontrol, yeni alt yok (setup yok). ABD WAIT_SESSION (NY ~03:21). BIST seans açık, yeni AL yok. Alt used 0/1400. Quotes BTC 80640 ETH 2428 BNB 714 SOL 96.2 SPY 766.81 QQQ 691.95 AAPL 349.51 MSFT 555.8 NVDA 200.13 THYAO 299 GARAN 138.5 BIMAS 372 TUPRS 345 USDTTRY 50.05."
     }
   ],
   "mark": {
-    "at": "2026-11-05T02:08:19.907083+00:00",
-    "source": "github-action",
+    "at": "2026-11-05T07:21:00+00:00",
+    "source": "paper-agent",
     "near": []
   }
 }
